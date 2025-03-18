@@ -17,7 +17,7 @@ uses
   Generics.Defaults, FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
   FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
   FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client,
-  System.RegularExpressions;
+  System.RegularExpressions, System.NetEncoding, System.IOUtils;
   (*"MidasLib" NECESSÁRIA PARA EVITAR ERRO DE ACCESS VIOLATION NO DM.cds*)
 
 type
@@ -2235,6 +2235,8 @@ type
     procedure bsSkinButton47Click(Sender: TObject);
     procedure seTamanhoTextoRetornoChange(Sender: TObject);
     function removeTagsHTML(texto: string): string;
+    procedure SaveBase64ImageToFile(const Base64String, FilePath: string);
+    function ExtractBase64Data(const Base64String: string): string;
   private
     { Private declarations }
     move_x,move_y:integer;
@@ -2254,6 +2256,7 @@ type
     //Define as ações para quando perder ou receber o foco
     procedure ApplicationDeactivate(Sender: TObject);
     procedure ApplicationActivate(Sender: TObject);
+    procedure ForceDirectoriesRecursive(const Path: string);
 
   public
     { Public declarations }
@@ -2686,6 +2689,60 @@ begin
   gravaParam('Geral', 'AlteraOrdem-'+semana, FormatDateTime('dd/mm/yyyy hh:mm:ss',now()), arq_liturgia);
 end;
 
+procedure TfmIndex.SaveBase64ImageToFile(const Base64String, FilePath: string);
+var
+  InputStream: TBytesStream;
+  OutputStream: TFileStream;
+  Decoder: TBase64Encoding;
+  Image: TImage;
+  Graphic: TGraphic;
+begin
+  // Decodifica a string Base64 para bytes
+  Decoder := TBase64Encoding.Create;
+  try
+    InputStream := TBytesStream.Create(Decoder.DecodeStringToBytes(Base64String));
+    try
+      // Cria um TImage para carregar a imagem decodificada
+      Image := TImage.Create(nil);
+      try
+        // Carrega a imagem a partir do stream
+        InputStream.Position := 0;
+        Image.Picture.LoadFromStream(InputStream);
+
+        // Determina o tipo de imagem com base na extensão do arquivo
+        if ExtractFileExt(FilePath).ToLower = '.jpg' then
+          Graphic := TJPEGImage.Create
+        else if ExtractFileExt(FilePath).ToLower = '.png' then
+          Graphic := TPngImage.Create
+        else
+          raise Exception.Create('Formato de imagem não suportado');
+
+        // Cria o diretório recursivamente, se não existir
+        ForceDirectoriesRecursive(ExtractFilePath(FilePath));
+
+        try
+          // Salva a imagem no arquivo
+          Graphic.Assign(Image.Picture.Graphic);
+          OutputStream := TFileStream.Create(FilePath, fmCreate);
+          try
+            Graphic.SaveToStream(OutputStream);
+          finally
+            OutputStream.Free;
+          end;
+        finally
+          Graphic.Free;
+        end;
+      finally
+        Image.Free;
+      end;
+    finally
+      InputStream.Free;
+    end;
+  finally
+    Decoder.Free;
+  end;
+end;
+
 procedure TfmIndex.sbAlinhMusicaChange(Sender: TObject);
 begin
   gravaParam('Musicas', 'Alinhamento', inttostr(sbAlinhMusica.ItemIndex));
@@ -2725,6 +2782,12 @@ function TfmIndex.FonteExiste(Fonte: STring): Boolean;
 begin
   with Screen.Fonts do
     Result := IndexOf(Trim(Fonte)) > 0;
+end;
+
+procedure TfmIndex.ForceDirectoriesRecursive(const Path: string);
+begin
+  if not TDirectory.Exists(Path) then
+    ForceDirectories(Path);
 end;
 
 procedure TfmIndex.FormActivate(Sender: TObject);
@@ -7249,6 +7312,7 @@ var
   bmp: TBitmap;
   i: integer;
   dir: string;
+  Base64String: string;
 begin
   if (p = 'canais') then
   begin
@@ -7271,12 +7335,17 @@ begin
       bmp := TBitmap.Create;
       if FileExists(dir + DM.qrONL_CANAIS.FieldByName('CANAL_ID').AsString + '.jpg') then
         Jpg.LoadFromFile(dir + DM.qrONL_CANAIS.FieldByName('CANAL_ID').AsString + '.jpg')
-      (*else
+      else
       begin
-        DownloadArquivo(DM.qrONL_CANAIS.FieldByName('IMAGEM').AsString, dir + '\' + DM.qrONL_CANAIS.FieldByName('CANAL_ID').AsString + '.jpg');
+        Base64String := DM.qrONL_CANAIS.FieldByName('IMAGEM_64').AsString;
+        SaveBase64ImageToFile(
+          ExtractBase64Data(Base64String),
+          dir + DM.qrONL_CANAIS.FieldByName('CANAL_ID').AsString + '.jpg'
+        );
+
         if FileExists(dir + DM.qrONL_CANAIS.FieldByName('CANAL_ID').AsString + '.jpg') then
           Jpg.LoadFromFile(dir + DM.qrONL_CANAIS.FieldByName('CANAL_ID').AsString + '.jpg');
-      end*);
+      end;
       bmp.Assign(Jpg);
       bmp.Height := 88;
       bmp.Width := 88;
@@ -7307,7 +7376,18 @@ begin
       Jpg := TJPEGImage.Create;
       bmp := TBitmap.Create;
       if FileExists(dir + DM.qrONL_PLAYLISTS.FieldByName('PLAYLIST_ID').AsString + '.jpg') then
-        Jpg.LoadFromFile(dir + DM.qrONL_PLAYLISTS.FieldByName('PLAYLIST_ID').AsString + '.jpg');
+        Jpg.LoadFromFile(dir + DM.qrONL_PLAYLISTS.FieldByName('PLAYLIST_ID').AsString + '.jpg')
+      else
+      begin
+        Base64String := DM.qrONL_PLAYLISTS.FieldByName('IMAGEM_64').AsString;
+        SaveBase64ImageToFile(
+          ExtractBase64Data(Base64String),
+          dir + DM.qrONL_PLAYLISTS.FieldByName('PLAYLIST_ID').AsString + '.jpg'
+        );
+
+        if FileExists(dir + DM.qrONL_PLAYLISTS.FieldByName('PLAYLIST_ID').AsString + '.jpg') then
+          Jpg.LoadFromFile(dir + DM.qrONL_PLAYLISTS.FieldByName('PLAYLIST_ID').AsString + '.jpg');
+      end;
       bmp.Assign(Jpg);
       bmp.Height := 90;
       bmp.Width := 120;
@@ -7346,7 +7426,18 @@ begin
       Jpg := TJPEGImage.Create;
       bmp := TBitmap.Create;
       if FileExists(dir + DM.qrONL_VIDEOS.FieldByName('VIDEO_ID').AsString + '.jpg') then
-        Jpg.LoadFromFile(dir + DM.qrONL_VIDEOS.FieldByName('VIDEO_ID').AsString + '.jpg');
+        Jpg.LoadFromFile(dir + DM.qrONL_VIDEOS.FieldByName('VIDEO_ID').AsString + '.jpg')
+      else
+      begin
+        Base64String := DM.qrONL_VIDEOS.FieldByName('IMAGEM_64').AsString;
+        SaveBase64ImageToFile(
+          ExtractBase64Data(Base64String),
+          dir + DM.qrONL_VIDEOS.FieldByName('VIDEO_ID').AsString + '.jpg'
+        );
+
+        if FileExists(dir + DM.qrONL_VIDEOS.FieldByName('VIDEO_ID').AsString + '.jpg') then
+          Jpg.LoadFromFile(dir + DM.qrONL_VIDEOS.FieldByName('VIDEO_ID').AsString + '.jpg');
+      end;
       bmp.Assign(Jpg);
       bmp.Height := 90;
       bmp.Width := 120;
@@ -12085,6 +12176,22 @@ end;
 procedure TfmIndex.miOpcExportar1Click(Sender: TObject);
 begin
   botao_trmenu.OnClick(Sender);
+end;
+
+function TfmIndex.ExtractBase64Data(const Base64String: string): string;
+const
+  Base64Prefix = 'base64,';
+var
+  PrefixPos: Integer;
+begin
+  // Encontra a posição do prefixo 'base64,'
+  PrefixPos := Pos(Base64Prefix, Base64String);
+  if PrefixPos > 0 then
+    // Retorna a parte da string após o prefixo 'base64,'
+    Result := Copy(Base64String, PrefixPos + Length(Base64Prefix), MaxInt)
+  else
+    // Se não houver prefixo, retorna a string original
+    Result := Base64String;
 end;
 
 function TfmIndex.ExtraiTexto(const Str, Str1, Str2: string): string;

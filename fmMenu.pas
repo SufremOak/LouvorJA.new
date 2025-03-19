@@ -2264,6 +2264,7 @@ type
     dir_temp: string;
     dir_config: string;
     url_params: string;
+    api_token: string;
 
     carrega_opc: Boolean;
 
@@ -3889,6 +3890,7 @@ begin
   DM.progressDialog.Value := 20;
 
   txt := TStringList.Create;
+  DM.IdHTTP1.Request.CustomHeaders.Values['Api-Token'] := api_token;
 
   try
     sql := DM.IdHTTP1.Get(url_conexao + '?tipo=' + p + '&id=' + id + '&atualiza_playlist=1&lang=' + fIniciando.LANG);
@@ -3906,7 +3908,7 @@ begin
   end;
 
   DM.progressDialog.MaxValue := 100;
-  DM.progressDialog.Value := 40;
+  DM.progressDialog.Value := 50;
   ExtractStrings(['|'], [], PChar(sql), txt);
   try
     for i := 0 to txt.Count - 1 do
@@ -3926,88 +3928,14 @@ begin
   end;
 
   DM.progressDialog.MaxValue := 100;
-  DM.progressDialog.Value := 60;
+  DM.progressDialog.Value := 100;
 
-  if (p = 'canais') or (p = 'tudo') then
-  begin
-    //BAIXA IMAGENS
-    DM.qrONL_CANAIS.Close;
-    DM.qrONL_CANAIS.Open;
-
-    dir := dir_config + 'imagens_onl\canais';
-    if not (DirectoryExists(dir)) then
-      forceDirectories(dir);
-
-    while not DM.qrONL_CANAIS.eof do
-    begin
-      DownloadArquivo(DM.qrONL_CANAIS.FieldByName('IMAGEM').AsString, dir + '\' + DM.qrONL_CANAIS.FieldByName('CANAL_ID').AsString + '.jpg');
-      DM.qrONL_CANAIS.Next;
-    end;
-
-    if (p = 'canais') then
-      application.messagebox(PChar('Canais atualizados com sucesso!'), TITULO, MB_OK + mb_iconinformation);
-  end;
-  if (p = 'playlists') or (p = 'tudo') then
-  begin
-    //BAIXA IMAGENS
-    if (p = 'tudo') then
-    begin
-      DM.qrONL_PLAYLISTS_TUDO.Close;
-      DM.qrONL_PLAYLISTS_TUDO.Open;
-      QUERY := DM.qrONL_PLAYLISTS_TUDO;
-    end
-    else
-    begin
-      DM.qrONL_PLAYLISTS.Close;
-      DM.qrONL_PLAYLISTS.ParamByName('CANAL_ID').Value := id;
-      DM.qrONL_PLAYLISTS.Open;
-      QUERY := DM.qrONL_PLAYLISTS;
-    end;
-
-    dir := dir_config + 'imagens_onl\playlists';
-    if not (DirectoryExists(dir)) then
-      forceDirectories(dir);
-
-    while not QUERY.eof do
-    begin
-      DownloadArquivo(QUERY.FieldByName('IMAGEM').AsString, dir + '\' + QUERY.FieldByName('PLAYLIST_ID').AsString + '.jpg');
-      QUERY.Next;
-    end;
-
-    if (p = 'playlists') then
-      application.messagebox(PChar('Listas de Reprodução atualizadas com sucesso!'), TITULO, MB_OK + mb_iconinformation);
-  end;
-  if (p = 'videos') or (p = 'tudo') then
-  begin
-    //BAIXA IMAGENS
-    if (p = 'tudo') then
-    begin
-      DM.qrONL_VIDEOS_TUDO.Close;
-      DM.qrONL_VIDEOS_TUDO.Open;
-      QUERY := DM.qrONL_VIDEOS_TUDO;
-    end
-    else
-    begin
-      DM.qrONL_VIDEOS.Close;
-      DM.qrONL_VIDEOS.ParamByName('PLAYLIST_ID').Value := id;
-      DM.qrONL_VIDEOS.Open;
-      QUERY := DM.qrONL_VIDEOS;
-    end;
-
-    dir := dir_config + 'imagens_onl\videos';
-    if not (DirectoryExists(dir)) then
-      forceDirectories(dir);
-
-    while not QUERY.eof do
-    begin
-      DownloadArquivo(QUERY.FieldByName('IMAGEM').AsString, dir + '\' + QUERY.FieldByName('VIDEO_ID').AsString + '.jpg');
-      QUERY.Next;
-    end;
-
-    if (p = 'videos') then
-      application.messagebox(PChar('Vídeos atualizadas com sucesso!'), TITULO, MB_OK + mb_iconinformation);
-  end;
-
+  if (p = 'canais') then
+    application.messagebox(PChar('Canais atualizados com sucesso!'), TITULO, MB_OK + mb_iconinformation);
+  if (p = 'playlists') then
+    application.messagebox(PChar('Listas de Reprodução atualizadas com sucesso!'), TITULO, MB_OK + mb_iconinformation);
+  if (p = 'videos') then
+    application.messagebox(PChar('Vídeos atualizadas com sucesso!'), TITULO, MB_OK + mb_iconinformation);
   if (p = 'tudo') then
     application.messagebox(PChar('Vídeos atualizadas com sucesso!'), TITULO, MB_OK + mb_iconinformation);
 
@@ -7324,29 +7252,35 @@ begin
     pnlOnlPlaylists.Visible := False;
     pnlOnlVideos.Visible := False;
     DM.ico_on_canais.Clear;
-    dir := dir_config + 'imagens_onl\canais\';
+    dir := dir_temp + 'imagens_onl\canais\';
     while not DM.qrONL_CANAIS.eof do
     begin
       bgOnlCanais.Items.Add.Caption := DM.qrONL_CANAIS.FieldByName('NOME').AsString;
       lbbgOnlCanais.Items.Add(DM.qrONL_CANAIS.FieldByName('CANAL_ID').AsString);
       i := bgOnlCanais.Items.Count - 1;
 
-      Jpg := TJPEGImage.Create;
-      bmp := TBitmap.Create;
-      if FileExists(dir + DM.qrONL_CANAIS.FieldByName('CANAL_ID').AsString + '.jpg') then
-        Jpg.LoadFromFile(dir + DM.qrONL_CANAIS.FieldByName('CANAL_ID').AsString + '.jpg')
-      else
-      begin
-        Base64String := DM.qrONL_CANAIS.FieldByName('IMAGEM_64').AsString;
-        SaveBase64ImageToFile(
-          ExtractBase64Data(Base64String),
-          dir + DM.qrONL_CANAIS.FieldByName('CANAL_ID').AsString + '.jpg'
-        );
-
+      try
+        Jpg := TJPEGImage.Create;
+        bmp := TBitmap.Create;
         if FileExists(dir + DM.qrONL_CANAIS.FieldByName('CANAL_ID').AsString + '.jpg') then
-          Jpg.LoadFromFile(dir + DM.qrONL_CANAIS.FieldByName('CANAL_ID').AsString + '.jpg');
+          Jpg.LoadFromFile(dir + DM.qrONL_CANAIS.FieldByName('CANAL_ID').AsString + '.jpg')
+        else
+        begin
+          Base64String := DM.qrONL_CANAIS.FieldByName('IMAGEM_64').AsString;
+          SaveBase64ImageToFile(
+            ExtractBase64Data(Base64String),
+            dir + DM.qrONL_CANAIS.FieldByName('CANAL_ID').AsString + '.jpg'
+          );
+
+          if FileExists(dir + DM.qrONL_CANAIS.FieldByName('CANAL_ID').AsString + '.jpg') then
+            Jpg.LoadFromFile(dir + DM.qrONL_CANAIS.FieldByName('CANAL_ID').AsString + '.jpg');
+        end;
+        bmp.Assign(Jpg);
+      except
+        Jpg := TJPEGImage.Create;
+        bmp := TBitmap.Create;
+        bmp.Assign(Jpg);
       end;
-      bmp.Assign(Jpg);
       bmp.Height := 88;
       bmp.Width := 88;
       DM.ico_on_canais.Add(bmp, nil);
@@ -7366,29 +7300,35 @@ begin
     lbbgOnlPlaylists.Items.Clear;
     pnlOnlVideos.Visible := False;
     DM.ico_on_playlists.Clear;
-    dir := dir_config + 'imagens_onl\playlists\';
+    dir := dir_temp + 'imagens_onl\playlists\';
     while not DM.qrONL_PLAYLISTS.eof do
     begin
       bgOnlPlaylists.Items.Add.Caption := DM.qrONL_PLAYLISTS.FieldByName('NOME').AsString;
       lbbgOnlPlaylists.Items.Add(DM.qrONL_PLAYLISTS.FieldByName('PLAYLIST_ID').AsString);
       i := bgOnlPlaylists.Items.Count - 1;
 
-      Jpg := TJPEGImage.Create;
-      bmp := TBitmap.Create;
-      if FileExists(dir + DM.qrONL_PLAYLISTS.FieldByName('PLAYLIST_ID').AsString + '.jpg') then
-        Jpg.LoadFromFile(dir + DM.qrONL_PLAYLISTS.FieldByName('PLAYLIST_ID').AsString + '.jpg')
-      else
-      begin
-        Base64String := DM.qrONL_PLAYLISTS.FieldByName('IMAGEM_64').AsString;
-        SaveBase64ImageToFile(
-          ExtractBase64Data(Base64String),
-          dir + DM.qrONL_PLAYLISTS.FieldByName('PLAYLIST_ID').AsString + '.jpg'
-        );
-
+      try
+        Jpg := TJPEGImage.Create;
+        bmp := TBitmap.Create;
         if FileExists(dir + DM.qrONL_PLAYLISTS.FieldByName('PLAYLIST_ID').AsString + '.jpg') then
-          Jpg.LoadFromFile(dir + DM.qrONL_PLAYLISTS.FieldByName('PLAYLIST_ID').AsString + '.jpg');
+          Jpg.LoadFromFile(dir + DM.qrONL_PLAYLISTS.FieldByName('PLAYLIST_ID').AsString + '.jpg')
+        else
+        begin
+          Base64String := DM.qrONL_PLAYLISTS.FieldByName('IMAGEM_64').AsString;
+          SaveBase64ImageToFile(
+            ExtractBase64Data(Base64String),
+            dir + DM.qrONL_PLAYLISTS.FieldByName('PLAYLIST_ID').AsString + '.jpg'
+          );
+
+          if FileExists(dir + DM.qrONL_PLAYLISTS.FieldByName('PLAYLIST_ID').AsString + '.jpg') then
+            Jpg.LoadFromFile(dir + DM.qrONL_PLAYLISTS.FieldByName('PLAYLIST_ID').AsString + '.jpg');
+        end;
+        bmp.Assign(Jpg);
+      except
+        Jpg := TJPEGImage.Create;
+        bmp := TBitmap.Create;
+        bmp.Assign(Jpg);
       end;
-      bmp.Assign(Jpg);
       bmp.Height := 90;
       bmp.Width := 120;
       DM.ico_on_playlists.Add(bmp, nil);
@@ -7408,7 +7348,7 @@ begin
     bgOnlVideos.ItemIndex := -1;
     lbbgOnlVideos.Items.Clear;
     DM.ico_on_videos.Clear;
-    dir := dir_config + 'imagens_onl\videos\';
+    dir := dir_temp + 'imagens_onl\videos\';
 
     gaOnlVideos.Visible := True;
     gaOnlVideos.Value := 0;
@@ -7423,22 +7363,28 @@ begin
       lbbgOnlVideos.Items.Add(DM.qrONL_VIDEOS.FieldByName('VIDEO_ID').AsString);
       i := bgOnlVideos.Items.Count - 1;
 
-      Jpg := TJPEGImage.Create;
-      bmp := TBitmap.Create;
-      if FileExists(dir + DM.qrONL_VIDEOS.FieldByName('VIDEO_ID').AsString + '.jpg') then
-        Jpg.LoadFromFile(dir + DM.qrONL_VIDEOS.FieldByName('VIDEO_ID').AsString + '.jpg')
-      else
-      begin
-        Base64String := DM.qrONL_VIDEOS.FieldByName('IMAGEM_64').AsString;
-        SaveBase64ImageToFile(
-          ExtractBase64Data(Base64String),
-          dir + DM.qrONL_VIDEOS.FieldByName('VIDEO_ID').AsString + '.jpg'
-        );
-
+      try
+        Jpg := TJPEGImage.Create;
+        bmp := TBitmap.Create;
         if FileExists(dir + DM.qrONL_VIDEOS.FieldByName('VIDEO_ID').AsString + '.jpg') then
-          Jpg.LoadFromFile(dir + DM.qrONL_VIDEOS.FieldByName('VIDEO_ID').AsString + '.jpg');
+          Jpg.LoadFromFile(dir + DM.qrONL_VIDEOS.FieldByName('VIDEO_ID').AsString + '.jpg')
+        else
+        begin
+          Base64String := DM.qrONL_VIDEOS.FieldByName('IMAGEM_64').AsString;
+          SaveBase64ImageToFile(
+            ExtractBase64Data(Base64String),
+            dir + DM.qrONL_VIDEOS.FieldByName('VIDEO_ID').AsString + '.jpg'
+          );
+
+          if FileExists(dir + DM.qrONL_VIDEOS.FieldByName('VIDEO_ID').AsString + '.jpg') then
+            Jpg.LoadFromFile(dir + DM.qrONL_VIDEOS.FieldByName('VIDEO_ID').AsString + '.jpg');
+        end;
+        bmp.Assign(Jpg);
+      except
+        Jpg := TJPEGImage.Create;
+        bmp := TBitmap.Create;
+        bmp.Assign(Jpg);
       end;
-      bmp.Assign(Jpg);
       bmp.Height := 90;
       bmp.Width := 120;
       DM.ico_on_videos.Add(bmp, nil);
@@ -12235,7 +12181,7 @@ begin
         gravaParam('Config', 'UltimaConexao', formatdatetime('yyyy-mm-dd', Now()));
 
         DM.progressDialog.MaxValue := StrToInt(lerParam('Config', 'Param Buffer', '100000'));
-        DM.IdHTTP1.Request.CustomHeaders.Values['Api-Token'] := '02@v2nFB2Dc';
+        DM.IdHTTP1.Request.CustomHeaders.Values['Api-Token'] := api_token;
 
         try
           LinkPag := DM.IdHTTP1.Get(url_params);

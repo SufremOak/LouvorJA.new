@@ -13,14 +13,13 @@ uses
 type
   TfIniciando = class(TForm)
     Timer1: TTimer;
-    Panel2: TbsSkinPanel;
-    Panel1: TbsSkinPanel;
-    lblTitulo: TbsSkinStdLabel;
-    bsRibbonDivider26: TbsRibbonDivider;
-    lblInfo: TbsSkinStdLabel;
+    Panel2: TPanel;
+    Panel1: TPanel;
+    lblInfo: TLabel;
     Image1: TImage;
     vLang: TValueListEditor;
     paramexec: TValueListEditor;
+    Image2: TImage;
     procedure Timer1Timer(Sender: TObject);
     procedure AppCreateForm(InstanceClass: TComponentClass; var Reference);
     procedure TranslateForm(Form: TForm);
@@ -78,6 +77,7 @@ var
   dir_temp: string;
   dir_config: string;
   url_params: string;
+  api_token: string;
   TITULO: PChar;
 begin
   Timer1.Enabled := False;
@@ -95,7 +95,7 @@ begin
     then TITULO := 'Loor JA'
   else TITULO := 'Louvor JA';
 
-  lblTitulo.Caption := TITULO;
+//  lblTitulo.Caption := TITULO;
   lblInfo.Caption := Translate(lblInfo.Caption);
   application.ProcessMessages;
 
@@ -165,7 +165,7 @@ begin
   dir_dados := GetEnvironmentVariable('APPDATA')+'\LouvorJA\';
   dir_temp := GetEnvironmentVariable('TEMP')+'\LouvorJA\';
   url_params := 'https://api.louvorja.com.br/params?type=env';
-
+  api_token := '02@v2nFB2Dc';
 
   if not(DirectoryExists(dir_dados)) then
     CreateDir(dir_dados);
@@ -197,6 +197,7 @@ begin
   fmIndex.dir_config := dir_config;
   fmIndex.externo := externo;
   fmIndex.url_params := url_params;
+  fmIndex.api_token := api_token;
 
   fmIndex.desenvolvedor(paramexec.Strings.Values['des'] = '1');
   fmIndex.usaFontes(true);

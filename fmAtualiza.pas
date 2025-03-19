@@ -282,7 +282,7 @@ begin
   pbProgresso.Style := pbstMarquee;
 
 
-  DM.IdHTTP1.Request.CustomHeaders.Values['Api-Token'] := '02@v2nFB2Dc';
+  DM.IdHTTP1.Request.CustomHeaders.Values['Api-Token'] := fmIndex.api_token;
   try
     LinkPag := DM.IdHTTP1.Get(fmIndex.url_params);
   except

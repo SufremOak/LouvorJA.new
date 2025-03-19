@@ -88,7 +88,7 @@ var
   Flags: Cardinal;
 begin
 
-  DM.IdHTTP1.Request.CustomHeaders.Values['Api-Token'] := '02@v2nFB2Dc';
+  DM.IdHTTP1.Request.CustomHeaders.Values['Api-Token'] := fmIndex.api_token;
   if (fmIndex.param.Strings.Values['help'] = '') then
   begin
     try

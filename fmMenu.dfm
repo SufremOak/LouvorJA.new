@@ -854,8 +854,8 @@ object fmIndex: TfmIndex
         Page = bsItensAgendados
         Visible = True
       end>
-    TabIndex = 2
-    ActivePage = bsBiblia
+    TabIndex = 4
+    ActivePage = bsFavoritos
     UseSkinFont = True
     AppButtonSpacing = -1
     AppButtonMargin = -1
@@ -910,6 +910,2368 @@ object fmIndex: TfmIndex
     DesignSize = (
       1370
       115)
+    object bsColetaneasOnline: TbsRibbonPage
+      Left = 1
+      Top = 26
+      Width = 1368
+      Height = 86
+      HotScroll = False
+      ScrollOffset = 0
+      ScrollTimerInterval = 50
+      CanScroll = True
+      Caption = 'Colet'#226'neas On-line'
+      ExplicitWidth = 982
+      object bsRibbonGroup60: TbsRibbonGroup
+        Left = 0
+        Top = 0
+        Width = 115
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 0
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Geral'
+        ShowDialogButton = False
+        object bsSkinSpeedButton58: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 111
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 37
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'V'#237'deos On-line'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton58Click
+          ExplicitLeft = 4
+          ExplicitTop = 0
+        end
+      end
+      object bsRibbonGroup64: TbsRibbonGroup
+        Left = 750
+        Top = 0
+        Width = 91
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 3
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Busca'
+        ShowDialogButton = False
+        object bsSkinSpeedButton59: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 5
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Localizar M'#250'sicas'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton59Click
+          ExplicitLeft = 10
+          ExplicitTop = 10
+          ExplicitHeight = 59
+        end
+      end
+      object bsRibbonGroup65: TbsRibbonGroup
+        Left = 115
+        Top = 0
+        Width = 115
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 1
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Usu'#225'rio'
+        ShowDialogButton = False
+        object btColetaneasOnlinePerso: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 111
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 39
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'V'#237'deos Personalizados'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = btColetaneasOnlinePersoClick
+          ExplicitLeft = 4
+          ExplicitTop = 0
+        end
+      end
+      object bsRibbonGroup66: TbsRibbonGroup
+        Left = 230
+        Top = 0
+        Width = 520
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 2
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Link do Youtube'
+        ShowDialogButton = False
+        object btUrlVideoOn2: TbsSkinSpeedButton
+          Left = 242
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 20
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Executar'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alRight
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = btUrlVideoOn2Click
+          ExplicitLeft = 10
+          ExplicitTop = 10
+        end
+        object bsSkinSpeedButton66: TbsSkinSpeedButton
+          Left = 329
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 15
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Salvar Link'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alRight
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton66Click
+          ExplicitLeft = 174
+          ExplicitTop = 3
+        end
+        object bsSkinSpeedButton64: TbsSkinSpeedButton
+          Tag = 9
+          Left = 431
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 38
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Fechar V'#237'deo'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alRight
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton62Click
+          ExplicitLeft = 342
+        end
+        object bsRibbonDivider45: TbsRibbonDivider
+          Left = 416
+          Top = 2
+          Width = 15
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'officegroupdivider'
+          DividerType = bsdtVerticalLine
+          Align = alRight
+          ExplicitLeft = 359
+          ExplicitTop = 0
+        end
+        object GridPanel83: TGridPanel
+          Left = 2
+          Top = 2
+          Width = 240
+          Height = 65
+          Align = alClient
+          BevelOuter = bvNone
+          Caption = 'GridPanel8'
+          ColumnCollection = <
+            item
+              SizeStyle = ssAbsolute
+              Value = 30.000000000000000000
+            end
+            item
+              Value = 100.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              ColumnSpan = 2
+              Control = bsSkinStdLabel99
+              Row = 1
+            end
+            item
+              Column = 1
+              Control = txtUrlVideoOn2
+              Row = 3
+            end
+            item
+              Column = 0
+              Control = Image23
+              Row = 2
+              RowSpan = 3
+            end>
+          RowCollection = <
+            item
+              Value = 50.000000000000000000
+            end
+            item
+              SizeStyle = ssAbsolute
+              Value = 19.000000000000000000
+            end
+            item
+              SizeStyle = ssAbsolute
+              Value = 5.000000000000000000
+            end
+            item
+              SizeStyle = ssAbsolute
+              Value = 19.000000000000000000
+            end
+            item
+              SizeStyle = ssAbsolute
+              Value = 5.000000000000000000
+            end
+            item
+              Value = 50.000000000000000000
+            end>
+          ShowCaption = False
+          TabOrder = 0
+          object bsSkinStdLabel99: TbsSkinStdLabel
+            Left = 0
+            Top = 8
+            Width = 240
+            Height = 19
+            EllipsType = bsetNone
+            UseSkinFont = True
+            UseSkinColor = True
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = -11
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'stdlabel'
+            Align = alClient
+            Caption = 'Executar URL do Youtube:'
+            Layout = tlCenter
+            WordWrap = True
+            ExplicitWidth = 127
+            ExplicitHeight = 13
+          end
+          object txtUrlVideoOn2: TbsSkinEdit
+            Left = 30
+            Top = 32
+            Width = 210
+            Height = 19
+            Text = ''
+            DefaultColor = clWindow
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clBlack
+            DefaultFont.Height = 13
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            UseSkinFont = True
+            DefaultWidth = 0
+            DefaultHeight = 0
+            ButtonMode = False
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'edit'
+            Align = alClient
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = 13
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            MaxLength = -1
+            ParentFont = False
+            TabOrder = 0
+            ButtonImageIndex = -1
+            LeftImageIndex = -1
+            LeftImageHotIndex = -1
+            LeftImageDownIndex = -1
+            RightImageIndex = -1
+            RightImageHotIndex = -1
+            RightImageDownIndex = -1
+            OnKeyUp = txtUrlVideoOn2KeyUp
+          end
+          object Image23: TbsPngImageView
+            Left = 0
+            Top = 27
+            Width = 30
+            Height = 29
+            DoubleBuffered = False
+            ReflectionEffect = False
+            PngImageList = DM.ico_16x16
+            ImageIndex = 82
+            Align = alClient
+            Center = True
+            ExplicitWidth = 16
+            ExplicitHeight = 16
+          end
+        end
+      end
+    end
+    object bsColetaneas: TbsRibbonPage
+      Left = 1
+      Top = 26
+      Width = 1368
+      Height = 86
+      HotScroll = False
+      ScrollOffset = 0
+      ScrollTimerInterval = 50
+      CanScroll = True
+      Caption = 'Colet'#226'neas'
+      ExplicitWidth = 983
+      object bsRibbonGroup7: TbsRibbonGroup
+        Left = 201
+        Top = 0
+        Width = 197
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 1
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = #193'lbuns'
+        ShowDialogButton = False
+        object btAbreColJA: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 88
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 1
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'JA/Min. M'#250'sica'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = btAbreColJAClick
+          ExplicitLeft = 33
+          ExplicitWidth = 87
+          ExplicitHeight = 59
+        end
+        object bsSkinSpeedButton4: TbsSkinSpeedButton
+          Left = 90
+          Top = 2
+          Width = 105
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 2
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Colet'#226'neas Diversas'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alRight
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton4Click
+          ExplicitLeft = 88
+        end
+      end
+      object bsRibbonGroup8: TbsRibbonGroup
+        Left = 767
+        Top = 0
+        Width = 91
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 4
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Busca'
+        ShowDialogButton = False
+        object bsSkinSpeedButton14: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 5
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Localizar M'#250'sicas'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton14Click
+          ExplicitLeft = 10
+          ExplicitTop = 10
+          ExplicitHeight = 59
+        end
+      end
+      object bsRibbonGroup20: TbsRibbonGroup
+        Left = 582
+        Top = 0
+        Width = 185
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 3
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Usu'#225'rio'
+        ShowDialogButton = False
+        object bsSkinSpeedButton20: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 115
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 13
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Colet. Personalizadas'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton20Click
+          ExplicitLeft = 3
+          ExplicitWidth = 111
+        end
+        object bsSkinSpeedButton18: TbsSkinSpeedButton
+          Left = 117
+          Top = 2
+          Width = 66
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 18
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Liturgia'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alRight
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton26Click
+          ExplicitLeft = 2
+        end
+      end
+      object bsRibbonGroup21: TbsRibbonGroup
+        Left = 0
+        Top = 0
+        Width = 201
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 0
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Hin'#225'rio Adventista'
+        ShowDialogButton = False
+        object btAbreHinos: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 94
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 51
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Hin'#225'rio Adventista'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alLeft
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = btAbreHinosClick
+          ExplicitLeft = 103
+        end
+        object btAbreHinosN: TbsSkinSpeedButton
+          Left = 96
+          Top = 2
+          Width = 103
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 52
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Hin'#225'rio Adv. 1996'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = btAbreHinosNClick
+          ExplicitLeft = 95
+          ExplicitTop = 3
+        end
+      end
+      object bsRibbonGroup9: TbsRibbonGroup
+        Left = 398
+        Top = 0
+        Width = 184
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 2
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'M'#250'sicas por Categorias'
+        ShowDialogButton = False
+        object bsSkinSpeedButton2: TbsSkinSpeedButton
+          Left = 95
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 46
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'M'#250'sicas Infantis'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton2Click
+          ExplicitLeft = 300
+          ExplicitTop = 0
+          ExplicitWidth = 84
+        end
+        object bsRibbonDivider25: TbsRibbonDivider
+          Left = 80
+          Top = 2
+          Width = 15
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'officegroupdivider'
+          DividerType = bsdtVerticalLine
+          Align = alLeft
+          ExplicitLeft = 79
+          ExplicitTop = 3
+        end
+        object bsSkinSpeedButton16: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 78
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 42
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Doxologia'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alLeft
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton16Click
+          ExplicitLeft = -32
+          ExplicitTop = -4
+        end
+      end
+    end
+    object bsUtilitarios: TbsRibbonPage
+      Left = 1
+      Top = 26
+      Width = 1368
+      Height = 86
+      HotScroll = False
+      ScrollOffset = 0
+      ScrollTimerInterval = 50
+      CanScroll = True
+      Caption = 'Utilit'#225'rios'
+      ExplicitWidth = 820
+      object bsRibbonGroup23: TbsRibbonGroup
+        Left = 0
+        Top = 0
+        Width = 273
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 0
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Igreja'
+        ShowDialogButton = False
+        object bsSkinSpeedButton25: TbsSkinSpeedButton
+          Left = 164
+          Top = 2
+          Width = 107
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 27
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Cron'#244'metro de Culto'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton25Click
+          ExplicitLeft = 155
+          ExplicitWidth = 100
+        end
+        object bsSkinSpeedButton26: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 66
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 18
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Liturgia'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alLeft
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton26Click
+        end
+        object bsSkinSpeedButton5: TbsSkinSpeedButton
+          Left = 68
+          Top = 2
+          Width = 96
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 47
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Itens Agendados'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alLeft
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton5Click
+          ExplicitLeft = 89
+        end
+      end
+      object bsRibbonGroup24: TbsRibbonGroup
+        Left = 273
+        Top = 0
+        Width = 116
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 1
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Sorteador'
+        ShowDialogButton = False
+        object bsSkinSpeedButton28: TbsSkinSpeedButton
+          Left = 57
+          Top = 2
+          Width = 57
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 23
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Nomes'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton28Click
+          ExplicitLeft = 6
+          ExplicitWidth = 87
+        end
+        object bsSkinSpeedButton30: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 55
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 22
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'N'#250'meros'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alLeft
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton30Click
+        end
+      end
+      object bsRibbonGroup34: TbsRibbonGroup
+        Left = 529
+        Top = 0
+        Width = 275
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 3
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Textos'
+        ShowDialogButton = False
+        object bsSkinSpeedButton31: TbsSkinSpeedButton
+          Left = 184
+          Top = 2
+          Width = 89
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 30
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Texto Interativo'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton31Click
+          ExplicitLeft = 95
+          ExplicitWidth = 87
+        end
+        object bsSkinSpeedButton27: TbsSkinSpeedButton
+          Left = 97
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 29
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Texto Din'#226'mico'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alLeft
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton27Click
+          ExplicitLeft = 98
+          ExplicitTop = 3
+        end
+        object bsSkinSpeedButton1: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 95
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 44
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Editor de M'#250'sicas'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alLeft
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton1Click
+        end
+      end
+      object bsRibbonGroup13: TbsRibbonGroup
+        Left = 389
+        Top = 0
+        Width = 140
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 2
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Tempo'
+        ShowDialogButton = False
+        object bsSkinSpeedButton29: TbsSkinSpeedButton
+          Left = 65
+          Top = 2
+          Width = 73
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 27
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Cron'#244'metro'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton29Click
+          ExplicitLeft = 10
+          ExplicitTop = 10
+          ExplicitWidth = 87
+        end
+        object bsSkinSpeedButton50: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 63
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 35
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Rel'#243'gio'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alLeft
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton50Click
+        end
+      end
+    end
+    object bsBiblia: TbsRibbonPage
+      Left = 1
+      Top = 26
+      Width = 1368
+      Height = 86
+      HotScroll = False
+      ScrollOffset = 0
+      ScrollTimerInterval = 50
+      CanScroll = True
+      Caption = 'B'#237'blia'
+      ExplicitWidth = 776
+      object bsRibbonGroup2: TbsRibbonGroup
+        Left = 0
+        Top = 0
+        Width = 178
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 0
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Geral'
+        ShowDialogButton = False
+        object bsSkinSpeedButton10: TbsSkinSpeedButton
+          Left = 89
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 7
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Busca B'#237'blica'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton10Click
+          ExplicitLeft = 95
+          ExplicitHeight = 63
+        end
+        object bsSkinSpeedButton9: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 6
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'B'#237'blia Sagrada'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alLeft
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton9Click
+          ExplicitLeft = 10
+          ExplicitTop = 10
+          ExplicitHeight = 63
+        end
+      end
+    end
+    object bsItensAgendados: TbsRibbonPage
+      Tag = -1
+      Left = 1
+      Top = 26
+      Width = 1368
+      Height = 86
+      HotScroll = False
+      ScrollOffset = 0
+      ScrollTimerInterval = 50
+      CanScroll = True
+      Caption = 'Configurar Itens Agendados'
+      ExplicitWidth = 820
+      object bsRibbonGroup72: TbsRibbonGroup
+        Left = 0
+        Top = 0
+        Width = 113
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 0
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Categorias'
+        ShowDialogButton = False
+        object btAddCategoriaAgendados: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 109
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 15
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Adicionar Categoria'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = btAddCategoriaAgendadosClick
+          ExplicitLeft = -4
+          ExplicitWidth = 87
+        end
+      end
+      object bsRibbonGroup73: TbsRibbonGroup
+        Left = 113
+        Top = 0
+        Width = 296
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 1
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Itens'
+        ShowDialogButton = False
+        object bsSkinSpeedButton8: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 132
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 34
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Excluir Itens Passados'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alLeft
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton8Click
+          ExplicitLeft = 4
+          ExplicitTop = 10
+          ExplicitWidth = 109
+        end
+        object bsRibbonDivider26: TbsRibbonDivider
+          Left = 134
+          Top = 2
+          Width = 15
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'officegroupdivider'
+          DividerType = bsdtVerticalLine
+          Align = alLeft
+          ExplicitLeft = 162
+          ExplicitTop = 3
+        end
+        object cbRemoveItensAgendados: TbsSkinCheckBox
+          Left = 149
+          Top = 2
+          Width = 145
+          Height = 65
+          HintImageIndex = 0
+          TabOrder = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'checkbox'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          WordWrap = True
+          AllowGrayed = False
+          State = cbUnchecked
+          ImageIndex = 0
+          Flat = True
+          UseSkinFontColor = True
+          TabStop = True
+          CanFocused = True
+          Radio = False
+          Checked = False
+          GroupIndex = 0
+          Caption = 'Excluir automaticamente itens passados'
+          OnClick = cbRemoveItensAgendadosClick
+          Align = alClient
+        end
+      end
+    end
+    object bsConfigColetaneasOnlinePerso: TbsRibbonPage
+      Tag = -1
+      Left = 1
+      Top = 26
+      Width = 1368
+      Height = 86
+      HotScroll = False
+      ScrollOffset = 0
+      ScrollTimerInterval = 50
+      CanScroll = True
+      Caption = 'Configurar V'#237'deos Personalizados'
+      ExplicitWidth = 982
+      object bsRibbonGroup67: TbsRibbonGroup
+        Left = 0
+        Top = 0
+        Width = 545
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 0
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Link do Youtube'
+        ShowDialogButton = False
+        object btAddVideoOn3: TbsSkinSpeedButton
+          Left = 354
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 15
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Adicionar Link'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alRight
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = btAddVideoOn3Click
+          ExplicitLeft = 174
+          ExplicitTop = 3
+        end
+        object bsRibbonDivider44: TbsRibbonDivider
+          Left = 441
+          Top = 2
+          Width = 15
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'officegroupdivider'
+          DividerType = bsdtVerticalLine
+          Align = alRight
+          ExplicitLeft = 343
+          ExplicitTop = 3
+        end
+        object bsSkinSpeedButton63: TbsSkinSpeedButton
+          Tag = 9
+          Left = 456
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 38
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Fechar V'#237'deo'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alRight
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton62Click
+          ExplicitLeft = 4
+        end
+        object GridPanel84: TGridPanel
+          AlignWithMargins = True
+          Left = 12
+          Top = 2
+          Width = 342
+          Height = 65
+          Margins.Left = 10
+          Margins.Top = 0
+          Margins.Right = 0
+          Margins.Bottom = 0
+          Align = alClient
+          BevelOuter = bvNone
+          Caption = 'GridPanel8'
+          ColumnCollection = <
+            item
+              SizeStyle = ssAbsolute
+              Value = 40.000000000000000000
+            end
+            item
+              Value = 100.000000000000000000
+            end
+            item
+              SizeStyle = ssAbsolute
+              Value = 75.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = bsSkinStdLabel100
+              Row = 1
+            end
+            item
+              Column = 1
+              Control = txtUrlVideoOn3
+              Row = 3
+            end
+            item
+              Column = 1
+              ColumnSpan = 2
+              Control = txtNomeVideoOn3
+              Row = 1
+            end
+            item
+              Column = 0
+              Control = bsSkinStdLabel101
+              Row = 3
+            end
+            item
+              Column = 2
+              Control = bsSkinSpeedButton68
+              Row = 3
+            end>
+          RowCollection = <
+            item
+              Value = 50.000000000000000000
+            end
+            item
+              SizeStyle = ssAbsolute
+              Value = 19.000000000000000000
+            end
+            item
+              SizeStyle = ssAbsolute
+              Value = 5.000000000000000000
+            end
+            item
+              SizeStyle = ssAbsolute
+              Value = 19.000000000000000000
+            end
+            item
+              SizeStyle = ssAbsolute
+              Value = 5.000000000000000000
+            end
+            item
+              Value = 50.000000000000000000
+            end>
+          ShowCaption = False
+          TabOrder = 0
+          object bsSkinStdLabel100: TbsSkinStdLabel
+            Left = 0
+            Top = 8
+            Width = 40
+            Height = 19
+            EllipsType = bsetNone
+            UseSkinFont = True
+            UseSkinColor = True
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = -11
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'stdlabel'
+            Align = alClient
+            Caption = 'Nome:'
+            Layout = tlCenter
+            WordWrap = True
+            ExplicitWidth = 31
+            ExplicitHeight = 13
+          end
+          object txtUrlVideoOn3: TbsSkinEdit
+            Left = 40
+            Top = 32
+            Width = 227
+            Height = 19
+            Text = ''
+            DefaultColor = clWindow
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clBlack
+            DefaultFont.Height = 13
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            UseSkinFont = True
+            DefaultWidth = 0
+            DefaultHeight = 0
+            ButtonMode = False
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'edit'
+            Align = alClient
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = 13
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            MaxLength = -1
+            ParentFont = False
+            TabOrder = 1
+            ButtonImageIndex = -1
+            LeftImageIndex = -1
+            LeftImageHotIndex = -1
+            LeftImageDownIndex = -1
+            RightImageIndex = -1
+            RightImageHotIndex = -1
+            RightImageDownIndex = -1
+            OnKeyUp = txtUrlVideoOn3KeyUp
+          end
+          object txtNomeVideoOn3: TbsSkinEdit
+            Left = 40
+            Top = 8
+            Width = 302
+            Height = 19
+            Text = ''
+            DefaultColor = clWindow
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clBlack
+            DefaultFont.Height = 13
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            UseSkinFont = True
+            DefaultWidth = 0
+            DefaultHeight = 0
+            ButtonMode = False
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'edit'
+            Align = alClient
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = 13
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            MaxLength = -1
+            ParentFont = False
+            TabOrder = 0
+            ButtonImageIndex = -1
+            LeftImageIndex = -1
+            LeftImageHotIndex = -1
+            LeftImageDownIndex = -1
+            RightImageIndex = -1
+            RightImageHotIndex = -1
+            RightImageDownIndex = -1
+            OnKeyUp = edtKeyUp
+          end
+          object bsSkinStdLabel101: TbsSkinStdLabel
+            Left = 0
+            Top = 32
+            Width = 40
+            Height = 19
+            EllipsType = bsetNone
+            UseSkinFont = True
+            UseSkinColor = True
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = -11
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'stdlabel'
+            Align = alClient
+            Caption = 'Link:'
+            Layout = tlCenter
+            WordWrap = True
+            ExplicitWidth = 22
+            ExplicitHeight = 13
+          end
+          object bsSkinSpeedButton68: TbsSkinSpeedButton
+            AlignWithMargins = True
+            Left = 270
+            Top = 32
+            Width = 72
+            Height = 19
+            Margins.Top = 0
+            Margins.Right = 0
+            Margins.Bottom = 0
+            HintImageIndex = 0
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'resizetoolbutton'
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = 13
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            DefaultWidth = 0
+            DefaultHeight = 0
+            UseSkinFont = True
+            CheckedMode = False
+            ImageList = DM.ico_16x16
+            UseSkinSize = True
+            UseSkinFontColor = True
+            WidthWithCaption = 0
+            WidthWithoutCaption = 0
+            ImageIndex = 7
+            RepeatMode = False
+            RepeatInterval = 100
+            Transparent = True
+            Flat = True
+            AllowAllUp = False
+            Down = False
+            GroupIndex = 0
+            Caption = 'Executar'
+            ShowCaption = True
+            NumGlyphs = 1
+            Align = alClient
+            Spacing = 1
+            OnClick = bsSkinSpeedButton68Click
+            ExplicitLeft = 8
+            ExplicitTop = 8
+            ExplicitWidth = 40
+            ExplicitHeight = 8
+          end
+        end
+      end
+      object bsRibbonGroup81: TbsRibbonGroup
+        Left = 545
+        Top = 0
+        Width = 232
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 1
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'A'#231#245'es'
+        ShowDialogButton = False
+        object btVidOnlPExec: TbsSkinSpeedButton
+          Tag = 9
+          Left = 143
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 37
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Executar V'#237'deo'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alRight
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = DBGrid4DblClick
+          ExplicitLeft = 91
+          ExplicitTop = 10
+        end
+        object bsRibbonDivider65: TbsRibbonDivider
+          Left = 128
+          Top = 2
+          Width = 15
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'officegroupdivider'
+          DividerType = bsdtVerticalLine
+          Align = alRight
+          ExplicitLeft = 127
+          ExplicitTop = 3
+        end
+        object GridPanel6: TGridPanel
+          Left = 2
+          Top = 2
+          Width = 126
+          Height = 65
+          Align = alClient
+          BevelOuter = bvNone
+          ColumnCollection = <
+            item
+              Value = 100.000000000000000000
+            end>
+          ControlCollection = <
+            item
+              Column = 0
+              Control = btVidOnlPExcluir
+              Row = 0
+            end
+            item
+              Column = 0
+              Control = btVidOnlPCopiarLink
+              Row = 1
+            end
+            item
+              Column = 0
+              Control = btVidOnlPAbrirNaveg
+              Row = 2
+            end>
+          RowCollection = <
+            item
+              Value = 33.335389882043610000
+            end
+            item
+              Value = 33.333045959745120000
+            end
+            item
+              Value = 33.331564158211270000
+            end>
+          ShowCaption = False
+          TabOrder = 0
+          object btVidOnlPExcluir: TbsSkinSpeedButton
+            Left = 0
+            Top = 0
+            Width = 126
+            Height = 21
+            HintImageIndex = 0
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'resizetoolbutton'
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = 13
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            DefaultWidth = 0
+            DefaultHeight = 0
+            UseSkinFont = True
+            CheckedMode = False
+            ImageList = DM.ico_16x16
+            UseSkinSize = True
+            UseSkinFontColor = True
+            WidthWithCaption = 0
+            WidthWithoutCaption = 0
+            ImageIndex = 14
+            RepeatMode = False
+            RepeatInterval = 100
+            Transparent = True
+            Flat = True
+            AllowAllUp = False
+            Down = False
+            GroupIndex = 0
+            Caption = 'Excluir'
+            ShowCaption = True
+            NumGlyphs = 1
+            Align = alClient
+            Margin = 5
+            Spacing = 1
+            OnClick = Excluir3Click
+            ExplicitLeft = 6
+            ExplicitTop = -6
+            ExplicitWidth = 149
+            ExplicitHeight = 32
+          end
+          object btVidOnlPCopiarLink: TbsSkinSpeedButton
+            Left = 0
+            Top = 21
+            Width = 126
+            Height = 21
+            HintImageIndex = 0
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'resizetoolbutton'
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = 13
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            DefaultWidth = 0
+            DefaultHeight = 0
+            UseSkinFont = True
+            CheckedMode = False
+            ImageList = DM.ico_16x16
+            UseSkinSize = True
+            UseSkinFontColor = True
+            WidthWithCaption = 0
+            WidthWithoutCaption = 0
+            ImageIndex = 54
+            RepeatMode = False
+            RepeatInterval = 100
+            Transparent = True
+            Flat = True
+            AllowAllUp = False
+            Down = False
+            GroupIndex = 0
+            Caption = 'Copiar Link'
+            ShowCaption = True
+            NumGlyphs = 1
+            Align = alClient
+            Margin = 5
+            Spacing = 1
+            OnClick = CopiarLink1Click
+            ExplicitLeft = 2
+            ExplicitTop = 9
+            ExplicitWidth = 25
+            ExplicitHeight = 18
+          end
+          object btVidOnlPAbrirNaveg: TbsSkinSpeedButton
+            Left = 0
+            Top = 42
+            Width = 126
+            Height = 23
+            HintImageIndex = 0
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'resizetoolbutton'
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = 13
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            DefaultWidth = 0
+            DefaultHeight = 0
+            UseSkinFont = True
+            CheckedMode = False
+            ImageList = DM.ico_16x16
+            UseSkinSize = True
+            UseSkinFontColor = True
+            WidthWithCaption = 0
+            WidthWithoutCaption = 0
+            ImageIndex = 67
+            RepeatMode = False
+            RepeatInterval = 100
+            Transparent = True
+            Flat = True
+            AllowAllUp = False
+            Down = False
+            GroupIndex = 0
+            Caption = 'Abrir no Navegador'
+            ShowCaption = True
+            NumGlyphs = 1
+            Align = alClient
+            Margin = 5
+            Spacing = 1
+            OnClick = AbrirnoNavegador1Click
+            ExplicitLeft = 2
+            ExplicitTop = 9
+            ExplicitWidth = 25
+            ExplicitHeight = 18
+          end
+        end
+      end
+    end
     object bsConfigColetaneasOnline: TbsRibbonPage
       Tag = -1
       Left = 1
@@ -2944,7 +5306,7 @@ object fmIndex: TfmIndex
         end
       end
     end
-    object bsConfigColetaneasOnlinePerso: TbsRibbonPage
+    object bsPainelD: TbsRibbonPage
       Tag = -1
       Left = 1
       Top = 26
@@ -2954,365 +5316,12 @@ object fmIndex: TfmIndex
       ScrollOffset = 0
       ScrollTimerInterval = 50
       CanScroll = True
-      Caption = 'Configurar V'#237'deos Personalizados'
-      ExplicitWidth = 982
-      object bsRibbonGroup67: TbsRibbonGroup
-        Left = 0
+      Caption = 'Configurar Painel Din'#226'mico'
+      ExplicitWidth = 759
+      object bsRibbonGroup49: TbsRibbonGroup
+        Left = 329
         Top = 0
-        Width = 545
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 0
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Link do Youtube'
-        ShowDialogButton = False
-        object btAddVideoOn3: TbsSkinSpeedButton
-          Left = 354
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 15
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Adicionar Link'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alRight
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = btAddVideoOn3Click
-          ExplicitLeft = 174
-          ExplicitTop = 3
-        end
-        object bsRibbonDivider44: TbsRibbonDivider
-          Left = 441
-          Top = 2
-          Width = 15
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'officegroupdivider'
-          DividerType = bsdtVerticalLine
-          Align = alRight
-          ExplicitLeft = 343
-          ExplicitTop = 3
-        end
-        object bsSkinSpeedButton63: TbsSkinSpeedButton
-          Tag = 9
-          Left = 456
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 38
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Fechar V'#237'deo'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alRight
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton62Click
-          ExplicitLeft = 4
-        end
-        object GridPanel84: TGridPanel
-          AlignWithMargins = True
-          Left = 12
-          Top = 2
-          Width = 342
-          Height = 65
-          Margins.Left = 10
-          Margins.Top = 0
-          Margins.Right = 0
-          Margins.Bottom = 0
-          Align = alClient
-          BevelOuter = bvNone
-          Caption = 'GridPanel8'
-          ColumnCollection = <
-            item
-              SizeStyle = ssAbsolute
-              Value = 40.000000000000000000
-            end
-            item
-              Value = 100.000000000000000000
-            end
-            item
-              SizeStyle = ssAbsolute
-              Value = 75.000000000000000000
-            end>
-          ControlCollection = <
-            item
-              Column = 0
-              Control = bsSkinStdLabel100
-              Row = 1
-            end
-            item
-              Column = 1
-              Control = txtUrlVideoOn3
-              Row = 3
-            end
-            item
-              Column = 1
-              ColumnSpan = 2
-              Control = txtNomeVideoOn3
-              Row = 1
-            end
-            item
-              Column = 0
-              Control = bsSkinStdLabel101
-              Row = 3
-            end
-            item
-              Column = 2
-              Control = bsSkinSpeedButton68
-              Row = 3
-            end>
-          RowCollection = <
-            item
-              Value = 50.000000000000000000
-            end
-            item
-              SizeStyle = ssAbsolute
-              Value = 19.000000000000000000
-            end
-            item
-              SizeStyle = ssAbsolute
-              Value = 5.000000000000000000
-            end
-            item
-              SizeStyle = ssAbsolute
-              Value = 19.000000000000000000
-            end
-            item
-              SizeStyle = ssAbsolute
-              Value = 5.000000000000000000
-            end
-            item
-              Value = 50.000000000000000000
-            end>
-          ShowCaption = False
-          TabOrder = 0
-          object bsSkinStdLabel100: TbsSkinStdLabel
-            Left = 0
-            Top = 8
-            Width = 40
-            Height = 19
-            EllipsType = bsetNone
-            UseSkinFont = True
-            UseSkinColor = True
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = -11
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'stdlabel'
-            Align = alClient
-            Caption = 'Nome:'
-            Layout = tlCenter
-            WordWrap = True
-            ExplicitWidth = 31
-            ExplicitHeight = 13
-          end
-          object txtUrlVideoOn3: TbsSkinEdit
-            Left = 40
-            Top = 32
-            Width = 227
-            Height = 19
-            Text = ''
-            DefaultColor = clWindow
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clBlack
-            DefaultFont.Height = 13
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            UseSkinFont = True
-            DefaultWidth = 0
-            DefaultHeight = 0
-            ButtonMode = False
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'edit'
-            Align = alClient
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = 13
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            MaxLength = -1
-            ParentFont = False
-            TabOrder = 1
-            ButtonImageIndex = -1
-            LeftImageIndex = -1
-            LeftImageHotIndex = -1
-            LeftImageDownIndex = -1
-            RightImageIndex = -1
-            RightImageHotIndex = -1
-            RightImageDownIndex = -1
-            OnKeyUp = txtUrlVideoOn3KeyUp
-          end
-          object txtNomeVideoOn3: TbsSkinEdit
-            Left = 40
-            Top = 8
-            Width = 302
-            Height = 19
-            Text = ''
-            DefaultColor = clWindow
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clBlack
-            DefaultFont.Height = 13
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            UseSkinFont = True
-            DefaultWidth = 0
-            DefaultHeight = 0
-            ButtonMode = False
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'edit'
-            Align = alClient
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = 13
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            MaxLength = -1
-            ParentFont = False
-            TabOrder = 0
-            ButtonImageIndex = -1
-            LeftImageIndex = -1
-            LeftImageHotIndex = -1
-            LeftImageDownIndex = -1
-            RightImageIndex = -1
-            RightImageHotIndex = -1
-            RightImageDownIndex = -1
-            OnKeyUp = edtKeyUp
-          end
-          object bsSkinStdLabel101: TbsSkinStdLabel
-            Left = 0
-            Top = 32
-            Width = 40
-            Height = 19
-            EllipsType = bsetNone
-            UseSkinFont = True
-            UseSkinColor = True
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = -11
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'stdlabel'
-            Align = alClient
-            Caption = 'Link:'
-            Layout = tlCenter
-            WordWrap = True
-            ExplicitWidth = 22
-            ExplicitHeight = 13
-          end
-          object bsSkinSpeedButton68: TbsSkinSpeedButton
-            AlignWithMargins = True
-            Left = 270
-            Top = 32
-            Width = 72
-            Height = 19
-            Margins.Top = 0
-            Margins.Right = 0
-            Margins.Bottom = 0
-            HintImageIndex = 0
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'resizetoolbutton'
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = 13
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            DefaultWidth = 0
-            DefaultHeight = 0
-            UseSkinFont = True
-            CheckedMode = False
-            ImageList = DM.ico_16x16
-            UseSkinSize = True
-            UseSkinFontColor = True
-            WidthWithCaption = 0
-            WidthWithoutCaption = 0
-            ImageIndex = 7
-            RepeatMode = False
-            RepeatInterval = 100
-            Transparent = True
-            Flat = True
-            AllowAllUp = False
-            Down = False
-            GroupIndex = 0
-            Caption = 'Executar'
-            ShowCaption = True
-            NumGlyphs = 1
-            Align = alClient
-            Spacing = 1
-            OnClick = bsSkinSpeedButton68Click
-            ExplicitLeft = 8
-            ExplicitTop = 8
-            ExplicitWidth = 40
-            ExplicitHeight = 8
-          end
-        end
-      end
-      object bsRibbonGroup81: TbsRibbonGroup
-        Left = 545
-        Top = 0
-        Width = 232
+        Width = 178
         Height = 86
         HintImageIndex = 0
         TabOrder = 1
@@ -3327,11 +5336,11 @@ object fmIndex: TfmIndex
         DefaultHeight = 0
         UseSkinFont = True
         Align = alLeft
-        Caption = 'A'#231#245'es'
+        Caption = 'Formata'#231#227'o'
         ShowDialogButton = False
-        object btVidOnlPExec: TbsSkinSpeedButton
-          Tag = 9
-          Left = 143
+        object bsSkinSpeedButton36: TbsSkinSpeedButton
+          Tag = 7
+          Left = 89
           Top = 2
           Width = 87
           Height = 65
@@ -3352,7 +5361,7 @@ object fmIndex: TfmIndex
           UseSkinFontColor = True
           WidthWithCaption = 0
           WidthWithoutCaption = 0
-          ImageIndex = 37
+          ImageIndex = 12
           RepeatMode = False
           RepeatInterval = 100
           Transparent = True
@@ -3360,375 +5369,254 @@ object fmIndex: TfmIndex
           AllowAllUp = False
           Down = False
           GroupIndex = 0
-          Caption = 'Executar V'#237'deo'
+          Caption = 'Restaurar'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = btOpcResetClick
+          ExplicitLeft = 10
+          ExplicitTop = 10
+          ExplicitHeight = 63
+        end
+        object btFormatPainelD: TbsSkinSpeedButton
+          Tag = 7
+          Left = 2
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = True
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 24
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = -1
+          Caption = 'Formatar'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alLeft
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = btFormatClick
+        end
+      end
+      object bsRibbonGroup50: TbsRibbonGroup
+        Left = 507
+        Top = 0
+        Width = 91
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 2
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = #193'rea Expandida'
+        ShowDialogButton = False
+        object btExp_PainelD: TbsSkinMenuSpeedButton
+          Tag = 7
+          Left = 2
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 10
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = expandirArea
+          NewStyle = True
+          TrackPosition = bstpRight
+          UseImagesMenuImage = False
+          UseImagesMenuCaption = False
+          SkinPopupMenu = bsPopupExpand
+          TrackButtonMode = True
+          OnShowTrackMenu = ShowTrackMenu
+          ExplicitWidth = 55
+          ExplicitHeight = 63
+        end
+      end
+      object bsRibbonGroup51: TbsRibbonGroup
+        Left = 0
+        Top = 0
+        Width = 329
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 0
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Exibi'#231#227'o de Texto'
+        ShowDialogButton = False
+        object btExibeTxtPainelD: TbsSkinSpeedButton
+          Left = 240
+          Top = 2
+          Width = 87
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 20
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Exibir Texto'
           ShowCaption = True
           NumGlyphs = 1
           Align = alRight
           Spacing = 1
           Layout = blGlyphTop
-          OnClick = DBGrid4DblClick
-          ExplicitLeft = 91
+          OnClick = btExibeTxtPainelDClick
+          ExplicitLeft = 10
           ExplicitTop = 10
+          ExplicitHeight = 63
         end
-        object bsRibbonDivider65: TbsRibbonDivider
-          Left = 128
-          Top = 2
-          Width = 15
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'officegroupdivider'
-          DividerType = bsdtVerticalLine
-          Align = alRight
-          ExplicitLeft = 127
-          ExplicitTop = 3
-        end
-        object GridPanel6: TGridPanel
+        object bsSkinPanel7: TbsSkinPanel
           Left = 2
           Top = 2
-          Width = 126
+          Width = 238
           Height = 65
-          Align = alClient
-          BevelOuter = bvNone
-          ColumnCollection = <
-            item
-              Value = 100.000000000000000000
-            end>
-          ControlCollection = <
-            item
-              Column = 0
-              Control = btVidOnlPExcluir
-              Row = 0
-            end
-            item
-              Column = 0
-              Control = btVidOnlPCopiarLink
-              Row = 1
-            end
-            item
-              Column = 0
-              Control = btVidOnlPAbrirNaveg
-              Row = 2
-            end>
-          RowCollection = <
-            item
-              Value = 33.335389882043610000
-            end
-            item
-              Value = 33.333045959745120000
-            end
-            item
-              Value = 33.331564158211270000
-            end>
-          ShowCaption = False
+          HintImageIndex = 0
           TabOrder = 0
-          object btVidOnlPExcluir: TbsSkinSpeedButton
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'panel'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          EmptyDrawing = False
+          RibbonStyle = False
+          ImagePosition = bsipDefault
+          TransparentMode = False
+          CaptionImageIndex = -1
+          RealHeight = -1
+          AutoEnabledControls = True
+          CheckedMode = False
+          Checked = False
+          DefaultAlignment = taLeftJustify
+          DefaultCaptionHeight = 20
+          BorderStyle = bvNone
+          CaptionMode = False
+          RollUpMode = False
+          RollUpState = False
+          NumGlyphs = 1
+          Spacing = 2
+          Caption = 'bsSkinPanel7'
+          Align = alClient
+          object mmPainelD: TbsSkinMemo
             Left = 0
             Top = 0
-            Width = 126
-            Height = 21
-            HintImageIndex = 0
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'resizetoolbutton'
+            Width = 238
+            Height = 65
+            Hint = 'Pressione CTRL+ENTER para pular linha.'
+            Align = alClient
+            Font.Charset = DEFAULT_CHARSET
+            Font.Color = clBlack
+            Font.Height = 13
+            Font.Name = 'Tahoma'
+            Font.Style = []
+            ParentFont = False
+            ParentShowHint = False
+            ScrollBars = ssBoth
+            ShowHint = True
+            TabOrder = 0
+            OnKeyPress = mmPainelDKeyPress
+            OnKeyUp = edtKeyUp
+            Transparent = False
+            WallpaperStretch = False
             DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
+            DefaultFont.Color = clBlack
             DefaultFont.Height = 13
             DefaultFont.Name = 'Tahoma'
             DefaultFont.Style = []
-            DefaultWidth = 0
-            DefaultHeight = 0
             UseSkinFont = True
-            CheckedMode = False
-            ImageList = DM.ico_16x16
-            UseSkinSize = True
             UseSkinFontColor = True
-            WidthWithCaption = 0
-            WidthWithoutCaption = 0
-            ImageIndex = 14
-            RepeatMode = False
-            RepeatInterval = 100
-            Transparent = True
-            Flat = True
-            AllowAllUp = False
-            Down = False
-            GroupIndex = 0
-            Caption = 'Excluir'
-            ShowCaption = True
-            NumGlyphs = 1
-            Align = alClient
-            Margin = 5
-            Spacing = 1
-            OnClick = Excluir3Click
-            ExplicitLeft = 6
-            ExplicitTop = -6
-            ExplicitWidth = 149
-            ExplicitHeight = 32
-          end
-          object btVidOnlPCopiarLink: TbsSkinSpeedButton
-            Left = 0
-            Top = 21
-            Width = 126
-            Height = 21
-            HintImageIndex = 0
+            BitMapBG = True
             SkinData = DM.bsSkinData1
-            SkinDataName = 'resizetoolbutton'
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = 13
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            DefaultWidth = 0
-            DefaultHeight = 0
-            UseSkinFont = True
-            CheckedMode = False
-            ImageList = DM.ico_16x16
-            UseSkinSize = True
-            UseSkinFontColor = True
-            WidthWithCaption = 0
-            WidthWithoutCaption = 0
-            ImageIndex = 54
-            RepeatMode = False
-            RepeatInterval = 100
-            Transparent = True
-            Flat = True
-            AllowAllUp = False
-            Down = False
-            GroupIndex = 0
-            Caption = 'Copiar Link'
-            ShowCaption = True
-            NumGlyphs = 1
-            Align = alClient
-            Margin = 5
-            Spacing = 1
-            OnClick = CopiarLink1Click
-            ExplicitLeft = 2
-            ExplicitTop = 9
-            ExplicitWidth = 25
-            ExplicitHeight = 18
+            SkinDataName = 'memo'
           end
-          object btVidOnlPAbrirNaveg: TbsSkinSpeedButton
-            Left = 0
-            Top = 42
-            Width = 126
-            Height = 23
-            HintImageIndex = 0
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'resizetoolbutton'
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = 13
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            DefaultWidth = 0
-            DefaultHeight = 0
-            UseSkinFont = True
-            CheckedMode = False
-            ImageList = DM.ico_16x16
-            UseSkinSize = True
-            UseSkinFontColor = True
-            WidthWithCaption = 0
-            WidthWithoutCaption = 0
-            ImageIndex = 67
-            RepeatMode = False
-            RepeatInterval = 100
-            Transparent = True
-            Flat = True
-            AllowAllUp = False
-            Down = False
-            GroupIndex = 0
-            Caption = 'Abrir no Navegador'
-            ShowCaption = True
-            NumGlyphs = 1
-            Align = alClient
-            Margin = 5
-            Spacing = 1
-            OnClick = AbrirnoNavegador1Click
-            ExplicitLeft = 2
-            ExplicitTop = 9
-            ExplicitWidth = 25
-            ExplicitHeight = 18
-          end
-        end
-      end
-    end
-    object bsItensAgendados: TbsRibbonPage
-      Tag = -1
-      Left = 1
-      Top = 26
-      Width = 1368
-      Height = 86
-      HotScroll = False
-      ScrollOffset = 0
-      ScrollTimerInterval = 50
-      CanScroll = True
-      Caption = 'Configurar Itens Agendados'
-      ExplicitWidth = 820
-      object bsRibbonGroup72: TbsRibbonGroup
-        Left = 0
-        Top = 0
-        Width = 113
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 0
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Categorias'
-        ShowDialogButton = False
-        object btAddCategoriaAgendados: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 109
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 15
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Adicionar Categoria'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = btAddCategoriaAgendadosClick
-          ExplicitLeft = -4
-          ExplicitWidth = 87
-        end
-      end
-      object bsRibbonGroup73: TbsRibbonGroup
-        Left = 113
-        Top = 0
-        Width = 296
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 1
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Itens'
-        ShowDialogButton = False
-        object bsSkinSpeedButton8: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 132
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 34
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Excluir Itens Passados'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alLeft
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton8Click
-          ExplicitLeft = 4
-          ExplicitTop = 10
-          ExplicitWidth = 109
-        end
-        object bsRibbonDivider26: TbsRibbonDivider
-          Left = 134
-          Top = 2
-          Width = 15
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'officegroupdivider'
-          DividerType = bsdtVerticalLine
-          Align = alLeft
-          ExplicitLeft = 162
-          ExplicitTop = 3
-        end
-        object cbRemoveItensAgendados: TbsSkinCheckBox
-          Left = 149
-          Top = 2
-          Width = 145
-          Height = 65
-          HintImageIndex = 0
-          TabOrder = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'checkbox'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          WordWrap = True
-          AllowGrayed = False
-          State = cbUnchecked
-          ImageIndex = 0
-          Flat = True
-          UseSkinFontColor = True
-          TabStop = True
-          CanFocused = True
-          Radio = False
-          Checked = False
-          GroupIndex = 0
-          Caption = 'Excluir automaticamente itens passados'
-          OnClick = cbRemoveItensAgendadosClick
-          Align = alClient
         end
       end
     end
@@ -4427,802 +6315,6 @@ object fmIndex: TfmIndex
             Sorted = False
             Style = bscbFixedStyle
             OnChange = cbFormatoChange
-          end
-        end
-      end
-    end
-    object bsPainelD: TbsRibbonPage
-      Tag = -1
-      Left = 1
-      Top = 26
-      Width = 1368
-      Height = 86
-      HotScroll = False
-      ScrollOffset = 0
-      ScrollTimerInterval = 50
-      CanScroll = True
-      Caption = 'Configurar Painel Din'#226'mico'
-      ExplicitWidth = 759
-      object bsRibbonGroup49: TbsRibbonGroup
-        Left = 329
-        Top = 0
-        Width = 178
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 1
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Formata'#231#227'o'
-        ShowDialogButton = False
-        object bsSkinSpeedButton36: TbsSkinSpeedButton
-          Tag = 7
-          Left = 89
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 12
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Restaurar'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = btOpcResetClick
-          ExplicitLeft = 10
-          ExplicitTop = 10
-          ExplicitHeight = 63
-        end
-        object btFormatPainelD: TbsSkinSpeedButton
-          Tag = 7
-          Left = 2
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = True
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 24
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = -1
-          Caption = 'Formatar'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alLeft
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = btFormatClick
-        end
-      end
-      object bsRibbonGroup50: TbsRibbonGroup
-        Left = 507
-        Top = 0
-        Width = 91
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 2
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = #193'rea Expandida'
-        ShowDialogButton = False
-        object btExp_PainelD: TbsSkinMenuSpeedButton
-          Tag = 7
-          Left = 2
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 10
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = expandirArea
-          NewStyle = True
-          TrackPosition = bstpRight
-          UseImagesMenuImage = False
-          UseImagesMenuCaption = False
-          SkinPopupMenu = bsPopupExpand
-          TrackButtonMode = True
-          OnShowTrackMenu = ShowTrackMenu
-          ExplicitWidth = 55
-          ExplicitHeight = 63
-        end
-      end
-      object bsRibbonGroup51: TbsRibbonGroup
-        Left = 0
-        Top = 0
-        Width = 329
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 0
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Exibi'#231#227'o de Texto'
-        ShowDialogButton = False
-        object btExibeTxtPainelD: TbsSkinSpeedButton
-          Left = 240
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 20
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Exibir Texto'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alRight
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = btExibeTxtPainelDClick
-          ExplicitLeft = 10
-          ExplicitTop = 10
-          ExplicitHeight = 63
-        end
-        object bsSkinPanel7: TbsSkinPanel
-          Left = 2
-          Top = 2
-          Width = 238
-          Height = 65
-          HintImageIndex = 0
-          TabOrder = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'panel'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          EmptyDrawing = False
-          RibbonStyle = False
-          ImagePosition = bsipDefault
-          TransparentMode = False
-          CaptionImageIndex = -1
-          RealHeight = -1
-          AutoEnabledControls = True
-          CheckedMode = False
-          Checked = False
-          DefaultAlignment = taLeftJustify
-          DefaultCaptionHeight = 20
-          BorderStyle = bvNone
-          CaptionMode = False
-          RollUpMode = False
-          RollUpState = False
-          NumGlyphs = 1
-          Spacing = 2
-          Caption = 'bsSkinPanel7'
-          Align = alClient
-          object mmPainelD: TbsSkinMemo
-            Left = 0
-            Top = 0
-            Width = 238
-            Height = 65
-            Hint = 'Pressione CTRL+ENTER para pular linha.'
-            Align = alClient
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = 13
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            ParentFont = False
-            ParentShowHint = False
-            ScrollBars = ssBoth
-            ShowHint = True
-            TabOrder = 0
-            OnKeyPress = mmPainelDKeyPress
-            OnKeyUp = edtKeyUp
-            Transparent = False
-            WallpaperStretch = False
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clBlack
-            DefaultFont.Height = 13
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            UseSkinFont = True
-            UseSkinFontColor = True
-            BitMapBG = True
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'memo'
-          end
-        end
-      end
-    end
-    object bsColetaneasOnline: TbsRibbonPage
-      Left = 1
-      Top = 26
-      Width = 1368
-      Height = 86
-      HotScroll = False
-      ScrollOffset = 0
-      ScrollTimerInterval = 50
-      CanScroll = True
-      Caption = 'Colet'#226'neas On-line'
-      ExplicitWidth = 982
-      object bsRibbonGroup60: TbsRibbonGroup
-        Left = 0
-        Top = 0
-        Width = 115
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 0
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Geral'
-        ShowDialogButton = False
-        object bsSkinSpeedButton58: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 111
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 37
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'V'#237'deos On-line'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton58Click
-          ExplicitLeft = 4
-          ExplicitTop = 0
-        end
-      end
-      object bsRibbonGroup64: TbsRibbonGroup
-        Left = 750
-        Top = 0
-        Width = 91
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 3
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Busca'
-        ShowDialogButton = False
-        object bsSkinSpeedButton59: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 5
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Localizar M'#250'sicas'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton59Click
-          ExplicitLeft = 10
-          ExplicitTop = 10
-          ExplicitHeight = 59
-        end
-      end
-      object bsRibbonGroup65: TbsRibbonGroup
-        Left = 115
-        Top = 0
-        Width = 115
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 1
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Usu'#225'rio'
-        ShowDialogButton = False
-        object btColetaneasOnlinePerso: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 111
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 39
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'V'#237'deos Personalizados'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = btColetaneasOnlinePersoClick
-          ExplicitLeft = 4
-          ExplicitTop = 0
-        end
-      end
-      object bsRibbonGroup66: TbsRibbonGroup
-        Left = 230
-        Top = 0
-        Width = 520
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 2
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Link do Youtube'
-        ShowDialogButton = False
-        object btUrlVideoOn2: TbsSkinSpeedButton
-          Left = 242
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 20
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Executar'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alRight
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = btUrlVideoOn2Click
-          ExplicitLeft = 10
-          ExplicitTop = 10
-        end
-        object bsSkinSpeedButton66: TbsSkinSpeedButton
-          Left = 329
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 15
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Salvar Link'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alRight
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton66Click
-          ExplicitLeft = 174
-          ExplicitTop = 3
-        end
-        object bsSkinSpeedButton64: TbsSkinSpeedButton
-          Tag = 9
-          Left = 431
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 38
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Fechar V'#237'deo'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alRight
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton62Click
-          ExplicitLeft = 342
-        end
-        object bsRibbonDivider45: TbsRibbonDivider
-          Left = 416
-          Top = 2
-          Width = 15
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'officegroupdivider'
-          DividerType = bsdtVerticalLine
-          Align = alRight
-          ExplicitLeft = 359
-          ExplicitTop = 0
-        end
-        object GridPanel83: TGridPanel
-          Left = 2
-          Top = 2
-          Width = 240
-          Height = 65
-          Align = alClient
-          BevelOuter = bvNone
-          Caption = 'GridPanel8'
-          ColumnCollection = <
-            item
-              SizeStyle = ssAbsolute
-              Value = 30.000000000000000000
-            end
-            item
-              Value = 100.000000000000000000
-            end>
-          ControlCollection = <
-            item
-              Column = 0
-              ColumnSpan = 2
-              Control = bsSkinStdLabel99
-              Row = 1
-            end
-            item
-              Column = 1
-              Control = txtUrlVideoOn2
-              Row = 3
-            end
-            item
-              Column = 0
-              Control = Image23
-              Row = 2
-              RowSpan = 3
-            end>
-          RowCollection = <
-            item
-              Value = 50.000000000000000000
-            end
-            item
-              SizeStyle = ssAbsolute
-              Value = 19.000000000000000000
-            end
-            item
-              SizeStyle = ssAbsolute
-              Value = 5.000000000000000000
-            end
-            item
-              SizeStyle = ssAbsolute
-              Value = 19.000000000000000000
-            end
-            item
-              SizeStyle = ssAbsolute
-              Value = 5.000000000000000000
-            end
-            item
-              Value = 50.000000000000000000
-            end>
-          ShowCaption = False
-          TabOrder = 0
-          object bsSkinStdLabel99: TbsSkinStdLabel
-            Left = 0
-            Top = 8
-            Width = 240
-            Height = 19
-            EllipsType = bsetNone
-            UseSkinFont = True
-            UseSkinColor = True
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = -11
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'stdlabel'
-            Align = alClient
-            Caption = 'Executar URL do Youtube:'
-            Layout = tlCenter
-            WordWrap = True
-            ExplicitWidth = 127
-            ExplicitHeight = 13
-          end
-          object txtUrlVideoOn2: TbsSkinEdit
-            Left = 30
-            Top = 32
-            Width = 210
-            Height = 19
-            Text = ''
-            DefaultColor = clWindow
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clBlack
-            DefaultFont.Height = 13
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            UseSkinFont = True
-            DefaultWidth = 0
-            DefaultHeight = 0
-            ButtonMode = False
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'edit'
-            Align = alClient
-            Font.Charset = DEFAULT_CHARSET
-            Font.Color = clBlack
-            Font.Height = 13
-            Font.Name = 'Tahoma'
-            Font.Style = []
-            MaxLength = -1
-            ParentFont = False
-            TabOrder = 0
-            ButtonImageIndex = -1
-            LeftImageIndex = -1
-            LeftImageHotIndex = -1
-            LeftImageDownIndex = -1
-            RightImageIndex = -1
-            RightImageHotIndex = -1
-            RightImageDownIndex = -1
-            OnKeyUp = txtUrlVideoOn2KeyUp
-          end
-          object Image23: TbsPngImageView
-            Left = 0
-            Top = 27
-            Width = 30
-            Height = 29
-            DoubleBuffered = False
-            ReflectionEffect = False
-            PngImageList = DM.ico_16x16
-            ImageIndex = 82
-            Align = alClient
-            Center = True
-            ExplicitWidth = 16
-            ExplicitHeight = 16
           end
         end
       end
@@ -9403,496 +10495,6 @@ object fmIndex: TfmIndex
         RightImageDownIndex = -1
       end
     end
-    object bsColetaneas: TbsRibbonPage
-      Left = 1
-      Top = 26
-      Width = 1368
-      Height = 86
-      HotScroll = False
-      ScrollOffset = 0
-      ScrollTimerInterval = 50
-      CanScroll = True
-      Caption = 'Colet'#226'neas'
-      ExplicitWidth = 983
-      object bsRibbonGroup7: TbsRibbonGroup
-        Left = 201
-        Top = 0
-        Width = 197
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 1
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = #193'lbuns'
-        ShowDialogButton = False
-        object btAbreColJA: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 88
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 1
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'JA/Min. M'#250'sica'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = btAbreColJAClick
-          ExplicitLeft = 33
-          ExplicitWidth = 87
-          ExplicitHeight = 59
-        end
-        object bsSkinSpeedButton4: TbsSkinSpeedButton
-          Left = 90
-          Top = 2
-          Width = 105
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 2
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Colet'#226'neas Diversas'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alRight
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton4Click
-          ExplicitLeft = 88
-        end
-      end
-      object bsRibbonGroup8: TbsRibbonGroup
-        Left = 767
-        Top = 0
-        Width = 91
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 4
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Busca'
-        ShowDialogButton = False
-        object bsSkinSpeedButton14: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 5
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Localizar M'#250'sicas'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton14Click
-          ExplicitLeft = 10
-          ExplicitTop = 10
-          ExplicitHeight = 59
-        end
-      end
-      object bsRibbonGroup20: TbsRibbonGroup
-        Left = 582
-        Top = 0
-        Width = 185
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 3
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Usu'#225'rio'
-        ShowDialogButton = False
-        object bsSkinSpeedButton20: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 115
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 13
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Colet. Personalizadas'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton20Click
-          ExplicitLeft = 3
-          ExplicitWidth = 111
-        end
-        object bsSkinSpeedButton18: TbsSkinSpeedButton
-          Left = 117
-          Top = 2
-          Width = 66
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 18
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Liturgia'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alRight
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton26Click
-          ExplicitLeft = 2
-        end
-      end
-      object bsRibbonGroup21: TbsRibbonGroup
-        Left = 0
-        Top = 0
-        Width = 201
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 0
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Hin'#225'rio Adventista'
-        ShowDialogButton = False
-        object btAbreHinos: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 94
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 51
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Hin'#225'rio Adventista'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alLeft
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = btAbreHinosClick
-          ExplicitLeft = 103
-        end
-        object btAbreHinosN: TbsSkinSpeedButton
-          Left = 96
-          Top = 2
-          Width = 103
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 52
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Hin'#225'rio Adv. 1996'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = btAbreHinosNClick
-          ExplicitLeft = 95
-          ExplicitTop = 3
-        end
-      end
-      object bsRibbonGroup9: TbsRibbonGroup
-        Left = 398
-        Top = 0
-        Width = 184
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 2
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'M'#250'sicas por Categorias'
-        ShowDialogButton = False
-        object bsSkinSpeedButton2: TbsSkinSpeedButton
-          Left = 95
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 46
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'M'#250'sicas Infantis'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton2Click
-          ExplicitLeft = 300
-          ExplicitTop = 0
-          ExplicitWidth = 84
-        end
-        object bsRibbonDivider25: TbsRibbonDivider
-          Left = 80
-          Top = 2
-          Width = 15
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'officegroupdivider'
-          DividerType = bsdtVerticalLine
-          Align = alLeft
-          ExplicitLeft = 79
-          ExplicitTop = 3
-        end
-        object bsSkinSpeedButton16: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 78
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 42
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Doxologia'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alLeft
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton16Click
-          ExplicitLeft = -32
-          ExplicitTop = -4
-        end
-      end
-    end
     object bsConfBuscaBiblica: TbsRibbonPage
       Tag = -1
       Left = 1
@@ -10857,7 +11459,7 @@ object fmIndex: TfmIndex
         end
       end
     end
-    object bsHinario: TbsRibbonPage
+    object bsBuscaMusica: TbsRibbonPage
       Tag = -1
       Left = 1
       Top = 26
@@ -10867,15 +11469,15 @@ object fmIndex: TfmIndex
       ScrollOffset = 0
       ScrollTimerInterval = 50
       CanScroll = True
-      Caption = 'Configurar Hinos'
+      Caption = 'Op'#231#245'es de Busca'
       ExplicitWidth = 983
-      object bsRibbonGroup5: TbsRibbonGroup
-        Left = 0
+      object bsRibbonGroup11: TbsRibbonGroup
+        Left = 473
         Top = 0
-        Width = 220
+        Width = 112
         Height = 86
         HintImageIndex = 0
-        TabOrder = 0
+        TabOrder = 3
         SkinData = DM.bsSkinData1
         SkinDataName = 'officegroup'
         DefaultFont.Charset = DEFAULT_CHARSET
@@ -10887,69 +11489,17 @@ object fmIndex: TfmIndex
         DefaultHeight = 0
         UseSkinFont = True
         Align = alLeft
-        Caption = 'Informa'#231#245'es'
+        Caption = 'Filtros de Busca'
         ShowDialogButton = False
-        object bsRibbonDivider75: TbsRibbonDivider
-          Left = 152
-          Top = 2
-          Width = 15
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'officegroupdivider'
-          DividerType = bsdtVerticalLine
-          Align = alLeft
-          ExplicitLeft = 548
-          ExplicitTop = 3
-        end
-        object bsSkinSpeedButton12: TbsSkinSpeedButton
-          Left = 167
-          Top = 2
-          Width = 51
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 3
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Letra'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton12Click
-          ExplicitLeft = 165
-        end
-        object bsSkinPanel1: TbsSkinPanel
+        object ckgFiltros: TbsSkinCheckGroup
           Left = 2
           Top = 2
-          Width = 150
+          Width = 108
           Height = 65
           HintImageIndex = 0
           TabOrder = 0
           SkinData = DM.bsSkinData1
-          SkinDataName = 'panel'
+          SkinDataName = 'groupbox'
           DefaultFont.Charset = DEFAULT_CHARSET
           DefaultFont.Color = clWindowText
           DefaultFont.Height = 13
@@ -10961,7 +11511,7 @@ object fmIndex: TfmIndex
           EmptyDrawing = False
           RibbonStyle = False
           ImagePosition = bsipDefault
-          TransparentMode = False
+          TransparentMode = True
           CaptionImageIndex = -1
           RealHeight = -1
           AutoEnabledControls = True
@@ -10975,71 +11525,28 @@ object fmIndex: TfmIndex
           RollUpState = False
           NumGlyphs = 1
           Spacing = 2
-          Caption = 'bsSkinPanel1'
-          Align = alLeft
-          object bsSkinStdLabel2: TbsSkinStdLabel
-            AlignWithMargins = True
-            Left = 10
-            Top = 3
-            Width = 140
-            Height = 13
-            Margins.Left = 10
-            Margins.Right = 0
-            EllipsType = bsetNone
-            UseSkinFont = True
-            UseSkinColor = True
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = -11
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'stdlabel'
-            Align = alTop
-            Caption = 'Hino:'
-            Layout = tlBottom
-            ExplicitWidth = 25
-          end
-          object bsSkinDBText1: TbsSkinDBText
-            AlignWithMargins = True
-            Left = 10
-            Top = 22
-            Width = 140
-            Height = 40
-            Margins.Left = 10
-            Margins.Right = 0
-            EllipsType = bsetNone
-            UseSkinFont = True
-            UseSkinColor = True
-            DefaultFont.Charset = DEFAULT_CHARSET
-            DefaultFont.Color = clWindowText
-            DefaultFont.Height = -11
-            DefaultFont.Name = 'Tahoma'
-            DefaultFont.Style = []
-            SkinData = DM.bsSkinData1
-            SkinDataName = 'stdlabel'
-            Align = alClient
-            Caption = 'bsSkinDBText1'
-            ShowAccelChar = False
-            Layout = tlCenter
-            WordWrap = True
-            DataField = 'NOME_COM'
-            DataSource = DM.dsHINOS
-            Transparent = True
-            ExplicitLeft = 4
-            ExplicitTop = 28
-            ExplicitWidth = 150
-            ExplicitHeight = 37
-          end
+          Align = alClient
+          OnClick = ckgFiltrosClick
+          UseSkinSize = True
+          ButtonSkinDataName = 'checkbox'
+          ButtonDefaultFont.Charset = DEFAULT_CHARSET
+          ButtonDefaultFont.Color = clWindowText
+          ButtonDefaultFont.Height = 13
+          ButtonDefaultFont.Name = 'Tahoma'
+          ButtonDefaultFont.Style = []
+          Items.Strings = (
+            'Nome da M'#250'sica'
+            'Letra da M'#250'sica'
+            'Nome do '#193'lbum')
         end
       end
-      object bsErroHino: TbsRibbonGroup
-        Left = 653
+      object bsErroMusica: TbsRibbonGroup
+        Left = 789
         Top = 0
         Width = 80
         Height = 86
         HintImageIndex = 0
-        TabOrder = 4
+        TabOrder = 6
         SkinData = DM.bsSkinData1
         SkinDataName = 'officegroup'
         DefaultFont.Charset = DEFAULT_CHARSET
@@ -11053,7 +11560,7 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Erro'
         ShowDialogButton = False
-        object bsSkinSpeedButton23: TbsSkinSpeedButton
+        object bsSkinSpeedButton37: TbsSkinSpeedButton
           Left = 2
           Top = 2
           Width = 76
@@ -11089,19 +11596,88 @@ object fmIndex: TfmIndex
           Align = alClient
           Spacing = 1
           Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton23Click
+          OnClick = bsSkinSpeedButton37Click
           ExplicitLeft = 4
           ExplicitTop = 10
           ExplicitWidth = 116
         end
       end
-      object bsRibbonGroup1: TbsRibbonGroup
-        Left = 553
+      object bsRibbonGroup63: TbsRibbonGroup
+        Left = 585
+        Top = 0
+        Width = 104
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 4
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Colet'#226'neas'
+        ShowDialogButton = False
+        object ckgColetaneas: TbsSkinCheckGroup
+          Left = 2
+          Top = 2
+          Width = 100
+          Height = 65
+          HintImageIndex = 0
+          TabOrder = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'groupbox'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          EmptyDrawing = False
+          RibbonStyle = False
+          ImagePosition = bsipDefault
+          TransparentMode = True
+          CaptionImageIndex = -1
+          RealHeight = -1
+          AutoEnabledControls = True
+          CheckedMode = False
+          Checked = False
+          DefaultAlignment = taLeftJustify
+          DefaultCaptionHeight = 20
+          BorderStyle = bvNone
+          CaptionMode = False
+          RollUpMode = False
+          RollUpState = False
+          NumGlyphs = 1
+          Spacing = 2
+          Align = alClient
+          OnClick = ckgColetaneasClick
+          UseSkinSize = True
+          ButtonSkinDataName = 'checkbox'
+          ButtonDefaultFont.Charset = DEFAULT_CHARSET
+          ButtonDefaultFont.Color = clWindowText
+          ButtonDefaultFont.Height = 13
+          ButtonDefaultFont.Name = 'Tahoma'
+          ButtonDefaultFont.Style = []
+          Items.Strings = (
+            'Baixadas'
+            'Web'
+            'Personalizadas')
+        end
+      end
+      object bsRibbonGroup4: TbsRibbonGroup
+        Left = 689
         Top = 0
         Width = 100
         Height = 86
         HintImageIndex = 0
-        TabOrder = 3
+        TabOrder = 5
         SkinData = DM.bsSkinData1
         SkinDataName = 'officegroup'
         DefaultFont.Charset = DEFAULT_CHARSET
@@ -11115,7 +11691,7 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Exportar'
         ShowDialogButton = False
-        object btExportarHino: TbsSkinMenuSpeedButton
+        object btExportarMusica: TbsSkinMenuSpeedButton
           Tag = 1
           Left = 2
           Top = 2
@@ -11138,7 +11714,7 @@ object fmIndex: TfmIndex
           UseSkinFontColor = True
           WidthWithCaption = 0
           WidthWithoutCaption = 0
-          ImageIndex = 43
+          ImageIndex = 55
           RepeatMode = False
           RepeatInterval = 100
           Transparent = True
@@ -11160,14 +11736,183 @@ object fmIndex: TfmIndex
           SkinPopupMenu = bsExportarMusica
           TrackButtonMode = True
           OnShowTrackMenu = ShowTrackMenu
-          ExplicitLeft = 4
+          ExplicitLeft = 0
           ExplicitWidth = 101
         end
       end
-      object bsRibbonGroup12: TbsRibbonGroup
+      object bsRibbonGroup82: TbsRibbonGroup
+        Left = 0
+        Top = 0
+        Width = 220
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 0
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Informa'#231#245'es'
+        ShowDialogButton = False
+        object bsRibbonDivider4: TbsRibbonDivider
+          Left = 152
+          Top = 2
+          Width = 15
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'officegroupdivider'
+          DividerType = bsdtVerticalLine
+          Align = alLeft
+          ExplicitLeft = 210
+          ExplicitTop = 3
+        end
+        object btMusicaLetra: TbsSkinSpeedButton
+          Left = 167
+          Top = 2
+          Width = 51
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 3
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Letra'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = btMusicaLetraClick
+          ExplicitLeft = 569
+          ExplicitTop = -6
+          ExplicitWidth = 82
+        end
+        object bsSkinPanel2: TbsSkinPanel
+          Left = 2
+          Top = 2
+          Width = 150
+          Height = 65
+          HintImageIndex = 0
+          TabOrder = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'panel'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          EmptyDrawing = False
+          RibbonStyle = False
+          ImagePosition = bsipDefault
+          TransparentMode = False
+          CaptionImageIndex = -1
+          RealHeight = -1
+          AutoEnabledControls = True
+          CheckedMode = False
+          Checked = False
+          DefaultAlignment = taLeftJustify
+          DefaultCaptionHeight = 20
+          BorderStyle = bvNone
+          CaptionMode = False
+          RollUpMode = False
+          RollUpState = False
+          NumGlyphs = 1
+          Spacing = 2
+          Caption = 'bsSkinPanel1'
+          Align = alLeft
+          object bsSkinStdLabel4: TbsSkinStdLabel
+            AlignWithMargins = True
+            Left = 10
+            Top = 3
+            Width = 140
+            Height = 13
+            Margins.Left = 10
+            Margins.Right = 0
+            EllipsType = bsetNone
+            UseSkinFont = True
+            UseSkinColor = True
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = -11
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'stdlabel'
+            Align = alTop
+            AutoSize = False
+            Caption = 'M'#250'sica:'
+            Layout = tlBottom
+            ExplicitLeft = 0
+            ExplicitTop = 0
+            ExplicitWidth = 36
+          end
+          object bsSkinDBText2: TbsSkinDBText
+            AlignWithMargins = True
+            Left = 10
+            Top = 22
+            Width = 140
+            Height = 40
+            Margins.Left = 10
+            Margins.Right = 0
+            EllipsType = bsetNone
+            UseSkinFont = True
+            UseSkinColor = True
+            DefaultFont.Charset = DEFAULT_CHARSET
+            DefaultFont.Color = clWindowText
+            DefaultFont.Height = -11
+            DefaultFont.Name = 'Tahoma'
+            DefaultFont.Style = []
+            SkinData = DM.bsSkinData1
+            SkinDataName = 'stdlabel'
+            Align = alClient
+            Caption = 'bsSkinDBText2'
+            ShowAccelChar = False
+            Layout = tlCenter
+            WordWrap = True
+            DataField = 'NOME_COM'
+            DataSource = DM.dsBUSCA
+            Transparent = True
+            ExplicitLeft = -6
+            ExplicitTop = 28
+            ExplicitWidth = 150
+            ExplicitHeight = 41
+          end
+        end
+      end
+      object bsRibbonGroup83: TbsRibbonGroup
         Left = 220
         Top = 0
-        Width = 235
+        Width = 155
         Height = 86
         HintImageIndex = 0
         TabOrder = 1
@@ -11184,7 +11929,7 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Slide'
         ShowDialogButton = False
-        object btHinoSlideMusica: TbsSkinSpeedButton
+        object btMusicaSlideMusica: TbsSkinSpeedButton
           Tag = 1
           Left = 2
           Top = 2
@@ -11221,65 +11966,12 @@ object fmIndex: TfmIndex
           Align = alLeft
           Spacing = 1
           Layout = blGlyphTop
-          OnClick = btHinoSlideMusicaClick
+          OnClick = btMusicaSlideMusicaClick
         end
-        object bsSkinSpeedButton6: TbsSkinSpeedButton
-          Tag = 1
-          Left = 160
-          Top = 2
-          Width = 73
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 50
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Em Sequ'#234'ncia'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alRight
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton6Click
-          ExplicitLeft = 167
-        end
-        object bsRibbonDivider3: TbsRibbonDivider
-          Left = 145
-          Top = 2
-          Width = 15
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'officegroupdivider'
-          DividerType = bsdtVerticalLine
-          Align = alRight
-          ExplicitLeft = 153
-          ExplicitTop = 0
-        end
-        object GridPanel69: TGridPanel
+        object GridPanel33: TGridPanel
           Left = 57
           Top = 2
-          Width = 88
+          Width = 96
           Height = 65
           Align = alClient
           BevelOuter = bvNone
@@ -11290,12 +11982,12 @@ object fmIndex: TfmIndex
           ControlCollection = <
             item
               Column = 0
-              Control = btHinoSlideMusicaPB
+              Control = btMusicaSlideMusicaPB
               Row = 0
             end
             item
               Column = 0
-              Control = btHinoSlideMusicaSA
+              Control = btMusicaSlideMusicaSA
               Row = 1
             end>
           RowCollection = <
@@ -11307,11 +11999,11 @@ object fmIndex: TfmIndex
             end>
           ShowCaption = False
           TabOrder = 0
-          object btHinoSlideMusicaPB: TbsSkinSpeedButton
+          object btMusicaSlideMusicaPB: TbsSkinSpeedButton
             Tag = 2
             Left = 0
             Top = 0
-            Width = 88
+            Width = 96
             Height = 32
             HintImageIndex = 0
             SkinData = DM.bsSkinData1
@@ -11344,15 +12036,16 @@ object fmIndex: TfmIndex
             Align = alClient
             Margin = 5
             Spacing = 1
-            OnClick = btHinoSlideMusicaClick
-            ExplicitLeft = 6
+            OnClick = btMusicaSlideMusicaClick
+            ExplicitLeft = -6
             ExplicitTop = -6
+            ExplicitWidth = 126
           end
-          object btHinoSlideMusicaSA: TbsSkinSpeedButton
+          object btMusicaSlideMusicaSA: TbsSkinSpeedButton
             Tag = 3
             Left = 0
             Top = 32
-            Width = 88
+            Width = 96
             Height = 33
             HintImageIndex = 0
             SkinData = DM.bsSkinData1
@@ -11385,7 +12078,7 @@ object fmIndex: TfmIndex
             Align = alClient
             Margin = 5
             Spacing = 1
-            OnClick = btHinoSlideMusicaClick
+            OnClick = btMusicaSlideMusicaClick
             ExplicitLeft = 2
             ExplicitTop = 9
             ExplicitWidth = 25
@@ -11393,8 +12086,8 @@ object fmIndex: TfmIndex
           end
         end
       end
-      object bsRibbonGroup74: TbsRibbonGroup
-        Left = 455
+      object bsRibbonGroup84: TbsRibbonGroup
+        Left = 375
         Top = 0
         Width = 98
         Height = 86
@@ -11413,7 +12106,7 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Arquivo de '#193'udio'
         ShowDialogButton = False
-        object GridPanel87: TGridPanel
+        object GridPanel34: TGridPanel
           Left = 2
           Top = 2
           Width = 94
@@ -11427,12 +12120,12 @@ object fmIndex: TfmIndex
           ControlCollection = <
             item
               Column = 0
-              Control = bsSkinSpeedButton13
+              Control = btMusicaAudioMusicaPB
               Row = 1
             end
             item
               Column = 0
-              Control = bsSkinSpeedButton3
+              Control = btMusicaAudioMusica
               Row = 0
             end>
           RowCollection = <
@@ -11444,7 +12137,7 @@ object fmIndex: TfmIndex
             end>
           ShowCaption = False
           TabOrder = 0
-          object bsSkinSpeedButton13: TbsSkinSpeedButton
+          object btMusicaAudioMusicaPB: TbsSkinSpeedButton
             Tag = 2
             Left = 0
             Top = 32
@@ -11481,12 +12174,12 @@ object fmIndex: TfmIndex
             Align = alClient
             Margin = 5
             Spacing = 1
-            OnClick = bsSkinSpeedButton13Click
+            OnClick = btMusicaAudioMusicaClick
             ExplicitTop = 16
             ExplicitWidth = 129
             ExplicitHeight = 32
           end
-          object bsSkinSpeedButton3: TbsSkinSpeedButton
+          object btMusicaAudioMusica: TbsSkinSpeedButton
             Tag = 1
             Left = 0
             Top = 0
@@ -11523,7 +12216,7 @@ object fmIndex: TfmIndex
             Align = alClient
             Margin = 5
             Spacing = 1
-            OnClick = bsSkinSpeedButton13Click
+            OnClick = btMusicaAudioMusicaClick
             ExplicitTop = 16
             ExplicitWidth = 200
           end
@@ -12115,7 +12808,7 @@ object fmIndex: TfmIndex
           UseSkinFontColor = True
           WidthWithCaption = 0
           WidthWithoutCaption = 0
-          ImageIndex = 43
+          ImageIndex = 55
           RepeatMode = False
           RepeatInterval = 100
           Transparent = True
@@ -12204,7 +12897,7 @@ object fmIndex: TfmIndex
         end
       end
     end
-    object bsBuscaMusica: TbsRibbonPage
+    object bsHinario: TbsRibbonPage
       Tag = -1
       Left = 1
       Top = 26
@@ -12214,278 +12907,9 @@ object fmIndex: TfmIndex
       ScrollOffset = 0
       ScrollTimerInterval = 50
       CanScroll = True
-      Caption = 'Op'#231#245'es de Busca'
+      Caption = 'Configurar Hinos'
       ExplicitWidth = 983
-      object bsRibbonGroup11: TbsRibbonGroup
-        Left = 473
-        Top = 0
-        Width = 112
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 3
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Filtros de Busca'
-        ShowDialogButton = False
-        object ckgFiltros: TbsSkinCheckGroup
-          Left = 2
-          Top = 2
-          Width = 108
-          Height = 65
-          HintImageIndex = 0
-          TabOrder = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'groupbox'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          EmptyDrawing = False
-          RibbonStyle = False
-          ImagePosition = bsipDefault
-          TransparentMode = True
-          CaptionImageIndex = -1
-          RealHeight = -1
-          AutoEnabledControls = True
-          CheckedMode = False
-          Checked = False
-          DefaultAlignment = taLeftJustify
-          DefaultCaptionHeight = 20
-          BorderStyle = bvNone
-          CaptionMode = False
-          RollUpMode = False
-          RollUpState = False
-          NumGlyphs = 1
-          Spacing = 2
-          Align = alClient
-          OnClick = ckgFiltrosClick
-          UseSkinSize = True
-          ButtonSkinDataName = 'checkbox'
-          ButtonDefaultFont.Charset = DEFAULT_CHARSET
-          ButtonDefaultFont.Color = clWindowText
-          ButtonDefaultFont.Height = 13
-          ButtonDefaultFont.Name = 'Tahoma'
-          ButtonDefaultFont.Style = []
-          Items.Strings = (
-            'Nome da M'#250'sica'
-            'Letra da M'#250'sica'
-            'Nome do '#193'lbum')
-        end
-      end
-      object bsErroMusica: TbsRibbonGroup
-        Left = 789
-        Top = 0
-        Width = 80
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 6
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Erro'
-        ShowDialogButton = False
-        object bsSkinSpeedButton37: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 76
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 33
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Reportar Erro'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton37Click
-          ExplicitLeft = 4
-          ExplicitTop = 10
-          ExplicitWidth = 116
-        end
-      end
-      object bsRibbonGroup63: TbsRibbonGroup
-        Left = 585
-        Top = 0
-        Width = 104
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 4
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Colet'#226'neas'
-        ShowDialogButton = False
-        object ckgColetaneas: TbsSkinCheckGroup
-          Left = 2
-          Top = 2
-          Width = 100
-          Height = 65
-          HintImageIndex = 0
-          TabOrder = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'groupbox'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          EmptyDrawing = False
-          RibbonStyle = False
-          ImagePosition = bsipDefault
-          TransparentMode = True
-          CaptionImageIndex = -1
-          RealHeight = -1
-          AutoEnabledControls = True
-          CheckedMode = False
-          Checked = False
-          DefaultAlignment = taLeftJustify
-          DefaultCaptionHeight = 20
-          BorderStyle = bvNone
-          CaptionMode = False
-          RollUpMode = False
-          RollUpState = False
-          NumGlyphs = 1
-          Spacing = 2
-          Align = alClient
-          OnClick = ckgColetaneasClick
-          UseSkinSize = True
-          ButtonSkinDataName = 'checkbox'
-          ButtonDefaultFont.Charset = DEFAULT_CHARSET
-          ButtonDefaultFont.Color = clWindowText
-          ButtonDefaultFont.Height = 13
-          ButtonDefaultFont.Name = 'Tahoma'
-          ButtonDefaultFont.Style = []
-          Items.Strings = (
-            'Baixadas'
-            'Web'
-            'Personalizadas')
-        end
-      end
-      object bsRibbonGroup4: TbsRibbonGroup
-        Left = 689
-        Top = 0
-        Width = 100
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 5
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Exportar'
-        ShowDialogButton = False
-        object btExportarMusica: TbsSkinMenuSpeedButton
-          Tag = 1
-          Left = 2
-          Top = 2
-          Width = 96
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 43
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Exportar M'#250'sica'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = ExportarMusicaClick
-          NewStyle = True
-          TrackPosition = bstpRight
-          UseImagesMenuImage = False
-          UseImagesMenuCaption = False
-          SkinPopupMenu = bsExportarMusica
-          TrackButtonMode = True
-          OnShowTrackMenu = ShowTrackMenu
-          ExplicitLeft = 0
-          ExplicitWidth = 101
-        end
-      end
-      object bsRibbonGroup82: TbsRibbonGroup
+      object bsRibbonGroup5: TbsRibbonGroup
         Left = 0
         Top = 0
         Width = 220
@@ -12505,7 +12929,7 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Informa'#231#245'es'
         ShowDialogButton = False
-        object bsRibbonDivider4: TbsRibbonDivider
+        object bsRibbonDivider75: TbsRibbonDivider
           Left = 152
           Top = 2
           Width = 15
@@ -12515,10 +12939,10 @@ object fmIndex: TfmIndex
           SkinDataName = 'officegroupdivider'
           DividerType = bsdtVerticalLine
           Align = alLeft
-          ExplicitLeft = 210
+          ExplicitLeft = 548
           ExplicitTop = 3
         end
-        object btMusicaLetra: TbsSkinSpeedButton
+        object bsSkinSpeedButton12: TbsSkinSpeedButton
           Left = 167
           Top = 2
           Width = 51
@@ -12554,12 +12978,10 @@ object fmIndex: TfmIndex
           Align = alClient
           Spacing = 1
           Layout = blGlyphTop
-          OnClick = btMusicaLetraClick
-          ExplicitLeft = 569
-          ExplicitTop = -6
-          ExplicitWidth = 82
+          OnClick = bsSkinSpeedButton12Click
+          ExplicitLeft = 165
         end
-        object bsSkinPanel2: TbsSkinPanel
+        object bsSkinPanel1: TbsSkinPanel
           Left = 2
           Top = 2
           Width = 150
@@ -12595,7 +13017,7 @@ object fmIndex: TfmIndex
           Spacing = 2
           Caption = 'bsSkinPanel1'
           Align = alLeft
-          object bsSkinStdLabel4: TbsSkinStdLabel
+          object bsSkinStdLabel2: TbsSkinStdLabel
             AlignWithMargins = True
             Left = 10
             Top = 3
@@ -12614,14 +13036,11 @@ object fmIndex: TfmIndex
             SkinData = DM.bsSkinData1
             SkinDataName = 'stdlabel'
             Align = alTop
-            AutoSize = False
-            Caption = 'M'#250'sica:'
+            Caption = 'Hino:'
             Layout = tlBottom
-            ExplicitLeft = 0
-            ExplicitTop = 0
-            ExplicitWidth = 36
+            ExplicitWidth = 25
           end
-          object bsSkinDBText2: TbsSkinDBText
+          object bsSkinDBText1: TbsSkinDBText
             AlignWithMargins = True
             Left = 10
             Top = 22
@@ -12640,24 +13059,155 @@ object fmIndex: TfmIndex
             SkinData = DM.bsSkinData1
             SkinDataName = 'stdlabel'
             Align = alClient
-            Caption = 'bsSkinDBText2'
+            Caption = 'bsSkinDBText1'
             ShowAccelChar = False
             Layout = tlCenter
             WordWrap = True
             DataField = 'NOME_COM'
-            DataSource = DM.dsBUSCA
+            DataSource = DM.dsHINOS
             Transparent = True
-            ExplicitLeft = -6
+            ExplicitLeft = 4
             ExplicitTop = 28
             ExplicitWidth = 150
-            ExplicitHeight = 41
+            ExplicitHeight = 37
           end
         end
       end
-      object bsRibbonGroup83: TbsRibbonGroup
+      object bsErroHino: TbsRibbonGroup
+        Left = 653
+        Top = 0
+        Width = 80
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 4
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Erro'
+        ShowDialogButton = False
+        object bsSkinSpeedButton23: TbsSkinSpeedButton
+          Left = 2
+          Top = 2
+          Width = 76
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 33
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Reportar Erro'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton23Click
+          ExplicitLeft = 4
+          ExplicitTop = 10
+          ExplicitWidth = 116
+        end
+      end
+      object bsRibbonGroup1: TbsRibbonGroup
+        Left = 553
+        Top = 0
+        Width = 100
+        Height = 86
+        HintImageIndex = 0
+        TabOrder = 3
+        SkinData = DM.bsSkinData1
+        SkinDataName = 'officegroup'
+        DefaultFont.Charset = DEFAULT_CHARSET
+        DefaultFont.Color = clWindowText
+        DefaultFont.Height = 13
+        DefaultFont.Name = 'Tahoma'
+        DefaultFont.Style = []
+        DefaultWidth = 0
+        DefaultHeight = 0
+        UseSkinFont = True
+        Align = alLeft
+        Caption = 'Exportar'
+        ShowDialogButton = False
+        object btExportarHino: TbsSkinMenuSpeedButton
+          Tag = 1
+          Left = 2
+          Top = 2
+          Width = 96
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 55
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Exportar M'#250'sica'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alClient
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = ExportarMusicaClick
+          NewStyle = True
+          TrackPosition = bstpRight
+          UseImagesMenuImage = False
+          UseImagesMenuCaption = False
+          SkinPopupMenu = bsExportarMusica
+          TrackButtonMode = True
+          OnShowTrackMenu = ShowTrackMenu
+          ExplicitLeft = 4
+          ExplicitWidth = 101
+        end
+      end
+      object bsRibbonGroup12: TbsRibbonGroup
         Left = 220
         Top = 0
-        Width = 155
+        Width = 235
         Height = 86
         HintImageIndex = 0
         TabOrder = 1
@@ -12674,7 +13224,7 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Slide'
         ShowDialogButton = False
-        object btMusicaSlideMusica: TbsSkinSpeedButton
+        object btHinoSlideMusica: TbsSkinSpeedButton
           Tag = 1
           Left = 2
           Top = 2
@@ -12711,12 +13261,65 @@ object fmIndex: TfmIndex
           Align = alLeft
           Spacing = 1
           Layout = blGlyphTop
-          OnClick = btMusicaSlideMusicaClick
+          OnClick = btHinoSlideMusicaClick
         end
-        object GridPanel33: TGridPanel
+        object bsSkinSpeedButton6: TbsSkinSpeedButton
+          Tag = 1
+          Left = 160
+          Top = 2
+          Width = 73
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'resizetoolbutton'
+          DefaultFont.Charset = DEFAULT_CHARSET
+          DefaultFont.Color = clWindowText
+          DefaultFont.Height = 13
+          DefaultFont.Name = 'Tahoma'
+          DefaultFont.Style = []
+          DefaultWidth = 0
+          DefaultHeight = 0
+          UseSkinFont = True
+          CheckedMode = False
+          ImageList = DM.ico_40x40
+          UseSkinSize = True
+          UseSkinFontColor = True
+          WidthWithCaption = 0
+          WidthWithoutCaption = 0
+          ImageIndex = 50
+          RepeatMode = False
+          RepeatInterval = 100
+          Transparent = True
+          Flat = True
+          AllowAllUp = False
+          Down = False
+          GroupIndex = 0
+          Caption = 'Em Sequ'#234'ncia'
+          ShowCaption = True
+          NumGlyphs = 1
+          Align = alRight
+          Spacing = 1
+          Layout = blGlyphTop
+          OnClick = bsSkinSpeedButton6Click
+          ExplicitLeft = 167
+        end
+        object bsRibbonDivider3: TbsRibbonDivider
+          Left = 145
+          Top = 2
+          Width = 15
+          Height = 65
+          HintImageIndex = 0
+          SkinData = DM.bsSkinData1
+          SkinDataName = 'officegroupdivider'
+          DividerType = bsdtVerticalLine
+          Align = alRight
+          ExplicitLeft = 153
+          ExplicitTop = 0
+        end
+        object GridPanel69: TGridPanel
           Left = 57
           Top = 2
-          Width = 96
+          Width = 88
           Height = 65
           Align = alClient
           BevelOuter = bvNone
@@ -12727,12 +13330,12 @@ object fmIndex: TfmIndex
           ControlCollection = <
             item
               Column = 0
-              Control = btMusicaSlideMusicaPB
+              Control = btHinoSlideMusicaPB
               Row = 0
             end
             item
               Column = 0
-              Control = btMusicaSlideMusicaSA
+              Control = btHinoSlideMusicaSA
               Row = 1
             end>
           RowCollection = <
@@ -12744,11 +13347,11 @@ object fmIndex: TfmIndex
             end>
           ShowCaption = False
           TabOrder = 0
-          object btMusicaSlideMusicaPB: TbsSkinSpeedButton
+          object btHinoSlideMusicaPB: TbsSkinSpeedButton
             Tag = 2
             Left = 0
             Top = 0
-            Width = 96
+            Width = 88
             Height = 32
             HintImageIndex = 0
             SkinData = DM.bsSkinData1
@@ -12781,16 +13384,15 @@ object fmIndex: TfmIndex
             Align = alClient
             Margin = 5
             Spacing = 1
-            OnClick = btMusicaSlideMusicaClick
-            ExplicitLeft = -6
+            OnClick = btHinoSlideMusicaClick
+            ExplicitLeft = 6
             ExplicitTop = -6
-            ExplicitWidth = 126
           end
-          object btMusicaSlideMusicaSA: TbsSkinSpeedButton
+          object btHinoSlideMusicaSA: TbsSkinSpeedButton
             Tag = 3
             Left = 0
             Top = 32
-            Width = 96
+            Width = 88
             Height = 33
             HintImageIndex = 0
             SkinData = DM.bsSkinData1
@@ -12823,7 +13425,7 @@ object fmIndex: TfmIndex
             Align = alClient
             Margin = 5
             Spacing = 1
-            OnClick = btMusicaSlideMusicaClick
+            OnClick = btHinoSlideMusicaClick
             ExplicitLeft = 2
             ExplicitTop = 9
             ExplicitWidth = 25
@@ -12831,8 +13433,8 @@ object fmIndex: TfmIndex
           end
         end
       end
-      object bsRibbonGroup84: TbsRibbonGroup
-        Left = 375
+      object bsRibbonGroup74: TbsRibbonGroup
+        Left = 455
         Top = 0
         Width = 98
         Height = 86
@@ -12851,7 +13453,7 @@ object fmIndex: TfmIndex
         Align = alLeft
         Caption = 'Arquivo de '#193'udio'
         ShowDialogButton = False
-        object GridPanel34: TGridPanel
+        object GridPanel87: TGridPanel
           Left = 2
           Top = 2
           Width = 94
@@ -12865,12 +13467,12 @@ object fmIndex: TfmIndex
           ControlCollection = <
             item
               Column = 0
-              Control = btMusicaAudioMusicaPB
+              Control = bsSkinSpeedButton13
               Row = 1
             end
             item
               Column = 0
-              Control = btMusicaAudioMusica
+              Control = bsSkinSpeedButton3
               Row = 0
             end>
           RowCollection = <
@@ -12882,7 +13484,7 @@ object fmIndex: TfmIndex
             end>
           ShowCaption = False
           TabOrder = 0
-          object btMusicaAudioMusicaPB: TbsSkinSpeedButton
+          object bsSkinSpeedButton13: TbsSkinSpeedButton
             Tag = 2
             Left = 0
             Top = 32
@@ -12919,12 +13521,12 @@ object fmIndex: TfmIndex
             Align = alClient
             Margin = 5
             Spacing = 1
-            OnClick = btMusicaAudioMusicaClick
+            OnClick = bsSkinSpeedButton13Click
             ExplicitTop = 16
             ExplicitWidth = 129
             ExplicitHeight = 32
           end
-          object btMusicaAudioMusica: TbsSkinSpeedButton
+          object bsSkinSpeedButton3: TbsSkinSpeedButton
             Tag = 1
             Left = 0
             Top = 0
@@ -12961,7 +13563,7 @@ object fmIndex: TfmIndex
             Align = alClient
             Margin = 5
             Spacing = 1
-            OnClick = btMusicaAudioMusicaClick
+            OnClick = bsSkinSpeedButton13Click
             ExplicitTop = 16
             ExplicitWidth = 200
           end
@@ -13207,615 +13809,13 @@ object fmIndex: TfmIndex
         end
       end
     end
-    object bsUtilitarios: TbsRibbonPage
-      Left = 1
-      Top = 26
-      Width = 1368
-      Height = 86
-      HotScroll = False
-      ScrollOffset = 0
-      ScrollTimerInterval = 50
-      CanScroll = True
-      Caption = 'Utilit'#225'rios'
-      ExplicitWidth = 820
-      object bsRibbonGroup23: TbsRibbonGroup
-        Left = 0
-        Top = 0
-        Width = 273
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 0
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Igreja'
-        ShowDialogButton = False
-        object bsSkinSpeedButton25: TbsSkinSpeedButton
-          Left = 164
-          Top = 2
-          Width = 107
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 27
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Cron'#244'metro de Culto'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton25Click
-          ExplicitLeft = 155
-          ExplicitWidth = 100
-        end
-        object bsSkinSpeedButton26: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 66
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 18
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Liturgia'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alLeft
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton26Click
-        end
-        object bsSkinSpeedButton5: TbsSkinSpeedButton
-          Left = 68
-          Top = 2
-          Width = 96
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 47
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Itens Agendados'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alLeft
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton5Click
-          ExplicitLeft = 89
-        end
-      end
-      object bsRibbonGroup24: TbsRibbonGroup
-        Left = 273
-        Top = 0
-        Width = 116
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 1
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Sorteador'
-        ShowDialogButton = False
-        object bsSkinSpeedButton28: TbsSkinSpeedButton
-          Left = 57
-          Top = 2
-          Width = 57
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 23
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Nomes'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton28Click
-          ExplicitLeft = 6
-          ExplicitWidth = 87
-        end
-        object bsSkinSpeedButton30: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 55
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 22
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'N'#250'meros'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alLeft
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton30Click
-        end
-      end
-      object bsRibbonGroup34: TbsRibbonGroup
-        Left = 529
-        Top = 0
-        Width = 275
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 3
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Textos'
-        ShowDialogButton = False
-        object bsSkinSpeedButton31: TbsSkinSpeedButton
-          Left = 184
-          Top = 2
-          Width = 89
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 30
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Texto Interativo'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton31Click
-          ExplicitLeft = 95
-          ExplicitWidth = 87
-        end
-        object bsSkinSpeedButton27: TbsSkinSpeedButton
-          Left = 97
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 29
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Texto Din'#226'mico'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alLeft
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton27Click
-          ExplicitLeft = 98
-          ExplicitTop = 3
-        end
-        object bsSkinSpeedButton1: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 95
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 44
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Editor de M'#250'sicas'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alLeft
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton1Click
-        end
-      end
-      object bsRibbonGroup13: TbsRibbonGroup
-        Left = 389
-        Top = 0
-        Width = 140
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 2
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Tempo'
-        ShowDialogButton = False
-        object bsSkinSpeedButton29: TbsSkinSpeedButton
-          Left = 65
-          Top = 2
-          Width = 73
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 27
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Cron'#244'metro'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton29Click
-          ExplicitLeft = 10
-          ExplicitTop = 10
-          ExplicitWidth = 87
-        end
-        object bsSkinSpeedButton50: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 63
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 35
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Rel'#243'gio'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alLeft
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton50Click
-        end
-      end
-    end
-    object bsBiblia: TbsRibbonPage
-      Left = 1
-      Top = 26
-      Width = 1368
-      Height = 86
-      HotScroll = False
-      ScrollOffset = 0
-      ScrollTimerInterval = 50
-      CanScroll = True
-      Caption = 'B'#237'blia'
-      ExplicitWidth = 776
-      object bsRibbonGroup2: TbsRibbonGroup
-        Left = 0
-        Top = 0
-        Width = 178
-        Height = 86
-        HintImageIndex = 0
-        TabOrder = 0
-        SkinData = DM.bsSkinData1
-        SkinDataName = 'officegroup'
-        DefaultFont.Charset = DEFAULT_CHARSET
-        DefaultFont.Color = clWindowText
-        DefaultFont.Height = 13
-        DefaultFont.Name = 'Tahoma'
-        DefaultFont.Style = []
-        DefaultWidth = 0
-        DefaultHeight = 0
-        UseSkinFont = True
-        Align = alLeft
-        Caption = 'Geral'
-        ShowDialogButton = False
-        object bsSkinSpeedButton10: TbsSkinSpeedButton
-          Left = 89
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 7
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'Busca B'#237'blica'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alClient
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton10Click
-          ExplicitLeft = 95
-          ExplicitHeight = 63
-        end
-        object bsSkinSpeedButton9: TbsSkinSpeedButton
-          Left = 2
-          Top = 2
-          Width = 87
-          Height = 65
-          HintImageIndex = 0
-          SkinData = DM.bsSkinData1
-          SkinDataName = 'resizetoolbutton'
-          DefaultFont.Charset = DEFAULT_CHARSET
-          DefaultFont.Color = clWindowText
-          DefaultFont.Height = 13
-          DefaultFont.Name = 'Tahoma'
-          DefaultFont.Style = []
-          DefaultWidth = 0
-          DefaultHeight = 0
-          UseSkinFont = True
-          CheckedMode = False
-          ImageList = DM.ico_40x40
-          UseSkinSize = True
-          UseSkinFontColor = True
-          WidthWithCaption = 0
-          WidthWithoutCaption = 0
-          ImageIndex = 6
-          RepeatMode = False
-          RepeatInterval = 100
-          Transparent = True
-          Flat = True
-          AllowAllUp = False
-          Down = False
-          GroupIndex = 0
-          Caption = 'B'#237'blia Sagrada'
-          ShowCaption = True
-          NumGlyphs = 1
-          Align = alLeft
-          Spacing = 1
-          Layout = blGlyphTop
-          OnClick = bsSkinSpeedButton9Click
-          ExplicitLeft = 10
-          ExplicitTop = 10
-          ExplicitHeight = 63
-        end
-      end
-    end
   end
   object PageControl1: TbsSkinPageControl
     Left = 0
     Top = 146
     Width = 1370
     Height = 502
-    ActivePage = tsColetaneasOnline
+    ActivePage = TabSheet14
     Align = alClient
     Font.Charset = ANSI_CHARSET
     Font.Color = clWindowText
@@ -13966,478 +13966,667 @@ object fmIndex: TfmIndex
       object pnlImagemCapaModel: TPanel
         Left = 240
         Top = 19
-        Width = 210
-        Height = 128
+        Width = 393
+        Height = 182
         BevelOuter = bvNone
-        Color = 6438155
+        Color = 2955528
         ParentBackground = False
         TabOrder = 2
         object imgImagemCapaModel: TImage
           Left = 0
           Top = 0
-          Width = 210
-          Height = 128
+          Width = 393
+          Height = 182
           Align = alClient
           Center = True
           Picture.Data = {
-            0954506E67496D61676589504E470D0A1A0A0000000D49484452000001F40000
-            01C2080600000019F53B3A000038454944415478DAEDDD5F4E24C9B9F7F1CC2A
-            A8BEA025F7F8D21A30B382C12B30231D09EC9B615660BC02E3154C9F150C5E81
-            F10A0EBEB141B2E43A2B7079058361E4CB3358EA79A501AAE2CDCCA2E8222BFF
-            44643C11917FBE1FC9724F7703993455BF8C88279E88230000D07971E80B0000
-            00F6087400007A80400700A007087400007A80400700A007087400007A804007
-            00A007087400007A80400700A007087400C1A8FFFBAF9F3C7CD89AC5917AB7FD
-            76BE1FFFF46FFF097D4D405711E8008279BCFBD52F55A4A6E9AFE3283EDCDEFD
-            EBFF86BE26A0AB087400C13CDE1D7FADA2E87DFA6B021DB043A00308E6C7DBE3
-            6FE338DA4F7F4DA00376087400413C7C77F479A4E2D9EABF0974C00E810E2088
-            A7DBA32F17717CB9FA6F021DB043A00308627DFD3C45A00376087400413CDC1D
-            FF3DF9BFC3D57F13E8801D021D401049A0ABF5FF26D0013B043A00EFD6F79FAF
-            10E8801D021D8077F9E9F614810ED821D0017895B67B7DFC61EB3EFFFB043A60
-            874007E0D5C377C7BF89547491FF7D021DB043A003F0EAE1F6F88FC93BCF69FE
-            F70974C00E810EC0AB87DBA3EFA3387E97FF7D021DB043A003F0E6E1EEE877C9
-            DBCE79D19F11E8801D021D803749A0FF2379DB3928FA33021DB043A003F0A268
-            EFF93A021DB043A003F0A2AC186E854007EC10E8009CCB1F955A844007EC10E8
-            009CAB1B9DA70874C00E810EC0A9B2CE7079043A60874007E0D48F7747FF9384
-            F549DDDF23D0013B043A006774D6CE570874C00E810EC019DDD1798A4007EC10
-            E8009C78BA3DFA7211C797BA7F9F4007EC10E800C4A585700F1FB666711CEDEB
-            7E0C810ED821D001887BB83DFA268AE333938F21D0013B043A0051D9547B145D
-            149DA856854007EC10E80044951D8F5A874007EC10E800C43CDC1DFF3DF9BFC3
-            261F4BA00376087400221EEF8EBF5651F4BEE9C713E8801D021D80B5A6EBE6EB
-            0874C00E810EC04A932D6A450874C00E810EC08A4937B82ADB3B4FEFE29FFEED
-            3FA1EF07E82A021D40633AC7A2EA9AEC5EF17E0458E00504A09187BBA3DF256F
-            21E7429F6E9A04FA17A1EF09E832021D80B187EF8E7F13A9E842EC13269F6BB2
-            77F5DBD0F7057419810EC088E9A12B7AD4D964F7FA0FA1EF0DE832021D80B6EC
-            7CF34534B5D99EB641A9FB68141D4E3EBDFE67E8FB03BA8C4007A0250BF36C9A
-            3D3E90FCBC2A52976F76AFBF0A7D7F40D711E8006AA97FFFFAE78F4FF399E8C8
-            7C258E4E279F5EFD29F43D025D47A003A8948ECCD522BEB46D1C53667B3CDA8F
-            7FF6977F85BE4FA0EB08740095A41AC714512ABA79B377F559E87B04FA804007
-            50286DE9FAF8C3782ABD66FE0AD3ED8018021DC0862CCC3F6C9D4B75812BFC1A
-            8CCE0151043A800D0F7747FF703A328FB2379FF7DBBB57FF1DFA5E81BE20D001
-            BCC84E4EFB617CE16ACD7C1DC570802C021DC08B87BBE3BF27FF77E8FC0B2975
-            3ED9BBFE7DE8FB05FA844007F05C00B795B6733D74FEB5583B079C20D001881E
-            835A87B573C00D021D18381F05706BA6DB3B4F27F14FFFF69F97AF7F7BF47DDA
-            818E3575C00E810E0C948FAD691B6275B07E08CBE3DDAF7EA92235CDFE288A0F
-            B777FFFABFA1BF2F405711E8C040792B805B2938F3FCF1EEF86B1545EFD35F13
-            E8801D021D18189F5BD3D6BEEA6CB27BFD8BFCEFAE3F5410E8801D021D181897
-            BDD9CB8C943AD9DABBFEF3FAEF3D57D6DFAFFE9B4007EC10E8C080782E805B2A
-            D973BEBE7E9E22D0013B043A3000410AE0965FB970AA3DB5BE7E9E22D0013B04
-            3A3000DE0BE0524ADD47A3E870BDAABDEA9A0874C00E810EF4589802B8A5A275
-            F375ABFDE7ABFF26D0013B043AD063210AE0522A52976F76AFBF2AFBF3FCFA79
-            8A4007EC10E8400FF9ECCDBEF1B593309FECCC4FD7BBC1E515B59A25D0013B04
-            3AD033E10AE0A2DA75F395FC747B8A4007EC10E840CF0429807BB6BDF3F4AE6A
-            649E2A9A6E4F11E8801D021DE88990057099383A9D7C7AF5A7BABF968CCEBF49
-            46E7679B1F4EA003360874A0274215C02DA9B3C9EEF51FB4AEF3F6F8DB388EF6
-            F3BF4FA003760874A0E34216C02D2F60F3D095320FDF1DFF26FDFB457F46A003
-            760874A0E38A2AC67DA9DB9EB671AD15EBFB043A608740073A2C486FF6176AB6
-            BD333FAC2B827BB9D6EF8E3E8F543C2BFB73021DB043A0031D14BC00CE30CC53
-            65C5702B043A608740073A28E4D6B494CEF6B457D75B333A4F11E8801D021DE8
-            90F005707A8D63F274D6F90974C00E810E7448C802B86598C7673A7BCD5F7D58
-            D6B96E7C93EF0C9747A003760874A023C216C0256275603A32CFAE5BF3218440
-            07EC10E840CB05EDCD9E5D80BA1F45D169D551A8A51FFAEF5FFFFC71BEB8D1F9
-            BB043A608740075A2E74019C6E4BD7C26BAFA96C7FFD650874C006810EB454F0
-            02B8287B8378BFBD7BF5DF4D3EF6E9F6E8CB451C5FEA7F2D021DB041A0032D15
-            B6377B944EB59F4FF6AE7FDFF8FA4B7AB69721D0013B043AD042C10BE00C0E5B
-            29B9FEDF25D77F6EF231043A608740075A2478015C76117623F3ECBC73B5B8AC
-            DBA69647A003760874A0454217C0D9AC997FBC8766B30B043A608740075A207C
-            6F769930B759F727D0013B043AD0025D2F804B9956B5E711E8801D021D0868B9
-            356D3CED72015CAAE9BAF93A021DB043A00381B4A3002EBA98EC5DFDD6FA3E04
-            1E4A0874C00E810E04D28702B8D4E3DDF1D72AF95CB69F67A4D44993F6B20096
-            0874C0B33614C049AC99A74C5ABBD699EC5EF17E0458E0050478D68702B8D4C3
-            77479F472A9E095DD37D724D9F04FB9E003D40A0039EB4A137BB44015CCAB6A2
-            BDC03419A17F11EEFB02741F810E78D09702B8ECD36447A2CE2F452BF385660D
-            802123D0010FBADE9BFDE5B3A461FE349FD96C4F2B42411C608F40071CEA5301
-            9C9391F9F233CFB677E687F14FFFF69F50DF22A00F0874C0A1BE6C4D737A2F4C
-            B703220874C0813614C04985B9EB59061ACA00320874C081BE6C4D737E2F6C57
-            03C410E880B0BE14C02DEFC5F19201D3ED8018021D10D2AB02381FDBEC92D1F9
-            F6DBF93EC570800C021D1042019C2146E78028021DB044015C33DBE3D17EFCB3
-            BFFCCBCF7708E83F021DB044015C936B96E95A07E023021D6848EA1C70CBAB10
-            2B80F317E6AC9D032E10E84003EDE8CD2E37327FF8EEF837E9A8D9CF75333A07
-            5C20D081067A55009786F9429D4BF7672F54303A7FB83BFA5D12F2FB14C80176
-            0874C0401BB6A6C986B9E099E61AF287B0AC7F7D3AC601760874C0409F0AE0B2
-            305D44532F23F3ECD2A39B377B579FBDBE868F53FD043A6087400734B4616B9A
-            680738CF619E4DB56F8D0FF2DBD4D6972E0874C00E810ED46847019C5C2199F7
-            305FDEC0C6C3C8F343D2FDEABF0974C00E810ED4E8556FF620611E4D27BB575F
-            E47FF3F1EE57BF54919AAEFE9B4007EC10E84089BE15C03DDD1E7DB988A20BAF
-            615EB1E73CAB6E8FE2F38FF74AA003360874A044BF0AE03CEE335F1747A7934F
-            AFFE54784DB7C77F5C5FC620D0013B043A90D3BF02B830615E37BBF0707BF4FD
-            FA6C01810ED821D0819CFCC8D13BD102B84023F348CDB677E68765ED5DD5BF7F
-            FDF3C7F9E266FDF70874C00E810EACE957015C98304FF79B4FB646875527A915
-            3D3411E8801D021D88DA5100D78B35F354AC0E269F5EFFB3EAAFFC787BFC6D1C
-            47FBAF3E8C4007AC10E840446F7629F9D6AEC5D757DC6E964007EC10E818B4FE
-            15C0F9EDCDFEFA36F466181EEF8EBF56C9034CFEF70974C00E818E41EB57015C
-            90A631C6F75156A740A0037608740C56EF0AE0024DB3171DBA5226DF1D6E1D81
-            0ED821D03138EDE8CDDE9302B8747BDA787C5255D1BEAEAA590F810ED821D031
-            38BD2A80BB3DFA2619959F05B9918AB6AE857F3D7718CBE6F78540076C10E818
-            8C3614C08957B3871A9927613E8AA2D3BA8A7693EB25D0013B043A0683DEEC72
-            74B6A7BDBAF59AD1798A4007EC10E81884DE15C0050CF326C19B3F594DEAF302
-            F8884047AF510027ABE992415167B8CDCF4DA003360874F45AAF0AE03A1AE6BA
-            D74DA003760874F4521B7AB34B85F972FD797C5A3765ED54C35986E50CC9F846
-            677F3C810ED821D0D14BBD2A800BDECDAEF9BDE8AC9DAF10E8801D021DBDF23C
-            9A9DF6A100AEEBB30CD999E74FF3996EF73A021DB043A0A3377A570017B2694C
-            762F767DE64DEB170874C00E818EDEE855015CE07BB17D30A9EAD95E864007EC
-            10E8E8BCAE4F4DE7EFE5F1C3F87DD091B9E5924136D53E9F5F9A2E7B10E8801D
-            021D9D47019CE0AD44EAF2CDEEF557369FA3E9BF07810ED821D0D1596DE8CD2E
-            DA012E74357B144D27BB575F58DD8341557B1E810ED821D0D149ED2880B32B1A
-            5B17BC002E3D0675677EA87B725AE13D7C77F479B488A64DCF6427D0013B043A
-            3AA957BDD983DF4B34DDDE793AB1097389FB20D0013B043A3AA50D0570BDDA9A
-            2630324F49D43110E8801D021D9DD2A702B8E0F72214E6623DE6637530F9F4FA
-            9FE1BE1F40B711E8E8843614C0496E4D0B3ECB2019E60B75DE74DD7CDD64F78A
-            F723C0022F207442F00A70D102B8D0D5EC32616E72F04AEDE752D1CD9BBDABCF
-            C27D4F96B2C23E159F27FFDE37A3485D6EED5DFF39F43501BA0874B45EF8A231
-            C902B8C01DE0840AE0D2E6310F4F8B69DD19E726D765BB654EC2D3EDD1978B38
-            BE5CBBD359FAF0C55200BA8040476BB5626A5A68CDBC15DBEC8446E629E9872C
-            C9B6B9D6F75654A898FC1C6C6F8DCFE39FFDE55FA1AF0F2843A0A3B5428F6625
-            43267C019CCCC83CE5E2DF65A4D4499BA6B71FEF8EBF56C9BFFFFAEFA5CB02F1
-            489D305A475B11E8681D0AE0A449AE99BB9865909B399054DAF54E4517DB6F9F
-            CEDA76BD00818ED6093E9AEDD9D6B4C9EEF52F5A7D2F820587D2CAFB04B4F321
-            04C346A0A3555AD06845A400AE0DB30C91E0347BD114B494B64DB7E795ED4A48
-            A7E047717C4A331CB405818ED6106B50D2548F4E4D132D8073F9EFA2D4FDF6DB
-            F97E9B47BA95DBF392EB8F46D121EBEA6803021DADE07204A843B2002E74315F
-            243832DFDCC625ACC5D3EDAF2E7339E3725FFA17E872871620D011DC73338F59
-            A8AF4F015C31E73326E9E87C6B7CD095AD60950F9D8CD4D102043A820A1DE614
-            C015B339D75CFB6A2375F966F7FA2B3FDF1B81EB4D1FD83E6CCD4A9BE97460F9
-            00FD46A0231807DDC64CAF8002B8023EC23CD5C5D3D51EEF7EF5CBE441645AFE
-            37A87E4738043A825886E0781AACA52BBDD98BEFC55361625B7AB737F1E3EDF1
-            B7550FA15D9B79407F10E80822ECF634C9DEECA1FBCC776F649EDA1E8FF6BBB2
-            769EA7F37D6AFB563CF413810EEF4256B44B16C0F5AA37BBC72D835D1FC16A2F
-            1551F90ECF08747815B4088E02B842CEB7A6E5747974BEA2B3CCD2F50717740F
-            810E6FD230578BF8324C119C5C015CF8AD6982D3ECBE9BF96447915EFDC9DBD7
-            7344FF21486E7907A843A0C39B60A35A0AE08AEF250DF3853A2FEC80E6E2CA55
-            743379FB74D0870AF074DAFD71BEB8D1B869B6B2C11B021D5E845B37972C80A3
-            039C8D3E4CB5AFABAB767FD1935909B41F810EE782AD9B0BAD995300674FB2B5
-            6E5B68CFD6D0450E9E10E8702EC4D62E7AB397DD8BBFAD692B5DDE735EA5BEC9
-            CCAB6F82584126508640875361D6CD29802B12E434BB8EF56B376118E8F749A0
-            7F12FA9AD16F043A9C0932D54E015CF1BD782E805BE9E354FB4AED096C9B1F41
-            C53B9C22D0E144983EED14C01509510097E9C8D1A836929F13A5FDEDE8E9D203
-            DA83408713DE5BBB0AAE51F66E64EE7B9A3DEAD716B52A26819EEAE28134E80E
-            021DE2CCA722ED5000572CDCC87C3855DDA6814E711C5C22D0214E7B7FAE00C9
-            DEECE10BE0BA3F324F0DE96012E3404F1ED826BB575F84BE6EF413810E515E83
-            84DEEC85426C4D5BBB8F41157E3508F4280974DE77E1043F5810E56F744E015C
-            9160D3ECD1F00E23D16EFFBAF991837AE8813F043AC4F82A26930C0E0AE084EE
-            628015DC46FBD0D70CEDC107FE10E810E1B1104E6C0D9291B990811E40D238D0
-            07F8F0033F087488F0B44D4D2400E9CD2E78174938C5237532848AF63C9BD91D
-            D6D1E1023F54B0E66774285734D6A702B8A023F3685815ED79566714C4EA6088
-            0F41708B408735D753D7E99AE364677E2A3232FF61EBD2E5B56AE8F4412BEB86
-            1CE6A92615EE2F3852150E10E8B0D2BCD257F70BC8ADCF520027A7CF3DDA75D8
-            9E5330F4EF1FDC20D061C5E9D1A8822775510027886E67D1E3DDF1D7C9F0FC7D
-            D38F5F0FF497991646EDB044A0A3B1A655BE5A84DA875200277D2BFD3F704587
-            6D1DC67AA0BF3C1C243FF3713C3AA1D73B9A22D0D198D3CA76A1A2210AE0246F
-            859179F66D90384970EDC1E8D5B2D540B7004206818E46B237A1A7F9CCC9F9DA
-            02538FEDE8CD2E5800177A642E782F5D27548CF8AA9FC2EB2521B987400C0B81
-            8E46DC1598C9B4C5EC5D01DC429D3B7978F27C2F7D20548FF12AD0F3B32F14CD
-            A109021D8D3CDC1E7D2F1E3042EBB34E0BF5F4F4666B1A61FE9AE0AE8E8D8E87
-            F96D70C9CFD03BBEEF3041A0C398A3B55CEB10A400AEBDF7D21782FF261B815E
-            50EFC151AB3042A0C398F874B6D0F6340AE064EF85307F4DF2BC82A229F5A2AD
-            70C9CFF32155EFD045A0C348B6554D2D2EC5A6DB05C29C023869847911C9E58F
-            E240DFDC069AF6CA9FBC7D3AE0DF023A08741811DFAA2650D14E015C3BEFA56F
-            249B139515BDFD787BFCEDE67638CE4F871E021D468ADF709A91A8E4A5039C24
-            C2BC8C6DABD7BCB2A9F4C29F67A5EE277BD79F84FE1EA0FD08746813EEDB6E55
-            F043015C7BEFA58F241F645365815ED65276E807E1400F810E6D826B88D6A3DA
-            F0D3EC6C4D1B0A17332765E7A197057A7AE2E09BDDEBAF427F2FD06E043AB489
-            8C52047AB4F76934DBA77BE92BE9D1795AE8F666EFEAB3A23FAB3C1F8133D451
-            83408716B93544BB029F3E05200570ED677BAA5A89D2E5A6CA40A7973E6A10E8
-            D022F2C666D909AE4F53D314C0B59F70CDC8DA272E0FE6EA130CE9F18E6A043A
-            B458376DB13C45AA7723F39EDC4B5F3D3791491FB80EC53F79C5D479DD91C4DB
-            E3D1BE6D0326F417810E2DD6BDDB2DD6FF9C8D94F4B1356D601C4DB5D76E41AB
-            0B74F6A4A30A818E5AB6816AB3DF3C5BBB5F44D33EAC333332EF06A74703D72C
-            3BD5057A55411D40A0A3964D10D9BC014937F36870F5626B967D5AFFEF3BE9AA
-            F6576A3A23D68FD0CBB7BC01FC60A056E3E3482DFAB42FD730C7D380C7A0B2CF
-            7C80C45B1BE7D41D89AAF3B3C2812D2843A0A356FE9C665D4DA7DA9D1624E95D
-            01D3EC0394D53744C9BF95BBE59DDAEE883A6BF7122D93D14F043A2AE94C0116
-            6B3E5DED7A94548391F900395D377FA633B2D6EA80C87E749420D051A9695576
-            D3694167D5C55A18990F918FE377756B49340F1BB23A0701FD45A0A352A3806D
-            3882085B04275700C7D6B46EB1EEB1A043A3A9523A4BF0F0B4986A14E411E828
-            44A0A392F121280D1BC8A461AE16F1A5B3EAE26A4CB30F94AF7F2F9D8630260F
-            8254BAA3083F14A8647ADE78D3829DC695F4D698661F2A5FFF5EBA27A599CC86
-            11E828C20F054A19377569383AF732E5598C91F940F95CDED16DD76AF2F04CA0
-            A3083F1428655CE15ED334A348B8512D23F3A1F2DC7D507BBDDBA8BD7283D71A
-            FA8F404729A3E2AE9A1ED5851FE261AB500946E603953DA4AAC5A5AF9FB99152
-            275B7BD77FD6BA2E838767F6A2A308818E526615EE668746645B853E6CCD0214
-            C1C9853923F34EF17E2E80C16E0FD3E253021D45087494D20DF4748FEDE4EDD3
-            8149B08419D90A4FB32FD4791F0E8D198210BB2874D7CE9F3B23DE9B7C6E021D
-            45087494D21EA11BAEE7051AD97204EA40F99E664F99046E93D703818E22043A
-            4AE956DDD61D38B12ECC543B05704315E2F85DD313068D7B3D44043A8A11E828
-            A515E8865DE102F46967643E502146E629D3B6C74D0E3F62DB1A8AF04381523A
-            81AEBB4E98F21F888CCC872AC4C83C63F880DBF4EC02021D45F8A140A9BA4037
-            9D5AFCF1F6F85B7F53ED72BDD9D99AD62DC1CE0430DCBAD9A4186E854047117E
-            2850AA2ED08D0A7F1AAC135A609A7DA002F636D0DE73BED2FC4151EE6115FD42
-            A0A354ED947BAC0E269F5EFFB3F6F3781D3131CD3E54C1A6D9A366456AA6E724
-            ACE1B4351422D051AAFA0D477F94E0B1573B23F3810A3932375D7A4AD93C2CEA
-            1EF682E121D051AA26D0B53AC3F95B7F66643E542147E65953A5ADD1A16E61E8
-            8A4D3D095BD650864047A9AA91B5CED61C7F7BCEE5D6141999774B880E70EB4C
-            D7CD97D76CF9C0C8C12C2841A0A354D5961A9D2A5B2F7BCE1B1ED95A78BD54B3
-            774AA87DE62B4D46CAD9D2C07C7163F785F56A57303C043A4A95077AFD8858E4
-            8DAB4E12E6D1283A947873639ABD5B424EB3A79AAE634B3CE4B2650D65F8C140
-            A9B240D77933735E082718E64CB3774BC802B8678D8A2F6DF69DAF7D16B6ACA1
-            14818E526553D075538DCE47E78CCC072BF4C8DCE6DF4BA2B1120571A842A0A3
-            54B64619A969FEF7EB0AE29207817F247FEBC0D9850915053132EF96D0057036
-            0F92620F8EAC9FA302818E5265539B55815EF610204628CC1999774BF091B945
-            988B2D1118B696C5F010E8A8B4B117BDE68DCD698BD72480277B57BFB5BEA734
-            CC17EABC8BD3B643D4E5917976FDCD3BC2BDBE0C1ACAA006818E4A05015DD976
-            F2E1F6E87B174129F566C6D6B46E09BD35CD3ACC256782D87F8E1A043A2A1554
-            BA9706BAABD17993D69A85D7C7347BA774799A7D75FD92330BF9A38AD3871D93
-            73D7D17F043A2A15846061A0CB6CC92990368ED91A1F98B6D6CCA300AE5BBA3E
-            CD9E92DDBAF97ABBDACB4E12C3F3D7D16F043A2AE54F4A2BDB36E364F49BBCA9
-            8EA2E8D4B4B5A6976B33BB11C2DC40D747E6D93D087749CCB7985D2F3EA5D10C
-            56F84140AD87BB63B5FA7559A0BB682423B1E79602B86EE9C3C8DCC54E8FED9D
-            A777EB3F43EB5FA3493F79F413818E5AEB55BA4521EB68746E3D95C8347BB704
-            EF0027D4B048BC30B4607747EEA181F3D19121D0516B3D180B035DBC18CE3E08
-            9966EF963E4CB367F7E1A2A95241757BFE61956977A4F8218096D5B47B61A0AF
-            4DC95B4BDE58E378746253BDCBD6B46EE9FAD6B48FF7517E3AA185C2D1F7C6D7
-            A2831C22021D9A56D3EEF940971E09DBAE073232EF96DE4CB3BB7A882CD97BBE
-            F9F0A0CE26BBD77F70FF0D439B11E8D0F23CC5771647F1FBF5D1B3EC14A3DD49
-            5214C075CBF356C774DAF830CC05C884B9CB8792FCDEF3958D4067FB1A22021D
-            16244F554B9BC74CB646874DF79B5300D73DCE0FF1A92218E60F4F8BA993AAFC
-            8A56C7260D9F301C043A1A939CDEB6996A679ABD5BFA32324FB97C28C96F555B
-            973F8A55AA9B22BA8D40476352CD336CFAB43332EF1EA9C34A1A110C7317BD17
-            5E2EB3E6355154884AA53BF8014063F95142133653ED8CCCBBA72F612EDD092E
-            AFEA88E2D2A52E2ADD078F40472362EBE70D4F906264DE3D8EB675E9910C73E7
-            0F92D5C5A1659DE8243A2BA2DB087434223142693AD51EBC0909616ECCD5497C
-            3AD259A078A44E84D6CCDDF638480F237A3BDFAFFAD92A7DA0A828A2C33010E8
-            684462EAB46C4B4E15A755C57A5740981B0A3A9B223832F7721F1AA15C3ED361
-            B7ED13DD47A0A311EB7ED50DF7CD065D8325CC8DB938A8449B60982F2BF3C753
-            A7DBEC348F0AAE780DB0756DE0087418B35D3F6F5A08E7B2AA58E3AA09734341
-            5BBA8AAE99FB59E2D15D03AF789826D0078E408731FB5197799BCAB015ED84B9
-            A97444FBF0616B166469447264EE6B8927B9E6C9DEF5273AD753F1304DA00F1C
-            810E633685414D1A60646B975112E6418AE0087353411BC77470649ED26DAC54
-            B35380401F38021DC6ACB61F196E530B3AD223CC1B0956D12E1CE66A115F7AFA
-            B9D30EE2BADE0F34971936FEF161AC79619A79156EB87573C2BC896047D70A17
-            C0F97C88D4DDEDA153BB42A00F1BFFF8306611E8466BE7E1CE3527CC9B0856D1
-            2E18E629AF3B290C767BE8BC1E08F461E31F1FC69ABEE1551D369197ADC37E18
-            DFF85F3727CC9BB2DECAD88474987B5D2E309BB1AA7DDD6916D6A1BF08741869
-            5A2864DA9632CC7E73C2BCA92047A1763ACCABFBB56FDCAADE56518AE2068E40
-            8791A6D3AA265DE1C2741623CC9B0AB2A5B0F3616EF880AB777D04FAC011E830
-            D230D08DDE68244E713343983715644B61C7C3BCC9D64DCDE50C027DE0087418
-            6916E8FAC570FEB73C11E636BC4FB5773CCCD3EB8FE3D189EE547B768DFA3320
-            04FAC011E830D224D0758BE19E1B92DCFBBB1BC2DC86F75D085D0FF3E54D18ED
-            F430EC214FA00F1C810E23C6816E70A4A3EF0A63C2BC39EF5BD47A11E6E6816B
-            D4C4A9E18147E80F021D464CDFC8752B79FD16C211E6B6BC4EB5F721CC1B6E29
-            33A927312DB443FF10E830621AE8BAD3ED3E3BC299EC87C726ABD6BFA6FA10E6
-            91D916B5976B35DC3DD0E46BA05F087418310974DD6A5EDBE358B50987C31079
-            6DF8D393306F72BA6093F6B37489033F0030A63BDD9A04FFE59BDDEBAF6A3F9F
-            8F375AC25CC4C3EDD13749989F39FF423D0973DDD7C0C6F59A161CD2250E1181
-            8E06B4BBB8699CACE66B74AE7B3C25CA65B3336A71E97C74DE9330CF6A35C6E3
-            13DD864A2F1FD56C16840A7710E830A71BE83A53803ED663291692D1C5999470
-            616ED61DF1F53537980531D84D82FE22D0614C2F84F50E9E70DE152E79A3DB7E
-            FB7446119C1D2F33297D09F306CD63569A6F07345FA747FF10E830A6B9BE573B
-            05E87C2F73F2C6BAFD76BE4F98DB73DE44A62F611E359F117A6EAC946EDD3C34
-            FF9A54B8834047035A41ACD1E4C2F5896A4DA73CF19AEBD179BA1B221EA99321
-            87B9ED75B3151329021DC6745AB4D6BDB1B96FF3CA14A414E7A3F3581DF421CC
-            4DCF377F75DDE9B1C42A9E35FBB254B86389404723756BDF7581EE72BABDE956
-            2114733A93A2B11342FB3A038779D3EE833653EDCFA8704786404723756F9E75
-            81EE6C3F33EBE6A29CCEA4F425CC2D7FE66C5F0BAC9F6385404723756D29AB02
-            DDF00429236C519365DA7E545B8FC2DCA6984F626F3FEBE75821D0D158D5B47B
-            55B03A9B6E672FAE3837DB0AE5EA1BBA1CE659B1E1D37C66D9A887E976BC20D0
-            D158D59B6975A0BB69264355BBBC87BB6325F9F924EB1BBA1CE6299103893832
-            156B0874345675E46955A03B39598D3736710E6652C44693610BE05276B30C52
-            3B07583FC73A021D561E6E8FBE2F9A32AC0A74E9AA69DD53DD604678BB5A7FC2
-            DC72FDDF6A8B5A0EEBE75847A0C34AE99B7EC57A76D9434073EC3977416C6944
-            B00B5CE830B72DBA4CD7CD1F9E165391BA0466A59043A0C34AC5B6A6D21199E4
-            BA2CA37377A46652246A1BB2F3C17F185F882FD5985D85F583A3EED1C33A986E
-            471E810E6BC5A3A6E2AE59D2EBB2BCA9B92312E802DBD35C6E7334B80AFB3097
-            ECBD4077381420D061AD6CFB4DD1F1A9B281DEBCD526AA8984A8C094706FC25C
-            BA7D2ED3ED2840A04344F17AEBE61BA16CA312D6CE5DB13F90C5FE61AB2F619E
-            ED0689929F79C1BA11B668A208810E31F962B7A23DC7528556E9DAF9E4EDD301
-            15BE6E58CDA40814C1F525CC5DB4CEE5AC029421D0216623AC0BD6F9A4029D16
-            AF6ED904FA48A993ADBDEB3FDB7C7DC9E2B16604C23C9BE5985F8ADF8760DB5C
-            F40B810E51F942AA7CD19A54A033E5E856D340B71D3DF6A59A3DE5E4943A0E1F
-            4205021DA2B2A6198B68FA32F59E2BDE9109748AE15C6B14E80295D74E8F6AD5
-            BB09913077D20D31BB3C8AE1508E4087B87C45EF7A372B9140E74DCDB926816E
-            33D52E7026B800A1913947032310021D4EBC1EA17C7CA39408F4A2ED7090651A
-            E83653ED6D986697AAC9A83ADFC01AA709A2066F8C702237E27AE91A2710E81C
-            17E98151A05B8C1C5B51CD2E5464E6ECECF897CBA48912AA11E870265D4F8F55
-            3AEA8AA7AB3722EB110CD3ED5E98057AB39163EF46E6C27BCD737890452D021D
-            5ED9768A93D812857AFAFF4E6AB6BD333F6C323A0F5D002715E6D92CC387F18D
-            C3304F2E561D481C6E837E23D0E1956D0732B6ABF9A11DE80DA7ABC54E726B4C
-            A800EEBBA3CFD522BE14393DAD1CA3736821D0E19DCD696B14C4F9A115E80DB7
-            A989F735372439327FF8B035731AE68247CFA2FF78738477165DC018A978A237
-            42371FE53ADBD2A54BA800CECB347B4447449821D0E15DE3A61B14C479531BE8
-            0D46E77D1A993F7ED83ADF3C32581E4B4C3041A0C3BBA6EBA76CDBF14723D08D
-            1EAE5C6FE9AA2777329FB73EF33CC0C210810EEF9A56BA13E8FED4FE1B19545D
-            679F4B2D2E5D4F4F979309739FDBECD2D304DFEC5D7DE6E7FB83BE20D011C48F
-            B7C7DF9A161311E87E95152F9A7485B33F57DD92E028D7597FF6229CA8860608
-            7404D1A4388A40F7AB2CD0757B01383B3E549764019CDF3EF3147FA211021D41
-            34E91847A0FB5518E8066D5E439E692E591DFE707BFC471F05702B14C2A12902
-            1DC198EE4727D0FD2A0E74BD36AF61B7A775B000EEE5D229844373043A82311D
-            F910E87E1506BAC63476D82E70DD2B805BC3543BAC10E808C6B4608A40F76B33
-            D0EBFBB63B3D3EB486E8347B883EF3F46B8725021D41998CD23998C5AF8D40AF
-            996E4FFB9A478B681A667B9ADCC8DC73015C868E709040A02328C386234C497A
-            B411E835D3EDC18AE0BABA35EDE30DCC9287915FF8FD9AE823021DC1E94E6FD2
-            6CC3AF7CA06FEF3CBD2B9B6E0F7614AAE8D6B4F1D4FB0349BA6B606B7C40553B
-            2410E8082E9BAA55F14CE7EF56850A64AD077AD5C354B87573C169764FBDD95D
-            DD039022D0D10ABA539DACA3FBF36A845EB27E1E6EDD5C726B5A98D905938E7B
-            800E021DAD9006835AC497B5ED6035F741C3DE7AA0973D488509C36E17C0655F
-            5B453793B74F07CC364112818ED6D03B5E9302225FD6037DB27BB5F15E11E404
-            B5CE17C02DD10D0E2E10E868159D111FD3EE7E7C0CF4CD872893BA07315D2F80
-            CBBEB8BA1F45D1293FBF70814047AB2C0B94C637556BB2AC3DFAF112E805CB1C
-            DE47B74223F3B0057072F7011421D0D13A3A55D34C59BAB76AFA93EFD0E77DAA
-            5DF028D19007C610E6708D40472BD5F603A7382E089D1914E1AFD8E5DEECEB57
-            50DB3617B045A0A3B52AA77595BA8FE3D109BDDDFDF2393A976C871AB2008E30
-            872F043A5AAB7E5445C5BB4F8F77BFFAA5528B4B2FA3F33E14C06517A0EEA351
-            74C8A12BF0814047ABD5BF21D369CB17D3E36E9B921A99B7A0008E8A767845A0
-            A313AAA64CD9C6E647E1F9E8E2243BC0052C808BF8B9847F043A3AE1B918EB7D
-            14C7679B7FC8B4A66B7ED6CEFB5200C771A808834047A79476934B4FAD7A3BDF
-            A7F048DE738BD47B975F433200839DFCE6E05E0013043A3A67D9A52C1D2DE6A7
-            53A92676C1F9E85CB4002E4C6FF6B5ABA0A603C110E8E8A4B229F8B48BDC643C
-            3EA3E98C1C975BBE4447E69E8AF64AD11B018111E8E8B4E79EE2E914FCE1CB6F
-            A6D3EF5BE303425D86B36238C1000C5D00C7C81C6D40A0A317D26961B588DEAF
-            8E5F651D5386C3E9F6E9F6CED389EDF248F0AD69D945D0D215ED40A0A357D211
-            7BACE293ADF1E88211BA3D4723DFE964F7EA0B99EBA3000E5821D001147251DD
-            9ED538ECCC4F4546E6810BE00873B40D810EA050D6EA355253B14F2858DB10B6
-            377BC4343B5A89400750A874CF7F034A453793ADD1A144985300071423D00114
-            7AB83DFAA6B0335F03126D50298003AA11E8000A49159C49F534A7000EA846A0
-            03282412A0027BCDE9CD0EE821D0016C9029889339AF9E0238400F810E60836D
-            A06745706F9F0E6CB6A72DB7A68DA714C0017A0874001BEC47E8764148011C60
-            8E4007B0C126D025D69B298003CC11E80036340D74DBA9760AE080E60874001B
-            9A06FAF678B46FD33C860238A039021DC08626816E3BB2956C64D30C0570E836
-            021DC006D3404FA7DADFEC5D7DD6F4EB393CA655F306E4CE66074221D0016C30
-            1EA1C7EA60F2E9F53F9B7C2D46E6800C021DC006C3406F7CBEB9E401304D5000
-            873E21D0016CD00E74A5EEA35174D864741E3ACC298043DF10E80036E8067AD3
-            11EEE3DDF1D72AF9D87077C8343BFA8740074AA4A196FEBF8AD57EACA2FDD5EF
-            ABC28627EA5D618BD274041BC7B3D7BF17DDC471749304E67D1C8D665BE3F846
-            E29C70E97BD709F426DBD4288003DC20D03168CBD056872A0DEC38DA4FFF3F09
-            DB7DDFD7A19E433EF9C56C7B6B7C1E3AE0B502BD4130669F572D2E93879C7761
-            EE8C9139FA8B4047EF3D7C77F479AC46EF96C19D8CA4E3F8205470EB53B3388A
-            2FB7C6A38B10E1AE13E8DB3B4FEF4C3AC2A5FF0ED1229A060B73D6CCD173043A
-            7A236D1BFAF4C3F64116DC5174D8FED0D696846032B26CB82DAC09F5EF5FFFFC
-            71BEB829FDF3485DBED9BDFE4AF7F3C91CC7DA1CD5EC1802021D9D938643AC16
-            EF5436D2EECA88DB5E1AA2939DF9A9CD91A4261EEE8E55D99F8D943AD9DABBFE
-            B3D675A7FDD93F6CCDC2FDFBC84DB3A73F7B5B3B8F335FFF068009021DADB62A
-            4C4B47DD0B159DF63DB46B596C13335516E8265DE18287B9E034FBC6363B155D
-            A4750FB152B3C528BAF13983021421D0D10AE914EFD37C71BA2A4E4BDE880FC2
-            154EB59FEB29E46CBD5BE5AAF33F7EF1D3C9A7577FD2F93C610F5B911B99EBEE
-            994F1F76A258CD46513C4B835E7716039040A0C3ABD7D3E5CFE11DF0DCEB2E73
-            19EA556BDEBAC570415BBA4A8ECC6DB7D9ADB62EAE763244F134FDEDEDDDBFFE
-            6F90EF0D7A8B4087332F5BC2D2C066C4ED84C95AB6898A40D76AF31AB20B9CE4
-            838EF3FB48C33E8A2F4791BA54F1E89E90870D021D56D647DC8B481DC45112DA
-            84B73F49206C6F8D0FA4B7B695077AFD347636A25DA8F3103F039D0AF3126AAD
-            F11053F73041A043CB6A4BD84B7853A0D61E0E3A9F1506BA46415ED022389705
-            706DF15C88C7B43D8A10E878252D861A2DA2FD576BDC8CB85BCFB4C94B9DE240
-            AF7E7048C3FCF1C3F826CCCF8AE4D6B4D07DE69BDCFE32E85556751FDF10F4C3
-            44A00F58F6A6FDDCA79CE9F28E13EE825618E835D5EDC18AE004672882F79917
-            929FB657D9A85ECDD85AD76F04FA007CDC12B66CC24268F793E428BD28D0AB0E
-            620937AA1DF8C8BC81FCD6BAF1DBF9944639FD40A0F748E174395BC20643B2E2
-            7D23D095BA9FEC5D7F52F4772BF7AC3B245A00D79391B9A5697A38501CC769E5
-            FD948E78DD43A077D4ABE9720AD410C9065CC108BD70BB5A5604F7C3F8C27BF3
-            982114C0B541F220A7E268BA9AB64FD7E709FAF622D05BACB0090BD3E52823B8
-            969C0FF4B28785309DE098660F6D7DDA3E5DA78FA3D16C6B1CDF843EF677E808
-            F49660BA1C02B49ABEE8C8077AD1FA7C90A9760AE0DA6EBABE7F9E66397E11E8
-            0164A30246DC10968E9A265BA3438951D2EB4057B36444FC8B575FEBDFBFFEF9
-            C3D362EA77A987917977A9E4C12F4E46F2CBC0DFDE995F306D2F8F4077281DC1
-            C42A3E21BCE14DAC0E24B626AD077AD1D9E7DE03B14DBDD921A3A0C73DA3793B
-            04BA2314DAC03BC136B0B911FAAB91713A3A7F9C2F6E7CDD966CB11F23F3D64A
-            7E7EE3787442A83747A03B40980F9D9AC5517CE9FBAB4AF7FC7EBA3DFA32ADE9
-            D8DA793A5F9F1E7D0EC5433F37155DE81ED55A87D76537B83A7068080874614C
-            E741BA0D2BECF1BAEC109516D545A784BA39025D102300A426BB57BCAE5A8469
-            F68E12AA071912DE78843002C00A81DE1EBC2E3B2C3BDD2F3E935A721902DE78
-            043032C73A02BD1D1899F780C691BDF888371E4B8C009047A087C74376BF5028
-            A787371E0BBC69A008811E16AFCB1E624B9B16DE781AE24D036508F470785DF6
-            5B1CC587847A39DE781A609A1D5508F430785D0E005BDA2AF1C663881100EA10
-            E8FEF1BA1C100AE54AF1C6638011007410E87EF1BA1CA6AE17CAA9FFFBAF9FCC
-            3F8C0F73276CA60F2CB3388EEFB7C6A30BD336CEBCF1686204005D04BA3FBC2E
-            07ACA38572CBB310E6277A3FB76A3652D17BDD0717DE7834F0A6011304BA1FEC
-            3347AA4B8572E9F9088B28BA589DBA999E64989E1D9F9E34F7723F6AF12E1BB5
-            472A0DFD83ECEF691E8DCC1B4F0DA6F3608A40778FD7255E74A450EEE1F6E89B
-            E4FF4E9FC37C9A3C88BCAF7B1059FE9CABB334D8D3508F47D1FBAACE79BCF154
-            60648E260874B7785DA2508B7BBF3FDC1EFF3149DBD3E57546A7A6ED6CB38781
-            383E5B7E78F98C046F3C251801A02902DD1D5E9728D5D2917A36CD1EC797F9DE
-            F4CF217D50701FB3E43EA6F9FB7879904D3ECFF6D6F8A068FA9D379E028C0060
-            83407783D7256AB5B0502EF9B9FD47B616AED4F964EFFAF71F7FFFF8EFC9FF1D
-            96DF4B7431D9BBFA6DD1E74ADE60DE6FEF5EFD77FE4378E3C9E14D03B6087479
-            BC2E61A22D8572AF46D56FE7FBF14FFFF69F8F7FF631D0E3E7E24EA5D43B15C5
-            27F1F316B67C703FDEFDEA974A2D2ED375F8A27BE48D670DD3799040A0CBE275
-            09632D997E7F199D47EA6CB27BFD87D77FF631D0D7DF3396DBDA1637CBDB886E
-            DEEC5D7DF6EAE356EBF1052378DE789E31028098E48516C7F185EF2FEB624492
-            8E081A7D0BE2C5BD4481125BD3602570A15C12DA2AFDFFED9DA777EBA3F3E73F
-            2B0CF4F58F2BFAB39735F948CD9287845FBCBADD5037DA268C00D00F9B2FF0C6
-            9FE9FFFEEB278F3F6C256F1A156B7C15CAD6F84CF0BA84B55C219A4FD9F478A4
-            A6E9AF8B66ED4A47E8CBD7DEFDEAFA277BD79FBCBAA5B53FCF7FDEC1073A2373
-            F489D474FFFA9B91B182A94053BC2E212650EFF72681FEF0DDD1E74A45EFE328
-            3E595E7BF16B69358227D0D7F0A681BE091EE805C53FA6785DC205DFBDDFD75E
-            43D3E475F945FECF75AADCB7DF3E9D15BD9608F41CA6F3D047A103DDB6BA98D7
-            259CF15C286717E86AB6BD333F2C7B3026D05F7D331801A09F8206BAE5543BAF
-            4B78E1A950EEE53554B00E9E7ABD6D2DCEFE7FA1D4C56ACB5A5121DDDAC712E8
-            D9378211007A2C64A06F8F47FBA6C73DAEF0BA84379E0AE5D68BD78A5E1B456B
-            E8AF5E77250FC854B93F630480BE0B15E836EB936C4D83779E0AE59AEC43FFF1
-            EEE87FB2A2B892AE772F7DDD739DE752830974C21C431028D00BD70875F0BA44
-            48AE0BE5D6679E0AF69A1706FAFA6B2FDF5826AB825FC497E9B4FC603BC5319D
-            87A10811E84DDF14D337A748A56741038178E8FDFEE3EDF1B7CB007EDD9BA1AA
-            B1CCEB59AB8FA3FBD5E83D3B1FFDEDD3417E8DBDF781CE080043E23DD01B16C2
-            65ED2D9FE6B3E7B3A181A05CF67E7F35A05C3B3AF5656A3DDA7CDD2ED7DFC7D3
-            E7435DB2ADA0F30FE3C3E5DA79545AD8D7EB4067648EA1F11DE84DDE08B391F9
-            229A12E6680DC78572AFB6A835390F7D7D605AF110DDDB4067648E21F21CE8C6
-            6BE78CCCD16A0EB7B4AD877AF2DABA9CECCC4FEB1A302D0F6A995F2E0BEBEA5B
-            2AF732D0199963A87C06BAE9E83C9B46FC30BE21CCD166AE0AE59EA7D14F3F8E
-            B4D5BD8AA3E9288A67B15233158FB22D6EB15ABC53717C90BCFE4E56419ECD20
-            C4D1FB7CA57C5EEF029D913986CC57A0A7238C37BBD75FE97E3EDBC35E006F1C
-            17CA3D1783A61975A8773DD1C5F6D6E8BD4E8F875E053A618EA1F33642375807
-            7C55E0037484CB42B954F6BAF87F5B27B18AF6552EDC9317F1341DB58FB7C633
-            93664DBD0974A6D901B940AFDB5256D596326FBD9A17E80CCFBDDF25F422D03F
-            B6C203864D2AD053AB7ED19B36BB5E95A10B1C3ACF53EF77914B0D7D01B61899
-            031FF90874DD9EED84397AA3C156B33097D961AC9903AFB90EF47C2BCAD28FA5
-            0B1CFAC4434739099D0D74C21CD8E43AD0EBF6C1A6B2823AB5B8647B1AFAC675
-            A19CFDF57510D3EC4031E753EE35EB8954B4A3D75A5E28D7B94067640E94731C
-            E8B59DE15EB5B804FAAAA585729D0A7446E64035B7815E5DDD4E111C06C371EF
-            F7A63A13E88CCC817A2E03BD6AFD90876D0C4E0B0BE53A11E88439A0C759A027
-            6F5E93BDEB4F8AFE1E07AE60C85CF57E6FA2F581CE933FA0CFE108BD74FDFCE1
-            F6E89B24CCCF42DF3B10448B0AE55A1DE88CCC01330E47E8E7C908FDF71B7F87
-            3007965A5028D7DA4067640E987315E845EBE74CB5036B5A5028D7CA4067640E
-            5B6947B3388E6E96FF91FE3ABE30FE1C917AFFFCAB775DD957ED24D04BD6CF7F
-            BC3DFE36F91EEF87BEE7C474F58BE4C1E3BDE9072BB538491E4A0E96BF8EF65B
-            724FE8A22CD4A3C35023F5D6053A237368495F38713C4B42F77E1425FF9F8477
-            ACE29BAD9DC799EE29604D645DD062B51F2DD4C173081C86FE56AC733442DF58
-            3F0FF4D03D4DFEDD67C92868E6FADF3A6D90F3F4C3F6F3439C3A5C44EA207958
-            4867220E3DDF333A2854A15CAB029D91398ABC8CB69337F364A47D5FD77AD4B7
-            F4B4BF791C9DC62A79B30F3CFD2C1AE8B747DF2FEFE7F5FEF374AAFDE1693175
-            3E924D1FDAA2F83219F14CDBB2DF377DA04B1F241E7F189F26038FFDF4A18E51
-            3D3604DAD2D69A4027CCF16C1AA7FF4BC25BC5A3FB36EDF1D491AD2BCFE7274A
-            C56721DEE425033D7D505149606DED3C9DAF8F845D9F6F9EF68B57B1BA0C5D60
-            646235A24F676F9207BB7DB51CC91F86BE2E84E5BBF77B2B029D69F681799E2E
-            8F5ED6B9E3A98A17F75D7A03AFBDC5E40D7EFE617C988DDC1D865F9E64A017C9
-            961C223515FDA4C9CF838AA3E938790F18BF9D4F5D2E99F8963EE03DCDD53ED3
-            F603E5B9502E78A03332EFB797E9F238BA48D73DBB36E216F91EA407967CD83A
-            4FCF5476FDB55C07BAF8E85CA9F3EDB7F3F77D0A715D2FF5182AFDB9E84EE125
-            0C792C940B1AE88CCC7B2237E2EEEA74B96BCFDBBCD23DDBA7AED6DA5D06BAD8
-            EB355B1B8F2EB6B7C6E7F1CFFEF22F57D7DB35AB69FB582DDEA9E7B5F9285DB6
-            515901265B033BCE47A15CB0406764DE51B9F06E5B815A17B81CB13B0DF4BBA3
-            7FD88E2255A42E273BF3D3218EC86DA5EF99E9DA3CD3F61DE5A1502E48A013E6
-            9D3065C4EDD6F37AF4FB48F0CDD955A00BAC9D4FA3589DF5A94EA20DD27F97D7
-            23FA6434CFD47DABB92C94F31EE84CB3B70CD3E541498FD65D05BACD39E769D5
-            7ABE521EEE3C7C77F4F96811ED336DDF520E7BBF7B0D7446E6813D87779C75D6
-            8AA784767B642360B5B8B47DD37511E86940442A79E83315B86B16362D675A16
-            E928FE84FDF38139E8FDEE2DD019997BC574790765A3F51FB62E238B29782781
-            DEE8001635DBDE991F322A6FBFCD697B46F45E3818A97B097446E68EE4A6CBB7
-            C6A30BAA86BBCFE6043327816E5A0C5772321BBA655975BF75A6947A97B53926
-            E4E50917CA390F74C25CC434DFB39C1177BF350D75E9405F76BE5BDCE8FEFD74
-            BD9C9D0FFDB63EA2A7598E0CA94239A781CE347B234C9723F3707BFC47D36239
-            E9407FBC3BFE5A2521ADF59793D7FA64EFEAB7DEBE41680D0AF12C094DBFBBDC
-            B3CAC8BC42DA416D144717BE4E094337998ED4A503FDE3012DD51899A348BEC7
-            FD4245A714E255B02C9473B3C58591F93AA6CB61C564A42E19E8DAD3ED8CCC61
-            8869FB1296BDDF5D14D00C73644E811A1CD21DA94B06BA563319C21CC2B2659E
-            214FDB5B6CF7949D9E1B46986F8CB8992E870F3AD5E6B2815EB77ECED634B8B7
-            7134ED2AEC7B3EA26F522827F6E2EFE934FB4B7853A086D0965DE5C637552316
-            C940AF9C15484611DB6FE7FB84394249679096BFEAE9D1B40DB6B489BCF8BB3E
-            32CF17A811DA68ABA7DBA32F17717C59F6E7A2815ED5EE358E4E7D9DF10C985A
-            1D4D9B8DE82375D2E9FEF6068572D62FFEBA37989679D912C67439BAAAAA48CE
-            47A053D18E2E7A15F25D9AB6372894B37AF1B77C64FE1CDEF105A18DBE29DB4E
-            2615E8CF67B7CF36BE0653EDE8999735FAE71EF7511B435EB350AEF18B5FE038
-            45096C09C320953D4C8B067AC1963546E7188AF5117D5BD6E8474A9D54359F69
-            F4E2CF4E5F5AA4E71B7BDD4EB0315D4E7863C87EBC3DFE36DFA4432AD04B1ED8
-            A7C9E7FF22F47D03A104EF8857532867FCE27F3E11EADEE535A7A300D6B8816A
-            45F52B2E03BD6E74000CD5C6D63AC78578655BDAB45FFCD99BC728191D2FE24B
-            A1D67D4C970396F2A374A940CF9F819EEE0479B377F559E8FB05BAC45947BC92
-            3575ED177F5684937D44A3A9856972059771349A31E206E4E447E9C255EEEAE3
-            7FA9B3C9EEF51F42DF2FD0071B85780DA6ED8B46E9DA2FFEA2F5BA1C46DC4000
-            EBAF4D1781CEE81CF0C3A410CF2AD0D3AAD7A7F9E254AD3EB952B3388EEFB776
-            9ECE197103E1ACB76815EE14B7DC1A47BF7620A8E5887EEB4C29F52E794D2ED7
-            E66375D678CA1D403BAD5EEC697B62C9A2B5743A3F5DFBE3A11DE806021D0080
-            1E20D00100E801021D00801E20D00100E881FF0FF07A2A6600A1F8CB00000000
-            49454E44AE426082}
+            0954506E67496D61676589504E470D0A1A0A0000000D49484452000001950000
+            01C20803000000100EA44600000300504C5445000000F8C8000097D70054D8FF
+            FFFFF9C9000055DB0054D9010202000408FFFFFF009ADCFCCC000D0A00FBD954
+            060500FACA00FFFFFFFFFFFFF9C800FFFFFFF9C800F8C80076A7BBF9C900FFFF
+            FFFFFFFFFFCD00130F00FAC9000051D0F8C8000053D5F0C1000098D8F8C800FF
+            FFFFFFFFFFDAB0000042AAF9C800FFFFFFFBCA00EDBF00FBCA00F6C6000097D8
+            FFFFFFF9C900E9BC002F2600001536F8C800423500E4B800FAC900FFFFFF004E
+            CB1E1800BC9700001D4B0049BD003D9E0093D2002157FFFFFFF8C800FFFFFFC8
+            A10000060F0090CDFFFFFF00121A000916FFFFFF003384FFFFFF3D3100F8C800
+            B592001914000097D7FFFFFFF8C800FFFFFF4C3D000046B5000B1C0018409276
+            00004CC5F8C800002A6D0084BDFFFDF4008AC5FFFFFFFAC900F9C900DFB400A8
+            8800002F790099DAFAC90000112C00293AF3C400000E2400090E292100544300
+            241D00003995F9C900FFFFFF614E000019250089D8FFFFFF6B5600002534F8C8
+            00FFFFFFFFFFFF0025619D7F00000000F9C900F9C800CDA600D7AD00FFFFFFFF
+            FFFFF9C800776000F9C800FAC900FFFFFFFFFFFFFFFFFFC39D00004969FFFFFF
+            D2A9008269006652000071A0382D00AF8D00FFFFFF715B00F9C8004538003329
+            008D71000075DA0097D85A4900007DB3F9C800F8C800F9C900003B55FAC90000
+            54D80000000097D7FFFFFFFFFFFF7D65000097D7F9C800F9C800FCCA00987A00
+            886E000077A90097D7FAC900FAC90000378C0097D7F8C8000097D70077D80005
+            09FFFFFF005E860097D7F8C800FFFFFF0053D9F8C800FFFFFF006A97FFFFFFFF
+            FFFFFFFFFF002F4300354D0096D60097D70053D9FFFFFFFFFFFF001F2C00425E
+            0097D700557A0054D60097D70053D90054D8FFFFFFA28300004F720097D7FFFF
+            FFFFFFFF0054D80000000053D9FFFFFF0055D6FFFFFFFFFFFF060A0A02020000
+            97D7F9C900000000FFFFFF00597F00648F0052D3000000000000000000000000
+            FFFFFF0054D80000000054D80053D80053D8005377B49100987B00FFFF00F30C
+            0000C90100180000000000000047704C47704C9B6B8A2A0000010074524E53FF
+            FFFFFFFFFFFFFFFFFFFEFFFFFF02FFFFF791FF1F44FD016DCDE2FFFFFFFFDFFF
+            FFFFF98040FFFF9168FFFF09FFFF3231FFFFFFBBFFFF200BFFFFFFFFFFFFFFFF
+            0FEAFBFFFFFFF3FFFF6EFFE0FFF0FFFFF49ECE06FFFFFFFFFFFFF4FFFF03FFF0
+            153FFFFFFFFF0DFFFFFFFFFFFFFFFFFF56C0FFFF101BFFFFD61762FFFFC34C60
+            FFFFBBB5E5FFA2275A76E7FFFF12FFFFFFFFFFFFEDFF79FFFFFF051CFFFF99AD
+            67FF1AF721E77CD4FF72818906FFFFFF383911FF4BC2CC0A1052FFAEC79760B4
+            DAFFC8293EFFFF5E2A16A624FFFFDAFF428A2CED2DFFFF9FAD4BDEF28D8B7747
+            3855E3BB739886FFFF9F073CAA6EC3B585BECFC5EADFCF0AFFFFFFCEFF0000B1
+            12776500004BF44944415478DAED5D795C14651F7F8C497745DC4451C455F148
+            C39612C80BF5D5440A2C8354D24AC5500C04EF034C5330D3D03CC834CDA3C47D
+            2B5F952C35AFB4F200B3C023BC3515156FCD134DCC77E79ED99967E6996B77ED
+            C3F70FD89D7D767676BEFB3CBFFBF7547804CAE171A850CE8A07A29C154F4439
+            2B9E8872563C11FF3256BE8ABE07BC6F1C7AC9DDD7A111FF2A56AE9406F838BE
+            4F51CE80C79C977F132B5FBD7AB32EF9E8B8DFAEC79A967F112B572B34BC413F
+            3E5E6DC35BEEBE1E0DF8D7B0E2FF5B00C6796A1EDDF431A6E5DFC2CA95D20A75
+            F947AE3EC6B3E55FC2CA15AF6B8D9D0E99CEFDFED8CA967F072BFE8704A40060
+            29FEBB86BB2F4C25FE1DAC9C715EBE70988E99ABBBFBC254E25FC1CA57472689
+            1EBFFAB8AE61FF0256FC73821BDE137DE578C5BA0ACFE52178DC59593B1980F5
+            22428544C9938FA764790C59C99D3835B793A5A0426244FC2A90350FD8CFC148
+            0165672E5E2DBB7C04449C19E0EEAB5684C78B95E0B473CD0A6CB7EBEDDA5205
+            F8ECBA75D97128A857B5C1D0F19695F30088AB167C7B7FBD8BE0F2919C0BEEFE
+            0288786C58C99D36AEB096696EE48135BCC35893814325DE9537763BF52826EE
+            3F876B1EF62EDB31CDDDDF04018F032BC1530F5C6C5B63CEEFEDBE723CF1BBCC
+            7B0DDBD7EA96C45BA3BA142DE23EB7075D68B0BFD2656BBC67CF1A4F6725D87B
+            5C61FD7A1FD6DE7C59F4656CDAB242C9F7170E3F73CAE9500C9860DEEF5D63A5
+            074F1A8F6665EDA3EBFFD4DA335E6244E01BD9F7244F1195F4C322B1E331031B
+            ECF73EDFDFDDDF10028F6525776D8568EF64EC4FC94141E15756CB9C67C6F7DB
+            612FD9AB35F8ABC8FAB2BBBFA9083C9395DC63A5C15F3F38F0A7CC304B93FA2B
+            E44E35EAE2BE22F8AB3171A17F5DF43C05C0135949786AFDDC81728CE0B065C6
+            DF921DB437546640C1D52A451EB694791A2B96EE6BABCFCD5E8334166B504520
+            EA87D6AABA19BCF268282B6D924F5C2892399143C89CF8B98907199A9EC54AEE
+            071796CCDF751975F8AC8937F8074C036B5CC801E04E669D11CC2B51EF4597CA
+            9F2A66E0AD4A9EB39279122BC1DD97BFBE189912601951EB5DFE11D3C00D9708
+            362CDD6FB202A770F875B9C942C01EFA97A7AC641EC38A65EE89C09C9F14BC01
+            4B6CE23C55E6CFBC441DB18CDFC1286705B3CD8BD04E1933B04EE97E4F58C83C
+            8495606CDD10D3578ADE12D4F3CA1CFE91052B8E9CA51F27DB06D10F539B1421
+            B202F00973E267F72F641EC14A6E52F5D73F52FA26DBA4D7F907C2FD7E28639E
+            0425B093E550D276E4B33A264C4A9555EEE6C5035849F26F706EBCE277617DF7
+            F015309F19730EB3AC60B6544646A417CA6A613CC4CC395BF4C8AD0B99DB5959
+            FBFB8B33D114613EB0E5EFF0A5CAE29947CB384FBD87CFA66D99D41BFB14B1E2
+            E065C2B1FA2DDD7853DCCC4A52E5E773D570E2980BD86FBC03430FFCC2250558
+            26FE498B1DF3A9DACA3F60DDAD9BEE53C8DCCA4A70F706EA38714C858F7EE479
+            C02C5DBE711A918C7D423D32E5F553385770C4CCC9731B2F6E642578CAD5654A
+            54612E30EB307EB02BEEF4512735199BCE28CEC90795887B063173F6B9491F73
+            1B2B9686F7FA2897F1349CD5E2D8CEE9779C86F8668EA5054BC1EC9DA7547D4C
+            CCD41325EE10FBEE6225A165B1625D988BF1D379719591B9A79C47607D0FE551
+            0F9D23920A60B795BEE6FAB8A57B5849AA1C3918C5290C83AF7F339E0B3FB6DD
+            D8328931A9EF37447085415070CCF5E2C52DAC840C552D5048601D0E9FE53E9F
+            72F633E1A0E40E3DE987875E50CF0A00C5FBBC5C1C1A73032B09EBDFD1B47839
+            80FDAF1F57B60F3D507248382868502AFD10D5410981DDB67B9C4B973197B392
+            9BB4A2BF96C58B40E00BBC056CDE6787CB8483BC5B57A195E7BC05DB4F69FAC0
+            75D56EB83265D9D5ACD86F5F53AF79D1080A78369BF334BCC2F54362A3D8FC3D
+            74B73104315D5F3DBFDB75DA986B59B1D8275DD73C511CB3208717191E59FA99
+            D8286B8DF6B41D09CB74414660DBDDBFFF7EDF65D2C5A5ACAC4DAC54ACC369B0
+            C4A65C13D21AF64399F8309F2CFAF12763B5887B07DA8FFE30E5A58B3657DC25
+            E05A5642867DA0C34471CCB89A4DB97E9AF9732E5C131D17307A18FD70F3482D
+            D21EC7970B7797FDE5AAE9E23A56727714E7EA7326EF8C1D1C1F98E9ABEEB071
+            EC422791158688E9DFED04609FF96A0B836F130197B16237E7A874440AB1AA1B
+            E749689F8587C487713C98F9137FD4F899851F7FEDF8BBF4B5932FB940477611
+            2BFE0BAF8D41CF93904120CF3339AF686199F8B8A06A8F689F4BC15865812F21
+            3666169FC3FF1F3EEB8255CC35ACE4EE3069351C5960B6044EC58A885F920627
+            C412556B8F36566C0396DE3EF9107FE48A55CC25AC24BCA2DFEA8527E7DDE5B8
+            5BBA5EDC03992AC06A66B2F8523B4FD0C8CAF397BD3613AC80A5AF9E7ECEB87B
+            45C015AC643D5AA48BEE4581E3A277CC87CF7B4107722655E4FB1DB57DA82DE4
+            E20B53E9277FFD69B045693C2B163BD64F379142A0D70FAC13CC3A6C6C197420
+            D69C8E229B4F0668FB4C9BFFD4E94FAC7C483DDB77D958E162382BC1A327E861
+            397231268B7D1C771062AC10E841BBCB4C7B9ED5F8A19D3367EF3D49B362B470
+            319A95A4CE9F6973DA8BA007C735F9669194BC98CD286B852F68FCD0F6B3C293
+            E63D649F9F37D2D0379815BBF95B651991F2E0A960B1ED32EE488C6567554E3F
+            8D1FDB7E7E50EF1D673807AE9F368E166359C9F2D7CF4AA1C1D1770118B2EBFC
+            5989B17347D071E4E4055A3F776364AFBC73DC0306CA7C4359E9BFBF40FF9306
+            3D7D398F79327B7499D4D805A3993417ADAC98A70EE959B29BF76987CF1E3788
+            162359A9F91F9D1C5F3C78EF666BB9631F6D915AC038DA5AFA798D71AF015D7E
+            5CFCAE53BAB961B418C78AA57FAEDECA178180894398F49639CBF648CE159615
+            D5C9473406B4FEDF86DE5F3B1D5CDAF688211AB261AC04F778527BD0510CDEEF
+            BDC73CCE1E263D96656554B3C9A7347D6C60DB61614E82C5817DDEF38CC8E333
+            8A95E02B838D2105B3769B413FF6E9B9587A30CB8A86943012816DAB7C96B2FF
+            D7874E8797B6996F002D06B1129CB25E47CF1717988D89FB82F02B272517305D
+            59699CD926F2D979CEAC386831C09E348695E0941D7A9B29342C352D4C32FEE2
+            9907A507B3AC684AD4C361AB362B14242E15B062082D86B0622029BCCE53D286
+            3DE0B21239265663E4DE3C6924E8F8E745E1E45CFAD274BD17312358319214E0
+            DD9AC93AB2D6DF77477A30CB8AF97BCDACEC6C7D2FE9C0AFC2C962C06C318015
+            4349E106EDBB1EB974437A30A7205F5B52AB03E6D5D33647169F1461457F5AF4
+            67C5585280F7F345F49DCE3EB2505AD883316C47A4191334B232A0F7D4F5606D
+            77D14FD45B13D39D15834901DE11DF518F2C5DD6C82C605C9FBF76566C3F6C00
+            E3ED67445FD49916BD59319A1480A57F403D8224B272A1272B81E30F7E0CC22A
+            168A4F4F7DAD7C9D59B18CD8A67B38850FDBE081D4A305BB73641630B088AD3C
+            D11C60C18D7B107D7B37E433F779FFA89F4F4C5F562C230C72B3B048B6D20E97
+            213FC926487C96C43CCCB11F3FA5ED93DBB7F908985BEC84BDAC272DFAB29251
+            D16852D86430A93C0A1A2FB0D5DFF913B5B202768403538FAFA12FEBE841D695
+            95FE378C70DDF3C0D6D5C93AC10016D2878D5A6A9F2BE0CBBE00B43B7B06FAFA
+            E1BB7A6524E9C94AC89457F43B1904BEF5AC9483CD3A728C8C58E1E483E9C2CA
+            F471F740D281DDF04FFDEB944E41631D59B1D77D51B7734181D92A50773AF451
+            910C2B96E19CF26F1D582969500A7AEE15B52329E815CBD78F95B557D2748FD1
+            0B81850450A6FD62D9800927CF58175636BE560ACC2BBA49B0B2F4D533BAD0A2
+            1B2BB9FFA4EB99200903D67723953EB1FC97CF64C6F2BA8AE8C0CAECA39F02D0
+            FB7F0FA5C61CD5C59AD48B154BFF1A86AB5F38B0A9B329560EBE7C56662CA7ED
+            911E3A986D58A18395760F0BA516CEA56DF5D08FF562654DBE7E49F752F07D66
+            3F79A77D9E93731883804F397DDDB4CF155B888F8395B0CABF4A4E967D973B6A
+            FF963AB192F59CF1EA1701DF765B4956C46BEC7908EACD46F8B57B5CF004F00D
+            0044FF79529215F0D79FDAF5637D58595B34CB05929EC02AAA59DB9CEBDFC8B0
+            C28DF0EBC28A7F28BE1E0C9B27CD8A1E8A982EACE4B61E63AC4B92033A901577
+            FABC8C5CE1F76BD7CE0AE8DC08D72FF879AD22C0CE9CD21A6DD185958CED06BB
+            2439A05919997B56C65CE1EF62A4032BEDFB3B8C7BD0AEF89CCC38ED125F0F56
+            426674D67E12547C38890C644D992227ECBD5BDF65CD15D3AEB63AB192525828
+            E7AADEF750A368D181958426EF693E073AE890C9B7A9253223BD237E6603C8DA
+            B32988B47CFC4CD5BE936345B3EB453B2BB9970C8E73F141B1E2B3B4AFDC5CE1
+            1580A7C6686705143677FC31AF88911DA855B46867A5E63097988F342856AC9B
+            5ACAB1C2466200BE87815D5B969E0381F9B51C7FA59CF90C348A16CDACD8B30D
+            A8869000155E0CF73B26A318FBFA477CC23ED39C3B09886209FC5FBB7C84B1DA
+            BCFA5A59092E3BA2F5CB2A03155E940FDAB3DE651C9AB3BF01CECA185CD380C6
+            EE79B87150C31AA6959511FB5CA71413A0C28B43EB2E916365FC428E41A3B952
+            02E0252C0BD63BFEA5FC2863DD9338BA55FD1AA69195D6535CA81413A058098D
+            5D28E79CECBF9CD3442C3D5F6B7B1D9C95F91B1CFFA29BCA59F704B438C4B4B1
+            125C76CD559E161A342BB74BE558F9269ED35C37AF9DF68F1ED0FAE0C78E7FA6
+            88CD28AC801B2755ABC7DA5871F9FAA58495C11C61AFBD86D88101A57508C7F8
+            F8A968E3D5AF619A58693DD1459E620E5059C1FAB6E4EC2FA5BD0B0260599109
+            B13050BF86696125F7D12057AF5FE8ACF0C2C3C0FCBD0E998D81ED2B13E14FB9
+            100B03D5DE632DACB8D87E2481CA8A77574EB71790DA44A6821205818D7BE38E
+            30998C0A2E8EABB42535B0B2F6EA3BDABFA96220B2E21B903C88F354F9C63822
+            C08BF0F0FFA696BB105951EBA6D4C04A66A141A58F924064C5D2BD4512E7E9A8
+            CB1ABBB6E1A0E70A786503EA5BAE1E55654BAA67C5F5A60A014456786E7C8762
+            9CA1B5EF248EC09491C47F58BD84104BEB7454F341AA59C9FD27C5F5A21EA0CF
+            951E76EE5620DA7BB4E2C04B2371C807BE18A8335A54B31212E706510F9059E1
+            EC1789E382C6A66D24685692F6A1A9C63854192D6A59097EDB95A12E0ED058C1
+            6C49DCDD7023BB6AEDFD4DC0FC7B1079BA7BBB915951E53C56CB8A0B6A22C481
+            E6076393F9088C6AB64BB31F1FE005ABAF11E446169F4266059C2F546E2AA964
+            C53D5A310E8A15194FBED3062D9A77FA2081971113FF3B212B61005B1CAC7CB2
+            A86465C4097768C538D05871DAA0A5F0059B76C5986505291CC9408576AC8E95
+            A4375D5014210E24567835128EBBF8E1F74DF559C1BEFB947880148EA4A1423B
+            56C74AE631572650F080C48AD3062D910F3ECB1F10784AF36713C5DD38C2AEA2
+            1A2C38AE1F563A5954B1B236D3B5B17A2E5058E1E7B202907279DF97E659DA45
+            0BC38A64C59700CA278B2A56DCE36B2141B5CD95EC6D1894B88CB79F77AF5D25
+            B14DBA94BDAF7519635841F74F12501CC357C34A42BCDBA40AD3A2D867D82C38
+            2BD8BE50AE616FEAB1A2CC2BCC66796BAFC6658C6145AC519804144F1635AC64
+            EC71DF5461B2F4A45809E42F6091F77F75AC3775EBDDF9BC4E9AA6658C0ADCA3
+            07896928952C2A58496AE32E5B050742EE24D6A006D7330952AEAFC2A500D6F2
+            51F3876FBE7FE694EACF0E6C5BEB63F2914C1D9E33944E1615ACF4BFE2C6A982
+            92678C2D7F87D7A18A76263A56B1B38D12342C6344D31002A2EDDB24A0D06651
+            CE8ADB3C60246856968F80B2E264429A22684B1CAB5DEFCE81D4DE33D446C058
+            565043F7341486BF94B3B266B0216D8A514137625BDE1FB68205259CE1EEF1C9
+            5398B0984BBF827E41ABD469632C2BC8A17B1ACABC618A59C97D14A7E60BE906
+            BAAA287B36ACAA08B3F7E43DE7FDAE1DABD8CDE5D11FAA5BC6585614AAC68EC9
+            F248499C45312B21D1AE29168681CE885C3CF3A8382B4EBB493A24F30AEE407C
+            152B00A3FA7FA4421B635931D753C80A38DA50C160A5AC580E85B825044983A9
+            EC5EFC29A46188F5E5153C591F7DC729F7C12BF6D2AFA5E67E197D8E5751285F
+            A87A551CB235ABCE505468A49415FB6AC3DB1A4982D9D9BEC50D482BD0C0AE9F
+            F09E87355DE5441FB18A81D4B72FCE52AC25BF4BF7C348DCACC41306F08A9640
+            F4C14A5971A35F9200165242B2026BD0CAD046432CFFD461511EB807A2664D51
+            9AA8CFB0829E5041438972AC9095E051EEB420018795D098E5A2EE49DB9B93B8
+            DE1648F73BACA5D7AFA5C0346C789FE3E094828F6758E9F82772420585A50AA2
+            5F0A59E9DFC84D81611A58481B52ED0DAFBC4B4C35B64CE43B2669C3DE19B845
+            B91E80D4B794F92C1956D04A8B7838FF1D725E8532562C4BDCAB1673BAB6411A
+            7F637347F31736D852E3D0C502BE71FCC7B564F48F675841A8EF76C6E17BC8F2
+            5E192B6ECACCE3C0B71E46F5928C1173E50BD4E2C8FBD0EC53AF561D66E0C911
+            055EB3B6A32E630C2B917EAB94B2A2C019A68C9511DFBBA2079824187FF0FB1F
+            89DC16DF41D3795205F462B7DE14C0CB3F3870AEE3BF796897C595D096319615
+            25692E14AEEE42B5EF15B1E266171801A647EBE77384D6063B9328983B49BADC
+            B1C02A07701653DFFE6D1852BE05C38A440B5D28D053C314B192F5D0CDB2DE01
+            5B7FAAE6615E91B0979E356DEC2DDE01B950AE572BAF2789B495A8C86A284E18
+            961505C9470C8E07220E54C44ACE24B72F60C066A3B27E44FA4E624D9AF1BCC5
+            C0D46789CCE9B05AF3D6CF251E8D1A95B65DD6D8675851967C4401D96451C28A
+            1BF38D58587A5012A04559B1F30EC496C15FF02DC894FD08590F8D435613B2C8
+            BCA5511FB97E7B0C2BC8C5915C20FBF395B0D27F8B5B7DF824983D25849D732D
+            237E738AC7C9F6F2C281757FE222B18A39AC974B324E18961545296134506BBF
+            94B052E25EC72409EF0C2A83D8FAB2F3E605C956BE590F522EAF46F1217AF9D3
+            AB1890F3F1B3AC284B09A370FD03B40EAE0A5849E8E0666F0B01660729C1CEF6
+            58970AAB79074C3D769C47535FBD1AF8159049FBA69D9219172C2B4937151B2C
+            E84B980256D6FCE17E0D8CD321CF67EA449E5CE16E8E470271AAE0F0EA41AF62
+            0EEB45C239C661E580C268240E54C7B102563233155F8501600A1E2D5DBEE11E
+            C7AC6F64F147CA2B601C7805C4DE9B4F3D4E6DF9D72A88786159511C8D248068
+            48A2B3E2092624C0EB8552C95E54A609E3B8C76DB14EFA97C2B45322A44F971E
+            454D8138C738AC9C472D24E602D1904467A5F5050FD0C0B825DB2367720E5B9B
+            3E9BCD1FA8D8CEF30AF3ADB29C7E734AFF293B4596319695C8A1DD54B082E80B
+            436765C425F7C6BB68048CA68CFBF973599B2FA8CC59A8487AC0C4E1154004C3
+            4898860D1F536997B355C9B222E3CB8101AD4C129D952F13545C8401609A4E70
+            B651B7D6E83497AF1483E8A69F29D791BC5A75F87533FDC4BCF5C1E40B4EB4B0
+            AC88EE7E2B0FB444706456D67AB9BE938E28BC7B6D2005C8E01AB3A8500A664D
+            9C7ACB6998D2EC46125EFEC1CC2AE66076C2C559FC981887158549AD14D07463
+            64563CC2B0C71154ED052A1A49B79EF40DB0AD752625E5B27C7F5B316065B403
+            8680B3D392C3CAF8E9AA3EE0C75E17E40721B352DBDBFD9E4902D6C4D5640C98
+            6ED38A3DD3EACA6AA74191150FA830BD0978B5AA7F7133FB14CF1C639D961C56
+            D44D46B4244A545682477A885871A8C60954A3753201DC41CAC13CE7411DEF17
+            A8595FC80FA8356FED7CF6A979E8B0342656C961A55DB11A56B02B8710040B2A
+            2BEE8F0DB3A0CABDC014FB217CF912CE14D4869D106020A6A480D335C1DCEFCD
+            C981A478E1B0A25CC723802458505959B3C89DE5117CCC1D412EFCF80606A233
+            25726877556B3E032C14CFE36391FAF603A2EE05DFC89386E2047012484E1754
+            563CC3DD42620195C632FFB75577C44831F5D8A63459CB1958ED7ACDE6730F44
+            4DBC38EB0C60F28C816A56C0793FF93188ACB8BC99B414E804F0D03EEFD7FF20
+            47B07C8176F554AD2D3C60A025153BA61135A5B8DBDB1C56D439C200B89E272F
+            EE1159595BD973C40AD33E3AF676FD1AF36E095E4FBA86EC2A96FC985A64060C
+            8B51B55B786B6705252D0C9195D6AF7982179F041682918B9625D334EC9EE065
+            B5774BF839B52BF9FDCECF8EEDD0F853E689EC065F10A0746E4564A5E64B9EE1
+            04C3C1A6175944F2BF7BD69EA3EC7412A0D25EC5616EA1C6690C90325D105999
+            FFB187D890389894301144A7A4AA351F45401452DE83BCF81F95AC2038281159
+            F114D72401DBA4D7612F45066E460C0A23C22BF6125FE8B350CB0A42FE111A2B
+            C126F7356E1100AB94D30DF25264E046556E100978F977BB375FF415C5E55E14
+            10C43D1A2B5937DC5B0CC90566FB6F1AC4A23580141CDD79963E83440501682E
+            100A59D058F1188731E65D6DE42F1B6E89BF189D32C8085278414A0E7A6FBB50
+            419DDBB8A3DC083456DC5D774723A8E3BED6CB61FD26539E5CADAF4C61E0F5B0
+            71C87782E912F9E07CE905358B987CAE1E1A2BF307A18C321A585944377B1EEC
+            D5A483CAB3E491E1D5E389AB421DB9E7C5F3F795FF10B033B2CE7C24562C011E
+            E06F093AF4F4073BE0B648AF3DCA0B4A14802CD317C0C14BA9E2754C3E831289
+            95B5456E4F3AC2AA560FAB917303F6B2B9D54375BE42F40B002D39317D16910F
+            FE7950A08C977D77E554632456DCB1FB0D0FBE376DAFEEDD06E50444D6FA4745
+            7EA94260B53F5D2BA62347DF7A2157919621DF3D048915377709C1BCEB244315
+            2FE2BE3CF18721CA97F3753C1A3359FCF36FA57FB8DB0B79AECAABC648ACB837
+            E41554A171FD5CA946DF61DE3B31179002B05A0D7F86BC648EB975F35780C88B
+            7CAA1E122B19935CF09DE19FFED474294E1C224551E6AA7A60B5EAED805F4633
+            FF9B79683F8EA56DE43AED20B1A2C706722A61A9F3C1E442A9013DAB16A94F9C
+            5006AF1EFF7C23F1B239FEF6DFBB901432D970240A2B962CB7992B961177E6DD
+            921AD0F37CB141A6A3105EADEECAB803A3C3B6A12864572D32035058715BD611
+            F64CC3923FEE490EE959ACB847846A78C5FACE971BE310FC5F2D975BC86E64CA
+            182C48ACB8A94622A852F29779326322ABA9CB915403AF06CD97CB8F8A6CF4F0
+            C6EE1249C9FF975C4E180A2B49056EF1E35B075847404D14D393E4C21679DF40
+            3F8B13BC1A345C8F32CE14F3F436EB4A095E647DF928ACACFDD20D9DDAB067DE
+            7DF25DE8ABA16927E6118A99AA6E042AE1D57A1BF7A909C01757738CCF8DDDE7
+            01641ACBD616A1B092D0D8F5A914963ACF95AE86BD18FEEA83C92DC9AD534DA3
+            54D4BDAB84D7A0D9DCA7055EF68FE1834DFD0FFCF3E0BCF84A269B5081C28AFD
+            0B97EF016DADFD2254F7B2F6AC7AF1AB80C43F494FA5AABA77954858C87D965E
+            D82BE8BF9F4A0C8FBC1654FCA04084175D5809A9E76AD3DE9A58072A52063F95
+            7BF32CC042FA9039E06197B5E64922A36E3B3BF7697AE1F1F6BD7DC324DF1259
+            1AB4EDFE19679D4CD6B84761C5E52DD87DAB3FBF06B666772DDD427C495B0A59
+            4AACB026550BEAF01D2EE985176E83F1D8EE4FA5DFD5F39CC57BD7392FEE94C1
+            0E074ABF0785959A6D5CCB0AD6E1C66F90974C036B4CA39AB58D20FB84E99694
+            278F3AE13CD3DEC14A11086CBC6C969CEBD6DCF196E578D84AC01223971286C2
+            8A8BE3C3580733EC57609A9BC57466FD906C0FA2702B142DD715FA3CCF882458
+            7160D1F5939FCABDD714732EB046C199330023F432B996D328ACB8B60115D621
+            6630ECBBA5FCB58A1137546B76A55BA168B8B0D0A778E60ACD4A60DD0FBEFE12
+            6193D0C846450E66CACE3D5102CECAC4883D8E15CB447312ECB52177F2996EB9
+            BE995483367555A32A80B534F16291342B2010B44F1F8E6436992A74AC7FD8DA
+            6BDACAC78C15AB39EA7398A08F0BCF641533A69BB4CAFA44E5C05A55E2B1C2D9
+            07DC5634BB4527057BEA5EFDFD25C9D751585999EE3256309BA0709EC1FC520E
+            2900EB7B95B4325556C2A9C07771BC1B9FB398B30FF880FB724A32177AB01274
+            CD557DC130EBE8B1303B657EE9426EB36F66FF6755CD8754216119EF07C363C5
+            B18CB51DFE1EAAF76742D3B7245FF72856B0C4EBDB6161C7052B4A781DD87DFD
+            A91E936AEB4894632C3F6ACF67C581F61F601168CBD863C58A35ED4798EF2BFC
+            AD894E5D26E97A09534B95B9F18AD1861F1F16B0E258C6B23EFE18E54C8F132B
+            D611CB60C160EBA69ECE8D6E9816BA6B35160CA3A26E757E4043C80A083CB508
+            FB0A61197B8C58C142DEED0F79C93A61EF42E75B6FDDD88C7C80D4F25387CB6B
+            F92C3F1259387CBB7094C3784158C61E1F56B06726F583487A9F0FB2859B7879
+            476C2485AFF24D37544110893C94B45D6C9C63193B27A78D3D3EAC58432F43C2
+            C1A6ACCF45F6F0F26E7D971CAF62D30D35F06AEDCD8F44EE0D151F1878EAEDE6
+            9BA597B1C78615AC6F0B984D1FB7AF54443363B6807651428557E456FECA0463
+            05C7ECA7245DC98F0D2B36E8FA05D99588E9C9EAA2840AAF37ECFC0352AC98DB
+            8E97F28D3D2EAC58C69FC9167F25B6B3B8B392690BEA9A840AAC766FA724E38B
+            6D4EC1870782F6BDB764C378794C58C16C9D6688BFE233638EF89602BE015DC8
+            56B9AE49A8C042BD9CD2593F192BAD6BD99E1FF91022F61F1756E29743C2F4D9
+            9FDF8498FB0133C93D545D9350E1D5CA493196650577C24C3FD756CCADA7072B
+            C6B7D1F36D540B12E86AD17526CC31E69D134F32E992840A413298394B8E1587
+            96BCE8EDF7EE8AF0A2072BC67BF27D17BE237EEF87FE0E8FCA336D415D9250E1
+            D5FA373E0951493F20EC3A652B12E1C5744E079FB1E1AC585FBA243E557C9676
+            87BF2BA81A9912E6A2848AA8754ECF915821CC97910FDBF1192DF94307563619
+            1CB7C77AFC203A554C43D71E85DF6FA62DA84B122A9CD28E0018D56C17E24693
+            0316F5E99DEBC5B55FF46025E3B8B1AC08B613A431674EA9443D11D3169448A8
+            C08887C6CD993ACE1545E9E7CCC8DB7FDA8AFA4CFB33935515F560C5F07CB0F1
+            9F884E156BFAF81B526FC3E690DE00539FCDFF803AC4C373E089335E00B5144E
+            019C135C94B1E258C73ADF7FFDC4F9B9D44256F2640DC9D11EC08A6FBD77457D
+            2DA609673F937EE76CAA2355D261E07F8C7864C6AC66EF122CAF04A86BE60185
+            732A0500790B2476CF114160E723F5FA7A4FFA1997FC37AA4A8F4561256B93A1
+            79C65897ADA2B6CAFC9997A4A74AD93703C50698E3FF6A7CF1887539D0B384D5
+            39950280FC89725BB30960BB5D777860E9AA4FEF5DAB263D102927FFB4A1ACD8
+            5E1235EBC3FD7E9120C5EA53DAEF992C78C56474FDA2A01BBB2E3ED26DCA4439
+            F926418E5D312B0E0CF86F8F0EAFD8E3EA4A8F426265AB911D8F827A5E11EB03
+            625A3A5962F3C6A04AF51A2FBF25399580A97D697ACEEE129D644CFB9F9D0ECC
+            98A020D58883C0CE3F4E6ED84A7A0C52AD578C91AD2982868D16BBBB5D6BE640
+            7FE6983520619864112B73E935B69DD2275D2CCEB97C582D2B0E1414BF263D00
+            89152377EFB434A9BF42E4B035EADB6B907760FE8977B6CBD54B3288BEF5C483
+            C2475A270CD6BDAA930A663ED9C8BDAC185A431C54EDB4984D9206B51FAD55DB
+            141E942E2CE6C31CE37F69A546F9222C544D8D8955CDCABA73FDA507A0B092FB
+            284ED3579284786BCFC1874A0E898FB7D6481F79162883392CFD436DF14AAFDC
+            6C27152C7AAC5D81B9C2C7BA0A320DC290BA2054BEA8E51B4942DC58B17C3901
+            22EAAD2F3DF5399244E123B2F489622D725F108804515D8A54B3525C47660052
+            C79011B31106A903D35E9D07CE965D4EC8285AA364F562115DFDB4FACC5791BE
+            3AA39A09F70C47C5DE60990148ACF4FFC538A7712F11C7A4CFAFCF8A0FB64CDC
+            AADECD10D65E591B2F0E447A8514CCDE794AE585C4BC292711D0FA835D37CC60
+            B1BDF889F0E0905D47454D11ACC1F32BE44E2881C856BFEC56E7BFF48AADE0DC
+            95223D7FBB9A33E18849933157D058C9FACDA8360856F34861AB036B549EA8A8
+            0F6AE3FD89EC19259174505D2F1EA74A7B1C79ED545F454C3F19C5188D157B5D
+            A30C16EF8F44F2BDE38E1789DD3A6B8D97E6DF903FA5247A562D52A38CD58D5C
+            E87C4843772EFB5D19C5188D95A440A3DAEB782F7B5320BC7D867D247AE3929B
+            4CD44A8ADAB6A182E00A307D385AF535ACDBAA4B8F56B0F20DCDB74314586253
+            E1F61073969D1035EB0FBCA4D44E118329768FE2C825161A3AD7E990F96480EA
+            4BD854A64B3F63C3B25C986DD139307D229A00161470AD10E18C08488956BA19
+            081673DDB9676EE4FB1D555FC0DE5FF5E9FD9DB1DD185F3E93C1CDC1E01A6209
+            AC9626AD354A7A16D156A59B1C08DCF820B5F3842245A7E0204F4E054364C5A8
+            D6B941835205C7D26E2D14B965B6C1A3B50B151AE6EEDB14D1828D1674CC4DBD
+            B5472D2B3103BAC80D416325A1B7319BAD31F55A2CAC51DFDC11B92F1DEE227B
+            891160EEAD64B660B5FC046DEB465D56CD4AC1DF2DE586A0B1E29FF58E8EF784
+            85C85E5073F68AC5556CC9FA36248DAC7800DD70F16AD0D959D8B32D1094A378
+            839C628CBA83D4AA4146A41AB3FBA63130CD4C11196899B84C4ED40F6DB600FF
+            D7B60014DF4258EBA2EFA0D7B80A2A57001EB5FF11F5EDCE38784A76C3484456
+            465C3222250CB35570BED93E9D7688A8C5D85C8854B1BEBF9EB2423F278B7793
+            57D698BAC372A1D2811C196AC22A23275C0A1DC600CCF85EB5C3E51BF9B80822
+            2BC6346EC342029C2DFB504CC45B2C1EAFB4F8B4895CDAA3943270974F3EE3E3
+            F8772B00145B40CCFD7A9B3ADD2DFB528A99F17644FD58B4B9B4544991341084
+            3D2A2B09FE462861584889B361983DFB94709C58BCD2D2286DE1F9274E825E54
+            9463642EE78D987740F1FD26EFD4FDB80EB47725886E8AD8C24AB461EE36D531
+            2F04618FBC0FB1212D8D455839F8B288012F12AF1CDCE8D108ACEA35E09D319B
+            7C43D7B302E799EFB5E6F55E866F6E84BA5DB1D7A0F902AF90F9EBB7D5C6878B
+            8B74DB87D872C8AAF222A4206425B65D86502F16C62B2DF1072F9E2196A7A05E
+            D5C864E3F03291A50FABD4F72874D329F3BB9F2149963A7D85FB7B44BD819AFA
+            2D806CC80BA0EFA49E6137C0E7226465FE6FAB84B2009B36833FCC3AEAABDB17
+            49A5C05A9BB2F9AD8993C5EE31F674C7A36F42B2947A9DDE8D7291820C63A034
+            C9980BF9E00A4067C590C097901571C3BE3FBF3C2F3678F56176D45CD292F1E9
+            B918F629B6676A88EE071679FF5784C922E204539E64CCC2DE485EAC20B392D0
+            C1003B52C8CAB77D440C7B30770477617790C231E002260E215EB4640E877E4C
+            59781FD1FCF28E28DA2DD677993053A070F8759546A4BC1B1FA0B36288335FC0
+            8AB8BB25F932572FF6C9D9CC9D4F4CDC2C7B1880C1F76603D10E7D48ADC5EA5A
+            45B6C239F4825A612FEF30060A58C92CD4DF6211B032B4EE12A1BF18EBDB9213
+            4576AEFFB20CA7D294E7EF97A8ABB0740F17695B1D39B49B2C2B5EAD9E9B2B7C
+            E318B5297A4862059D1523DCC60256426F8B147705053CCB6990101AFB014F18
+            60362BF97359B03B47424A0455118B048CB7CB7AC3BC061D108A15F5C96028D6
+            8A025672A7EABFDD87809516F744566BEF880AAC2D681922081F2F229D7D430F
+            C0D22DC937D614C98F09AB2CBB848978F1B524836DDA882056D059012B537477
+            50622118DF961822A62B790F9FCDAA60715505AA33555B242E935888E5924516
+            CB458BC5F7F24A3FAF560543B15694B062405F76A6DE9482B8C398E976E080A5
+            CB1AC1ADA7F4664B976D25D29FD62550D02AE615B96623E23BE1E425A9D4C0EC
+            72952B24D05931C015E65BCFCA63DAF2653791517467101C22E1632627768A5D
+            6A0573C0665BEB6C4ECA777C4B58283CA63EC145361B9F043A2B06D44B307D56
+            2958BA88EDFCC76565718140D1C2425A91EBDEC8DCB3D2A2DBB75E7B67892FDB
+            F1AD8ED81691E6EFE55D59E238B81D412F56C20A18F15FDD054B60375E49A4CF
+            30B11D6539ACF8F45C2ABC89CD22C87B2DEAADE1C1F2AC9F930F39BA9AF4FEC5
+            58CC2D91052CB5C930A00A687AB112562CEFDDD07D094BB6F102BF3ECF1D1609
+            79715819FCAB880B32D94AFAB3C59363B8C0126D4E81E6C86299FDD785D92DF8
+            C15A2A83F648EE16A068AE189041691B3C90FB549695B4FF9D12BE4E376BB50E
+            CB9054C2006EFA04F1B53CF38A18C937881AF6EA83F6C5D9287AB122560CC8D5
+            0B0AE71963B2ACBC2F96EBEAFDFC7E52887F3A4F66AE387E0654A7371AE6DE4B
+            A4867BC5FACD15392CD2C9180DDF0CBE80344E092BFA9BF7CC0D2521CE8A7757
+            BAC4C5E7B97D22B381290DFF7C8EEC2F186BE914D51C2FD9F14D2C8F02A80F0F
+            DBBDE592F1292861257894DE7E63A75A7B082B8C1539F4C02E1156ACB5A9A8FE
+            BC22990E2322593592AC40B64E376D52191E4633EC813256F46F1466E9BE9F7B
+            9320AC301E9739D7BF1159A3B0441F72599ABFA018560DCEC04992815E52654A
+            90050CB5339833E46BBC68286225EBA1CEDB7962569E6A2CCE0AD3070C743D22
+            DAD9C57B1919D61F9ABF47368AE59DB183A71C87ED95BABC55AF8A1D4EBEADAE
+            F80ECD338943112BFAE754784FE66AFE907AC8C01AD48482B142B53AB48E1C23
+            CB8A732F324956EA882E602A3BB8A05448D050C40A18F1BDCE4B18D33B9280B8
+            6D0F7C07508A138495A004B217B278861F1F4EB3539215AC6580E81EDD2A435E
+            A8262450CA4AEB293A678133312BF299A81F8C8DDB4358A1F7598590CA077F76
+            4AB3B22A4EECF6A7BEDF50152B0505483E301CCA58B12CD1B94B05D6A43257DC
+            A789EA28588368D2D90B61C561D6133E17D38471F29FC88B0B48B3226E428251
+            EDD4097BA4D8300965AC809AC3F496F799933801F521FF155D82E8D47D711D0C
+            303B7AC6AD94FF405E0C4D5207836860A0E01355C115944C561A0A59D1BDFD11
+            B3ED2381AE45A2DF3768103948DC5E71603CF9FB9FB3A44856DCD3428882449A
+            0BC48404F96D557D53646305286645F7DD6FB1BE5538376970C34CB125CAD2FD
+            26F19316CDAC04ECDE91836BCC922D92B09AAB70EB00E056A4B0313E09D39E67
+            810A2890F5CA59B11FD4D9EBC273E687FB1D135DA2ACFD88C960E9B8459C9590
+            3604B5E115AECB7AC2F8AC987A7C0D1B289AF40D54BBF111E35D2494B212DF55
+            E7BC30EBCB2BD8DF372CCA8BD91A1393E57DF14A7C5FFFC144169ECFD2BE725E
+            63275624F6A310E97C4040A51B1F2D604F41292B60CD1FFACA7B66CB2102F352
+            C44761B33EC2D7A829905EBA748865F674E9D03D706605BE770B16FAB778524F
+            F20935555EC88E49028A59496AAD6FA098F16211883B2DDE5707048EC6E35571
+            072F88DB89BDC885483C4D99072756EEC12ABE84AD7229A8ABF252A0160315AC
+            E8AE1CF3CCFBF0CA102DCB3262CD6F704F9777C4CF049943769D97EB5FC12FB1
+            4CDA078BDBD7ED3D59F4B83A87B1DD82AE160335ACACBDAAAF3F1F0B79C41A92
+            A6D11FC17EBB2D5FC886FA54E888C082BB0BE5C43DB313058176C5901C1798B1
+            A2D261AC442D066A58D1BD7295B7A3C4626852A2ADD595D530EB9D8E0840A71A
+            8BA0A7B91B20266E861447C28C15907C57850D899806C640052B6B33F5CD6DC5
+            1A7056FAF02B272193C5B767F3496745EAEC8853503E47D3CB5BE458E1795CCC
+            2D20F5DD306345658D84C2A9A2861590B94C5FCF31B7ECD1F24522B48FB175EC
+            484B7ABAE86D0F184D1A11B912BBE85023A97A170249D7568BB3229E32095466
+            E32B71B61050C38A3D5BDFC9C2538EA16A1641CB0F8DC453F1E81930456E1B0A
+            BECAD7F14F48E310C11E383454B92651535B18A86145F7CD8B7CDF4F677EBFB1
+            8FE08B1096989A76ED8068888592E143B61C94FE2826C88FC3DC693364016BF9
+            9CB8AC579574A478AAA86345EFC96219518BAD1B4AFB1F3C31154B3CF79CFD94
+            D80B54E5D182F932FE495EFE46CA65C80206129641FAF316BEA0FCEB29952A2A
+            59D1DD470916B01D41C2BB2D91D06EB1BEBB44670355A5175B3D47869541E3D8
+            B9D6EEACB80606B5EB5565182BB45570A8634577358C6BB3A4DD92920DD6A7C4
+            5710B2A2553C1F83036E0E2DB48658D87F9D46D41BB3152F6008DD749CA18E15
+            CBF03DFA16B360B3D85EADB1EDC6AA68A3BA8AD87112DA9F9AFE1C6EC50C2C21
+            1FAE16AB718229F3809150C78AFE06BEF50D56355A3CF3A8625A7C9F21B2304D
+            4B7B497F4E4B3659D31401F1177BB586B8C05439C19479C048A864056454D4DB
+            755C9911F8D64D2F2BEEC68AF53D44286123674A0EE3EE56052D8A84241C3960
+            DEA8D809B6CE1735098C03B5ACE4DE4CD3B79AC577106B7343E3F3126FA75255
+            2131660ADC9CFCC88A90A98205422C48000AF6296DDF12F32662C2370F6A59D1
+            3F15BCD9C034461B9D37FDA66C669713A898E68219521B7F720DA3B0A69082A2
+            BA813FC3DEAF3C3F0FA19DA10854B362A9AC73DD84A5E608A6AD87356AB1D2B7
+            DB6C44884532486C99C82E93E615DD210A182432EC8069575B85EE1645D17A16
+            AA59D1BF793EB7C637D4B744E11AE61DB1119F0692F5DDC91DE299A902F3E163
+            B5218115A0A6F9C1C1C54A0D4802EA59D1BFF574F275B6C6376EDF2565FD8BBD
+            5B572174EB6F53A141626B53B6FD6ECA8F27617E49E85451EE6E91DD560D020D
+            ACC4BFA8735131D624652C4D8529EB4BF9DC2E2E2C352D84B89F320DC6266663
+            4B88E1591450BFA48A826EF4D2082768600564E95DBE6AE9EECDB426B2642E54
+            64B5604D46107275C8F62BE2E2DE37802DB7378DCA81388BC58B864928CE39DA
+            744A8DA807DA58F19FA6F7C6F7D6C4358CE7C5E783853795982D41BD893C9716
+            37204B5F50B51718B1D5EB89550AC3F53894F6FB96DFFD06062DAC8084267AD7
+            B3589BC6315A92831625B3850AB10CF515AFEFC61AB02A5ED24FB0F62D525245
+            7191AA1AAB9E8426560CA85FF57D2694B1F394D14205E4C52B5A1D42A51F630E
+            F53C0FEB6C08298424613ADDE69492AFA27AFDD2CA8AA57284CE6B986FC0BBC7
+            9885C667D18CDBC80A325DA877305C6405C39A24BE4F0B95E8A6AB61FDA5BD5A
+            7B43A50A18D54C9161AFC281CF401B2B067446C09E69D88559C42CF10DE48BEA
+            68D85288256AF6E22291934EEACB923207BAF1BD68D7161AF9F39564B7C464AA
+            5EBF34B362448B3DAC430CEB6D9FF3631DD974481AB3892A175E1370EA8C4D9E
+            2BA5030552BB4960C90760CE62DCB09FA764AA6858BFB4B3027256E9DF368C4B
+            4B78FDFDE710ED4932A0D9A2CCB9BEDB5287B37C3DF10774E7152CB4BE44099F
+            B2F43CB5F62309CDAC04971DD1780621B0A995585A7C065AC720EDBDE9DB6E2B
+            7EEF054DC0BD9BC54EA549E9597B35BCD324D679AB849B2B6FAC020D4C9DAB98
+            8166562C73754EAD2010518DB3DDF09C8857CE22D08235B88BDB374E4DC0B1C4
+            73F519D334E5490952BC5A3D3B1F7E7673BE9236212AFD5F3434B30240FF2DFA
+            B7050F2AEBBA885DB7AC6FFB2F3923BB8C61B6245C4DE03501B7D4BD3F6C1313
+            7BEEB547AAEF9484AFC581D45005117B55A12E0E7460C57F9AFEA205586BC4CD
+            E358F6431BCCBB7A536EBE9021164E7938F6749B57261FA4278A392C60B544EF
+            4F8960178EBC0CF488BD16A598800EAC18D1FB10D79BBAD5E4B40A35455639B1
+            4746BC507BB7D14DC07D6FDAC25E4863A658B4F58E64DF3C49AD18800BE8BB76
+            C6BC59556D07440A7AB002B25A18B0451E5636B32AB75FB7CF338D0B3AFF7C4C
+            AA9334B9CF61DC617CA9093AD43CEC463E3BDDC2BCA5378616ED26CD428906A6
+            3C2BCF19BAB062886871DCD84AC95F72FB1D5BFAB63BF3C5A312A880A13AE7E0
+            4DC0830E653ED870984DBE8F0EFBE5D70A92A488F62D66A1C084D42A54805EAC
+            58FAEF3362F355879D5F7103AFD96D78FF6AA78F2DBF5955BCB688CC93197CA8
+            A4E3D1C44BE359F64CB1FEAB655AAFD76DB7F29EC4CBE67C641352B350017AB1
+            0282533E3664A7624B934635F9ADA17DFA55B0F8E6FC75BDAC9E6031A3C25AB1
+            C1FB5FDBCF7D53CADF77E4F68A8256465040F781C5BC7943BDA785864EAC80B5
+            5774CE44A260A95B2BEC8853BB5BCB8B0F9BC5FF7077F9C1801BA01EB8C5C80E
+            EBF5F770AF9C296A0B777E453EA8B9CA4B8614896C4912E8FD28F6966894F438
+            F4620564AD34C098C4E130031B2F1786BF621FC6DEFFFBEAFE2BAFDFFDE21479
+            24F97EFD3B59CEC3CC31FEB9089BDB46FD2D25EA15247D6B727F31D08D15B026
+            DF981DA41D52BC7EE3D7D66C105BF67D222EB5D85E87F66D0C5870C9893D53BF
+            3316848DEEBC627DE74B0E1875711F9A09B9EE6F2DEE2F06FAB1026A56364211
+            C3610555DFA97C486EB75401CCCD420FE7C92D5E38EA48C4BA08140E47F38115
+            946897F4387464C5D2BF86CE6DAA38C09EE9F1DCC5D1B714BC23B2FAAD9B7918
+            8A5B135B952DB97E0173165A1E98BDE11FDA253D0E1D5901B9ADC718B15B3105
+            CB9DBE575A551FF504D28C3127DC28B6AEAC801499915DBF50DB7F6A741473A0
+            272B20A9F36A03690196808EBF3F19B7D3FF4BD929D3B3F6A5BC1280B6A1AD64
+            AC9E80694F4F14A91293A987FA4540575640D22FD70CD18F1960556F26D68AFB
+            63F7B6270F48CD99A49B689BD9E2A8FBACB4FE85EC6DD9BB5B0FF58B80BEAC00
+            FBD959C6D2E280A50CF83D59AF746471851327B9C74D2F62EDF2530855ADE75E
+            B99DA118405B83B0408B77E9A31393D0991597D082EFC95D06EED86E57AEC83D
+            F87787ED679610757820F259C4FDB8E5ED47DC5879F794FC8936F968F67EB1D0
+            9B1590E56FC026AC30F8721EE3CE31BAC0CED46729222B7523ED72C50F05B311
+            8C155D49D19F15E38C7C04600D9A91DE99DEFFD3B077BD13506A2175F01373A1
+            3F2B2004731B2D549018AF4E4170B3E0C5AB75641B53A7369137567432E91918
+            C08A3B670BBDC757AF2750943079A518206DCFAD372986B0E2C6D992DC81DCD7
+            08DE0B8403AC2C4A4E29464ACED39D1463580159AD75AECE430596FE01F15F7E
+            D354800B95CE724A31CAE6B6FA9362102BAED5C43860B6A41A26AF1A632DEF22
+            4C6959C7647181EEA418C50A681DEB0ABB4580A09ED7C82824B475210324A102
+            523B4F90568B8BCFE9AA7D91308A15179993CEA0AB23E5B7B2C56A4B47EA29C8
+            356ED1D74EA161182BC05EF6A391AE4A71D0D591A0579EDC06C3838FAC973F9F
+            5C10D218520C640524457EEB7A5AA8EA48905228BDC1B0BCFB9E40C16CB38406
+            163375877EBE2F2E0C6405244DE863443E9224E8CD2523AB7D27C50A8AF98863
+            86542D774CA67E5E623E8C6405048F3E6B5C74521CDE1F918DC6CCEFCE9118E5
+            D5A358CE274940D287AF3D71150A435901F1D54D46A55840406F1426B15904AE
+            7EF59D81D49045CA876FC70C23C56056807FED1906A4204B80DE794D6A1322AC
+            D6CBB28E6202A96FF43B057BADA0A4449F18BD180C66058090D96FB856431E4C
+            79C2E01B76C9471F29A49F87B63D30C2766461382BA0F58D3097AA62645B5089
+            DD22B056B565BDF7044CA760D5113129C668C4348C6705045F19EC4A994FB605
+            95F04F3646F07E1180AAC5C6295F145CC08A4302FFED3A994F6FAA177D477C63
+            02444305E02D8EBE17DFA8A0E09871729E842B5801FE0BAF8D719570A16A5661
+            DDD6BD5AA1192A00AE16AFFB2741A7B42F285CC28A438D34CF73914189D9DA91
+            968A689018EB8E66A838605E20DA4C2766EA0D43450A0117B102827BDC77CD2A
+            E6EB4F85233B9E12161261DD4B7621B82409887B8BEDD86F5ACBEB10E02A561C
+            AB58D5FE86141E3983DE0F4F2448ECD5039D14903F51C45BBCEE1F03AD14162E
+            630580B5F78EBA44175B4556760B77BC513253441B4ABB64F5C2E142561CBA58
+            AB7EC60B7DEFE78B08D538FA4FA720B12252C492280A8EB962F5C2E14A5600C8
+            FAB289FE0D139CE0DD9AECC46A6AC9578D152D5F20356685D3548949B933D068
+            DD8B866B5901C191AF1AED1763C291894BB88795CD14907EDE69AAB86EA20097
+            B3E282E962AD4135C81D6FE784EE1592623EC977B6B872A20037B0824F97370D
+            952ED6644A09E30489BD5A3DFA5D0129A0E0139E5FD28EDD34D6C5E204D7B3E2
+            982E8D8F18A98CD17B0F72FC935EB14FA05AF404F853C531512EB9421F66E10E
+            564070F7170DB45DE88D8DD99D9F959202D2CF71FC922E952824DCC28A634918
+            FDCE62A396B1A08067899CB0C862AA1B9857832ACA326CCD27C34F31576A3BE9
+            4A8942C24DAC00FFE1B54A0C5AC6E85D0AE92071DD4A2F227A8969A49FA3AB53
+            63E6EC738931EF0477B102406ED2F45C83B4B11E441CD2D403DF9105AB1DFB00
+            319E4283952AEB6EB956CAD3701F2B00ACDD1A39587FF1E2FBB02C856C1CD22E
+            DFB17AF90757418B3CB2A015B002AFD2FD6E9828C0BDAC3878B9665DA2F3B6EC
+            951AB43CFCC604C2E71276F91CD6FD89554A7773A6A68A3DF4888B352F16EE65
+            C5A125D7B6EA68BDF85E6B1E16FAC464AA9B4BCAE5D5AD1E1528DE629B50C062
+            A69EF03238E0280177B3E2E06576DBBDFAAC6318E8DB6ACD1EB6C14ECFBDCF9F
+            505EDE842B603129F77F76B536CC85FB5901FE1F8FB636D5611DC3129B6DDCC6
+            ED8D90F2774585721E47FAB9E89AEEE5C4235871C07E2230476B04196B327929
+            BFBD9BB91D5ADA17FF4D57F2ABAC722F279EC20AB0745F3B62F3692D0B19F60C
+            BB419486EB28F2BA6C7737271EC38A03C1D8BBF5E76B30600EBCB75AFD9B491C
+            CF19B6FEA51AEEBE11C093587120E1A99AF355767EC3C67F57A8F1D3CF54BE73
+            E8257F977B57C4E051AC0090F4EBBAC3D96A260CB5E1AD5A988A7286FD53F092
+            BBBF3E0D0F63C5B1B2FF37A1FAB30F9412E3FDFCA33C856FE1E078E09D07057D
+            3D629690F0385670D80BD7CF1DA848F463D3156EE5C8E278E0A5B2ED6F2D1AEF
+            41A478262B8E191314BEFE59D32E546630ABBA05CCFC074E894708781E3C9415
+            0772D75668613E528C645E32A5C34A10B964E1C80705A11E4709F06456700463
+            B1B61A3BB3651D655862D3A18A4E6C3AB630C9E441E2DD099ECD0A0EFB8C17DB
+            56DE73507A35F39E391AB5DBB1F98F4A0B93CA2A6FF4BC758B85E7B3E240EEA6
+            BD51FE7FADAAFF3B06A3868E0A4BC3740CD4BE81DDD85EC323972D0E1E0B5648
+            5882FEFCD8FB76CDE452B1052DD9275B32B3C87CD4C1C7C3DB95378EF0245D0B
+            86C788151CFE5D0EDE8F6958F94ECDE446557C760176EA60EFB3BB7DB330B5FF
+            0C804A0B87620FFF011B6B78AA1411E231638580FFCBE657C1E471050D2BDFAE
+            F0E9A4C5A009AEA70D1C7EB52E3DE07825006A834960E87D936376D400A1C0C3
+            572C673C8EAC50B010F23DD81BDC277772CCF0BEDE18FF6F1E3DEC1F0036027C
+            6EF883C91E651E22E23166C519F16F0761F3014832AD7FCBDD97A215FF22561C
+            33A3A810004FD7AF50F0AF62E55F8372563C11E5AC7822CA59F14494B3E28928
+            67C51351CE8A27A29C154F44392B9E8872563C11E5AC7822CA59F14494B3E289
+            2867C51351CE8A27C21856E21A92FD863AAED07822CD68731C78C89528010A2B
+            9B7B11FF7CBF0943BA0F8BBF8AD8398F7C3C68CFBDCFFA6D151934AB8CEC4299
+            8E0D17BCE69FDB95FCBC6E59008C7B8A1CF8FBEB7B611F183FBE3579AEBF3EE4
+            9F27AD7BF2A89066325702F26ABFC03F90FE05E89678655B9E188F6BFE166BDD
+            30B6AFE885D9CDE4E0E8C5A8B96A345058A91E92EFF8FB77D4D870F9B1E33AFE
+            EA3BFEFEDFCC739F98FE79373E140CF37BF232BE5BEDDF7E0F84694496763F03
+            E2F3CE38886833E525725BDBB5B1B0AF36EB9D3AC4F84DEFE5F33EC26FE286EF
+            38D55F902B01CD2EDCE71F685308404C8BC93B8F57EE22F8C89C4D5FF909CE70
+            394C24BDC68192FFFC890FBEFCE37BBBE46F1C0F48ACDC23EE72D491A372233B
+            859BB76F713EE833E2AB44E719E16085FC2FCACA26E23FC10A38F6DD58E2993D
+            B819E44337CF203E32FBE948CEC1590BA3BF1014E4F98C2CCD13CC9766172085
+            7B1D0ECE7CCEF933732689E5098AB362AFFE0AF565074D94BFC93CE8C94AFC24
+            BB90131C11ED5A7DCE5F0FD05969F36A06F1AC620664839A364B9F25FE4FDCCA
+            DEF0B88FED3344EF75EFC64BDB2CE51F82B2E2F84CCB5316DEFC53C44AE6313A
+            737DDDC357E5EF32173AB232EBC7BD9760AF4DB59EE74D177456C0B48FC8BBF6
+            93595CAC9D5E414C269F4193D92B299B0DBD929ACDAFF16FB4042B8EDF53F139
+            DE2AA68095847866CFCCB76ACE94BFCB5CE8C7CAB8F98F24BE9ECF8B8DB3384F
+            15B032EE0B72884FFA18B113C76DBD49FCB71732E797BE9288CF56F37E2092AC
+            80ECDB07B8734B012B197BD882B52FF295755DD28D95719D3FFC857EDCA1EE3B
+            DFE1FF5B5E1DCF7CE38ABF54E0FCD615B0E210FEA4F290B1454C873AF8476FE2
+            FFB2F5F4DDE35E89CFE4EABBF1FF315F9C618F152CE20A7D8A958AED6B5307CE
+            EF06A1CC6010F5697DCEE0CC2F1A713FBC88BC7A315682DF7E8F7D32193E7745
+            A1172B9DDE676E85CF9F0B7BAE227E275D5B26461FA0254DC55FA2590614B0C2
+            DCF7ECD9229F4F73460FE65D49EF596F9FF3251E75ED1EF1C564FA4A7C0AFA73
+            F8A55899FAD338EAC09DA1E0C1D7277AD3AF4FBCC599E4C12DB81FBEA7512E94
+            9535B3B96D1D96CCF8C30DACB419BA88BA1515370E5CF60A9B44EAF7AEE967EA
+            950E96EBCCCD50C24ADCB426E40BAF55592A184CAF6F8C5ACC5E4987174B1778
+            3157123F3031AF07F54AC489E6ACF241B1E2A4F7EF9C59D54E9DA6F56400416B
+            2B94154BC035FCC21A56BB4C94AAD7ABB6C70DAC4CAB42D55A457C76CD4928A7
+            856CA4BF5FA502FA2629610534B943CEFF2D43849624A50BB06AF1E67DA426ED
+            F8F1DBB2F863FD9E6A475D09578BA65971FA769DA2B2A955E7F217424B978404
+            2B593708EBF7C561571388E7F3D2945892FAB0B2F311A56F64DFC9CD777E31EE
+            402A45997D2A7D5B15B11297D686F8DF61C030E74C6E5A2D66648EDF31CACAAB
+            39F443C17D60AF84B32C415801FE03CE911CF64E8459CF7056FC3326125F6C4A
+            93A46184819FBE558925A90B2B717BEBFF42DDB7EC7CE1CB6DBA6DA196F4AA9D
+            A89543112B96DF0793EF172AC7CE6A717C34B57EF5AE7346B8DC81B839BDC997
+            7DDAACA38FC158016D02BEA7BE542FC8F786B3D27A0AD1E2BC6B48C65A1FE207
+            DB701B6C8F3031E8C24A4106B53963FE76D1C9DE691AF9630735FDA81BAD8815
+            30EB2CD9CD9B6B939037EEA8935A4C5F49C5A231A2EEC8349F4CF2C1E5A7E90F
+            86B2C2B815F25F00E280B392B98CD0A07F3AD39B3626D75DED0D90A10B2BE3E7
+            910A70CDFC7AE2039AD7A5687BFA20F95F192B60FC2EF2279E5199CF7AF34F22
+            F07F1517D36AF12BF7C981309313341946AE61110B688517CECACEB3E48D9CB8
+            2E5FFC645056D66612DDE2DE7AA9AFC39ABC490CEA1AAAC0EDA20B2BBF535381
+            59A09C116FDB48DEAD03F1E41754C84A41D7CB4EF7923A2D691344CDA57E0D71
+            CD3388FF1D5E86ED1F4C2F4B209056C3E0ACCC6AF122F422094059C9384ECC0F
+            C22D69C91A441CFBA23ABADB450F56D29611575D713ACF3FC8036D73443D471A
+            700A59F19FDD9FB424F9CAB1402DA67FDDAC5A21003D5998090067C53F955CEE
+            7E5AFFA1F8B960AC5016A45F6606AE9D844493EAD81FE896A41EACD09A2BD73F
+            E804FA27DA7B27790E85ACD04B153B2B08502BE7D498A7A9039B8F91B73C3F02
+            AA878E8B27B5B6A9972951046725FE6992958C6990B3C158E9BF85345292D3F0
+            7FC12349E57849D56EF2F79A841EAC50C64AC5A206F0734C27D71ADA99A59495
+            F8DB24AB154FA4B193A5534406F19FFD35D09FC26A58425C208B5AB33FA7CE0E
+            6785BEC8D756414E056125B8EC08F1BFE987240D19DB09337FF20A644B520F56
+            2811EBE37F107E8E695B09E5965EF095B202F2F692B3802BC685DE62EA8ED333
+            5214D4048B18492DB77056A85F1B5C48415809B94E4C95AEF9D49245C97EBF79
+            29A885B37AB0F24D1FD97BE15F955CE52A9AAE12CF15B342875938FE8FB84164
+            013DEB2DA6D7C9EC89129D5F4E871357C2FC86A0ACA455253F32E24FD8F71267
+            8516EF536CB478A73CCDE99634F99B4D400F569E3E45FC83DBC00EE44D257463
+            D5AC30619689DEB4724CCB1AD65B4CB332F53A443CE368D294B81259566635A7
+            BC9C7EEFC0CE26CE8A7D35A90A379AE97404DD927C6C58A1EDBFDEEF51A23D3E
+            9A9CA21CEF18122BD4950858E17B272D7FDC1B4492C21A430288B352DB9B9819
+            EB5630FB8AE55E2267CFBA4C44B78B9EAC64D4879F835A37D4B302A6D326CF38
+            D2D0480B25B5604E1205DA0A46492327566AE671FC2A9DDECDAB409BE27E2BDA
+            C24E25CA4AC21F84146978E73C7B8C92340D5F438C49EA29ED074D869F63DA21
+            C2D547FB9454B042DB225B30F2472D508B1D3849FAFCD548FB88F69C1EAFA195
+            C6D20FB34BE640B56C5156469C20624B3C7724AD1CFFF4355A4C5217CD98BAE3
+            0BA534E30CE21C347352ACF88789B2129F91484E96334DF1DB44ABC5196B39EE
+            105A3396D206E9999D49593ED211629F83AFE7435F1463656D11790D2B12B864
+            52CA71D7900CF9DB0DF461855AA9C1903CE81760AC484AF6A475259D1976AB70
+            79A0FD285B6AF0F37E8AFF47FE80C925853218F9D17CEAF701F2E7C0440198F5
+            0A6545D2B2479295ECE8FE5BE1AF8AB152B30D1986ED3E8B3B32F40631D26F9A
+            0F9225A9072BF40F9FB798F0412F3F35FF2687D266B3D839698DD7D9C3D8660E
+            156629B97601CFDE233FBB0F37B4D57C2CE571B1426541938124B743F650B75B
+            32F328610B7CA688B242AF550D133EE70D7D9E4CADA817B158FE7EEBC34AFC38
+            F2E7079CB2175958C653A29A596F288766EF2041E28A7F03CA34C9B8E9144B3C
+            36859C09787090F24257CC28E2CE0A05DEC93383F9DE49212A763AFC25945C02
+            22AC643D94DEAD8CBFB0C1A0AF27DF1B32A2E00E695A74A8B483BAA8A7A938D9
+            32614429CD4EDAC4AF9538713CAE7206F1DF21A8E3F34E110F9D83C68C27BF02
+            E47E423DF942F8546F0E7181D3106165D520E9D6A5E9EB51DC2EBAB042398D85
+            F10F0A6DA6BC4ABA7CD995854A430507D609DE41BF24248C4E12DA33AE21A516
+            3BC70EFC3E258F7758281EF59A753783BAD2BB1FF24FDAFB66DCFBD491ED89A4
+            9CA4B53D28A8E03CF8A9037D84E6098EB3410893451756E26DA486053A9C0E17
+            11B3FE610FA90831B36C00BFD6E4371706CA68F1912D8C0BD002ACA63746A50B
+            C539994896F1D49564DF9E29E2748AB74D252706474B13B122C7FF4E5EAFF047
+            96CB13D6946F182CE9471FA12C480974ABBA04C8421756FCD795D2D914EBAE09
+            B3299A3E4569FF9CB007B3BEE78F715272E8241531A5995EF75E0B2443C6C2C4
+            3DBFBEE42B60CB7DBBE007C25EC9104C2A9B829EDB3EF356F1679CDDF4217701
+            A2FC5B7E737BD0AF67933B5675DD27BC498DC894BE867D1062923A651E8DA7F2
+            4140EF09F39D64745AEE702AB1A4C3CB1CD14CAF5311FD7819C8FEB9FF9004D3
+            5E001E76BE418A1C1F32B9512CC995C981AA396CBD1365EC9570950C313F189D
+            B3E3A45526457E9BB88BF5302605922A3C9B463CE27B82A686A344D2F62C2672
+            B90B0B969F2C4A5891A85FE9546D0355B3D2E1F9A8A20C66E9F46F367637931D
+            CFAEE580B51B80CF8BEF7562C6B7C929240543C5E9AF8AE400D049C514F86A31
+            75065A86019F5D9572D92B896FFEE0EF99D4955434356167B4182B96955F11BF
+            B28A496F71B4F3F8A963BEF2AB57F627754ECB70D234042FDEA1CCF8A4374932
+            C3868A654E508A00C76BA9072B5397AC143674FC6A23F94B6792471CBFFE670F
+            8FFB6E1BFEE83F29C96D7630B5137E3579FA129D41022A2E29EE39171FFFC67F
+            6A8C88A07ECD9024155A8522C7644C16919C6257626EF1ED242B93D15A714F5B
+            CEE228EA33A65394B897115F7D1FCE42BDF40565787A6A6ED27F28C9FEC5C754
+            BA2A6541427CC3748EEB9453B26E1705AC7488FA45F85A6F5F4A2637FF995304
+            35F51EB1FC72DC490E5256F2A71A9344E638B3B9153E7EECBDFDCC3D87A8B64C
+            0E130E67E31F40AF64EC861376E650C5F73A72CF2DEEC9F71B4A72CBD1396A56
+            A6F651AA97711A800653FB509609E373A413BE217114FAE5C927642D4905AC88
+            22E205DA2579F0DB9F7E819FA3E27B7D9C5724268021822DF521FE67DAA78203
+            66B44A5F49878F2AF07C0690F8CAE9545249FCC997A69EAD12028E3583EDDBFF
+            C52F94A0583398A0CD6F1EC452A46B27E8C8311CFAB102D2167D00DDD82122ED
+            0DA146356EC024BBF8F09FEA3E07D1EAD3CA3EA11F0AD4627650540EE4C48E1F
+            FFFB03F8C208C24AFC957C520A6DFA80521A9222D3C4D4DE7A77A940B065491C
+            F17F727057F18FA6EB8CA82C0B09E8C80A681311F5B2F848BFA7FCC59C7C6DBA
+            55182B72B8C3BC32580D246BBDC3EA5908740A5F7243F44A3A64E46D707A172C
+            16D9693EA98EB0E55E49BF84097783A9D78DAE10CEFA8D943353FE0BAB8AC8D9
+            44BCBFE1A824200D3D5901A0E058856481FFA2C38492BA10FF47DC94E53B9C2B
+            293B24E6348787122D155791CE1BE9700ED8D9E8E824C132267A25D0B83DEDEA
+            64BD3A49E18717F3A7BC5FBDE7D651D6AAE55008A963C1BDF5B4E5DFAD85CC64
+            4161E52789B6FF4ED51DF1FE4FC6BEF61CE74647BC13127BB90BD4AF0E663D88
+            BDC0BD7D53072C9CE625950A1237876A876FDF2F1106C6EB55A684CFBDC7F989
+            C0AEA4D96952C3FC5C608DD126FE81C5F49A676938BEDA2ED6FDF8E2B8A35518
+            1D980ACE839F96C2ED91956F10FFFCF6C804F0515839DD19FEDAC0FF3A6729FA
+            3F1CDDF7EC86EBF8C36A51D64F5F976B9DD06679F2AEFC05C443DFC2B8B04559
+            32E30B8E91FEAA1F262F9519193FE4DB54D92BF1F74F27CED764B740F0750A5F
+            4E7EC74EEC3BFDBBAC9DF4D7AA498E4713BA3F75A131C72E69DD8F6C3ABE5E42
+            C3A2C7143D272DEF8DE91832EB02F97B09DE8A343CDE4A062312B6E5238D37EE
+            4A909044FC10537728AB405582F2EE3A9E8872563C11E5AC7822CA59F14494B3
+            E2892867C51351CE8A27A29C154F44392B9E8872563C11E5AC7822CA59F14494
+            B3A20049AFF4D7E53C23F5884596830255B2A5157EBE87644694B3A200E5AC78
+            22CA59F14494B3E2892867C51351CE8A27A29C154F44392B9E8872563C11E5AC
+            782212EAEB9302D645AE54A29C1525F02FD5E53466B9EE6DE5AC7822CA59F144
+            94B3E2892867C51351CE8A27A29C154F44392B9E8872563C11FF078AF265C383
+            D49DCF0000000049454E44AE426082}
           Transparent = True
-          ExplicitLeft = 24
-          ExplicitTop = 72
-          ExplicitWidth = 162
-          ExplicitHeight = 89
+          ExplicitLeft = 8
+          ExplicitWidth = 210
+          ExplicitHeight = 128
         end
       end
       object imagemFundoInfo: TbsSkinEdit
@@ -32360,7 +32549,7 @@ object fmIndex: TfmIndex
                   PageSize = 1
                   Min = 1
                   Max = 0
-                  Position = 1
+                  Position = 0
                   SmallChange = 1
                   LargeChange = 1
                 end
@@ -32688,7 +32877,7 @@ object fmIndex: TfmIndex
                   PageSize = 1
                   Min = 1
                   Max = 0
-                  Position = 0
+                  Position = 1
                   SmallChange = 1
                   LargeChange = 1
                 end
@@ -50072,7 +50261,7 @@ object fmIndex: TfmIndex
         PageSize = 1
         Min = 1
         Max = 0
-        Position = 1
+        Position = 0
         SmallChange = 1
         LargeChange = 1
       end
@@ -53483,7 +53672,7 @@ object fmIndex: TfmIndex
             Width = 225
             Height = 374
             Align = alClient
-            Date = 43344.611996747680000000
+            Date = 43344.821642476850000000
             DoubleBuffered = False
             ParentDoubleBuffered = False
             TabOrder = 0

@@ -88,6 +88,8 @@ begin
     arquivo_temp := 'arquivo_'+formatdatetime('yyyymmdd_hhnnsszzz', Now())+'.~tmp';
     arquivo_ftp := StringReplace(arquivos[i], '\', '/', [rfIgnoreCase, rfReplaceAll]);
 
+    fmIndex.gravaLog('Baixando: '+ftp_dir+arquivo_ftp);
+
     sTitulo.Caption := 'Baixando arquivo '''+ExtractFileName(fmIndex.dir_temp+arquivos[i])+'''';
     sProgressoT.Caption := 'Arquivo '+IntToStr(i+1)+' / '+inttostr(arquivos.Count);
 
@@ -278,9 +280,12 @@ begin
   arquivos_falha := TStringList.Create;
   sStatus.Caption := '';
 
+  fmIndex.gravaLog('Conectando FTP');
+
   sTitulo.Caption := 'Buscando informações...';
   pbProgresso.Style := pbstMarquee;
 
+  fmIndex.gravaLog('URL: '+fmIndex.url_params);
 
   DM.IdHTTP1.Request.CustomHeaders.Values['Api-Token'] := fmIndex.api_token;
   try
@@ -328,9 +333,11 @@ begin
       lParams := lParams+'&pc_name=' + trim(fmIndex.paramtemp.Lines[0]);
 
       if Pos('?', fmIndex.param.Strings.Values['conn_ftp']) > 0 then
-        url := fmIndex.param.Strings.Values['conn_ftp']+'&data='+DM.IdEncoderMIME.EncodeString(lParams)
+        url := fmIndex.param.Strings.Values['conn_ftp']+'&data='+DM.IdEncoderMIME.EncodeString(lParams)+'&lang='+fIniciando.LANG
       else
-        url := fmIndex.param.Strings.Values['conn_ftp']+'?data='+DM.IdEncoderMIME.EncodeString(lParams);
+        url := fmIndex.param.Strings.Values['conn_ftp']+'?data='+DM.IdEncoderMIME.EncodeString(lParams)+'&lang='+fIniciando.LANG;
+
+      fmIndex.gravaLog('URL para autorização de conexão: '+url);
 
       while (tmrFecha.Enabled = False) and (dados_ftp = False)  do
       begin
@@ -437,6 +444,12 @@ begin
   ftp_porta := StrToInt('0'+ftp.Values['port']);
   ftp_usuario := ftp.Values['username'];
   ftp_senha := ftp.Values['password'];
+
+  fmIndex.gravaLog('ftp_url: '+ftp_url);
+  fmIndex.gravaLog('ftp_dir: '+ftp_dir);
+  fmIndex.gravaLog('ftp_porta: '+inttostr(ftp_porta));
+  fmIndex.gravaLog('ftp_usuario: '+ftp_usuario);
+  fmIndex.gravaLog('ftp_senha: *****************');
 
   sTitulo.Caption := 'Conectando ao servidor...';
   ftp_conecta();

@@ -19,7 +19,8 @@ type
     Image1: TImage;
     vLang: TValueListEditor;
     paramexec: TValueListEditor;
-    Image2: TImage;
+    ImagePT: TImage;
+    ImageES: TImage;
     procedure Timer1Timer(Sender: TObject);
     procedure AppCreateForm(InstanceClass: TComponentClass; var Reference);
     procedure TranslateForm(Form: TForm);
@@ -91,8 +92,12 @@ begin
     LANG := vLang.Strings.Values['_'];
   end;
 
-  if LANG = 'ES'
-    then TITULO := 'Loor JA'
+  if LANG = 'ES' then
+  begin
+    TITULO := 'Loor JA';
+    ImagePT.Visible := false;
+    ImageES.Visible := true;
+  end
   else TITULO := 'Louvor JA';
 
 //  lblTitulo.Caption := TITULO;
@@ -187,6 +192,10 @@ begin
   begin
     fmIndex.bsRibbonGroup7.Visible := False;
     fmIndex.bsRibbonGroup9.Visible := False;
+    fmIndex.btAbreHinosN.Visible := False;
+    fmIndex.bsRibbonGroup21.width := 110;
+
+    fmIndex.imgImagemCapaModel.Picture := fmIndex.imgImagemCapaModelES.Picture;
   end;
 
   fmIndex.TITULO := TITULO;

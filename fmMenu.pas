@@ -1714,6 +1714,8 @@ type
     bsSkinStdLabel183: TbsSkinStdLabel;
     seTamanhoTextoRetorno: TbsSkinSpinEdit;
     bsSkinButton47: TbsSkinButton;
+    pnlImagemCapaModelES: TPanel;
+    imgImagemCapaModelES: TImage;
     function VersaoExe: String;
     procedure FormCreate(Sender: TObject);
     procedure fExibeColetaneas(Tipo: string; ScrollBox: TbsSkinScrollBox);
@@ -12046,17 +12048,27 @@ begin
     lmdBibliaTxt.Caption := '';
     lmdBibliainfo.Caption := '';
 
-    if (fIniciando.LANG='ES') then
+    DM.qrBUSCA_VERSAO.Close;
+    DM.qrBUSCA_VERSAO.ParamByName('SIGLA').AsString := lerParam('Biblia', 'Versão', '.');
+    DM.qrBUSCA_VERSAO.Open;
+    if (DM.qrBUSCA_VERSAO.RecordCount <= 0) then
     begin
-      loadCol.Strings.Values['BIBLIA_VERSAO'] := lerParam('Biblia', 'Versão', 'RV');
-      loadCol.Strings.Values['BIBLIA_LIVRO_SIGLA'] := lerParam('Biblia', 'Livro Sigla', 'Gn.');
-      loadCol.Strings.Values['BIBLIA_LIVRO_NOME'] := lerParam('Biblia', 'Livro Nome', 'Génesis');
+      fmIndex.apagaParam('Biblia');
+      DM.qrBUSCA_VERSAO_1.Close;
+      DM.qrBUSCA_VERSAO_1.Open;
+      while not DM.qrBUSCA_VERSAO_1.Eof do
+      begin
+        loadCol.Strings.Values['BIBLIA_VERSAO'] := DM.qrBUSCA_VERSAO_1.FieldByName('VERSAO').AsString;
+        loadCol.Strings.Values['BIBLIA_LIVRO_SIGLA'] := DM.qrBUSCA_VERSAO_1.FieldByName('SIGLA').AsString+'.';
+        loadCol.Strings.Values['BIBLIA_LIVRO_NOME'] := DM.qrBUSCA_VERSAO_1.FieldByName('LIVRO').AsString;
+        DM.qrBUSCA_VERSAO_1.next;
+      end;
     end
     else
     begin
-      loadCol.Strings.Values['BIBLIA_VERSAO'] := lerParam('Biblia', 'Versão', 'ARA');
-      loadCol.Strings.Values['BIBLIA_LIVRO_SIGLA'] := lerParam('Biblia', 'Livro Sigla', 'Gn.');
-      loadCol.Strings.Values['BIBLIA_LIVRO_NOME'] := lerParam('Biblia', 'Livro Nome', 'Gênesis');
+      loadCol.Strings.Values['BIBLIA_VERSAO'] := lerParam('Biblia', 'Versão', '');
+      loadCol.Strings.Values['BIBLIA_LIVRO_SIGLA'] := lerParam('Biblia', 'Livro Sigla', '');
+      loadCol.Strings.Values['BIBLIA_LIVRO_NOME'] := lerParam('Biblia', 'Livro Nome', '');
     end;
     loadCol.Strings.Values['BIBLIA_F'] := 'okf';
     loadCol.Strings.Values['BIBLIA_LIVRO'] := lerParam('Biblia', 'Livro', '1');

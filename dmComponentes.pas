@@ -191,6 +191,8 @@ type
     cdsMonitoresLEFT: TIntegerField;
     dsMonitores: TDataSource;
     cdsMonitoresX: TStringField;
+    qrBUSCA_VERSAO: TFDQuery;
+    qrBUSCA_VERSAO_1: TFDQuery;
     procedure tmrSortearTimer(Sender: TObject);
     procedure tmrSortearNMTimer(Sender: TObject);
     procedure tmrSorteioTimer(Sender: TObject);

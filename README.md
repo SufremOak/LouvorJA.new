@@ -68,3 +68,6 @@ Instação opcional. Serve para deixar o código com uma aparência mais organiz
 ---
 
 Após seguir esses passos, você provavelmente já conseguirá executar o LouvorJA no modo de desenvolvedor, a partir do código, em sua máquina, e trabalhar em melhorias. Esses passos foram desenvolvidos para se executar na versão 10.2 (Tokyo) do Delphi, e podem não funcionar em outras versões, por mais atualizadas que sejam.
+
+## Forker notes
+https://learn.microsoft.com/pt-br/windows/win32/learnwin32/module-3---windows-graphics
